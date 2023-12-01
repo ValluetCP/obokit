@@ -1,0 +1,617 @@
+Rapport d'assemblage
+
+-----------------------------------------------------------------------------
+Document :
+Nom : obokit-maquette.ai
+Mode : Couleurs RVB
+Profil colorimétrique : sRGB IEC61966-2.1
+Unité : pixels
+Dimensions : 1920 px x 9973 px
+Afficher les images en mode Tracés : INACTIF
+Mettre en évidence les polices substituées : INACTIF
+Mettre en évidence les glyphes substitués : INACTIF
+Conserver le caractère modifiable du texte
+Simuler le papier couleur : INACTIF
+
+-----------------------------------------------------------------------------
+Objets en tons directs :
+
+-----------------------------------------------------------------------------
+Polices manquantes :SANS
+
+-----------------------------------------------------------------------------
+Polices protégées non assemblées :
+Montserrat Light Italic (Polices Adobe)
+Montserrat Light (Polices Adobe)
+
+-----------------------------------------------------------------------------
+Polices :
+IvyMode-Regular (TrueType)
+IvyMode-Light (TrueType)
+IvyMode-Italic (TrueType)
+
+-----------------------------------------------------------------------------
+Polices incorporées :
+SANS
+
+-----------------------------------------------------------------------------
+Liens manquants :
+SANS
+
+-----------------------------------------------------------------------------
+Images liées :
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_aloco.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 902K, 680 x 453 pixels
+Dimensions : 424 x 282,459 points 
+Résolution : 115,472 x 115,472 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_pastel.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 902K, 680 x 453 pixels
+Dimensions : 490 x 326,426 points 
+Résolution : 99,918 x 99,918 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_pastel.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 902K, 680 x 453 pixels
+Dimensions : 490 x 326,426 points 
+Résolution : 99,918 x 99,918 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_pastel.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 902K, 680 x 453 pixels
+Dimensions : 490 x 326,426 points 
+Résolution : 99,918 x 99,918 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_accras.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 902K, 680 x 453 pixels
+Dimensions : 457,837 x 305 points 
+Résolution : 106,938 x 106,938 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bowl-poulet.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1011K, 677 x 510 pixels
+Dimensions : 449 x 338,242 points 
+Résolution : 108,561 x 108,561 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bowl-morue.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1011K, 677 x 510 pixels
+Dimensions : 433 x 326,189 points 
+Résolution : 112,573 x 112,573 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_morue.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 942K, 680 x 473 pixels
+Dimensions : 508 x 353,359 points 
+Résolution : 96,378 x 96,378 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bowl-vegetarien.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1010K, 680 x 507 pixels
+Dimensions : 400 x 298,235 points 
+Résolution : 122,4 x 122,4 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 370 x 370 points 
+Résolution : 155,676 x 155,676 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-poulet-marinade.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 940K, 680 x 472 pixels
+Dimensions : 498 x 345,671 points 
+Résolution : 98,313 x 98,313 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_morue.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 942K, 680 x 473 pixels
+Dimensions : 508 x 353,359 points 
+Résolution : 96,378 x 96,378 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 370 x 370 points 
+Résolution : 155,676 x 155,676 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 370 x 370 points 
+Résolution : 155,676 x 155,676 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 346 x 346 points 
+Résolution : 166,474 x 166,474 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-poulet-marinade.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 940K, 680 x 472 pixels
+Dimensions : 498 x 345,671 points 
+Résolution : 98,313 x 98,313 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-poulet-marinade.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 940K, 680 x 472 pixels
+Dimensions : 476 x 330,4 points 
+Résolution : 102,857 x 102,857 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_morue.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 942K, 680 x 473 pixels
+Dimensions : 435,603 x 303 points 
+Résolution : 112,396 x 112,396 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 346 x 346 points 
+Résolution : 166,474 x 166,474 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\bokit_poulet_bb.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 346 x 346 points 
+Résolution : 166,474 x 166,474 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 476,498 x 321,636 points 
+Résolution : 102,75 x 102,75 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 391,111 x 264 points 
+Résolution : 125,182 x 125,182 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 358 x 358 points 
+Résolution : 160,894 x 160,894 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-yassa.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 914K, 680 x 459 pixels
+Dimensions : 502,222 x 339 points 
+Résolution : 97,487 x 97,487 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_bokit-saumon.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 1875K, 800 x 800 pixels
+Dimensions : 364 x 364 points 
+Résolution : 158,242 x 158,242 pixels par pouce
+
+
+C:\Users\33616\Pictures\obokit-main\img\Obokit-food-truck_frite_patate-douce.jpg
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 830K, 680 x 417 pixels
+Dimensions : 680 x 417 points 
+Résolution : 72 x 72 pixels par pouce
