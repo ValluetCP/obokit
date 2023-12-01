@@ -1,0 +1,22 @@
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio figure{
+    width: 364px;
+}
+#portfolio figure h4{
+    width: 364px;
+    text-transform: uppercase;
+}
+
+#filtre{
+    list-style-type: none;
+}
+
+#filtre li {
+    margin: 10px;
+}
+
