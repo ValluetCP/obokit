@@ -17,77 +17,65 @@ if (isset($_GET['carte'])) {
             <li><a href="#">Viande</a></li>
         </ul>
     </div>
-    <aside id="sidebar">
-        <div class="flex bokit" id="liste">
-            <figure class="poulet">
-                <div class="fond_noir">
-                    <img src="./image/poulet_b_b.jpg" alt="">
-                </div>
-                <h4><span>poulet</span><br>boucané banane plantain</h4>
-                <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                <hr>
-            </figure>
-            <figure class="poisson">
-                <div class="fond_noir">
-                    <img src="./image/poisson_saumon.jpg" alt="">
-                </div>
-                <h4><span>SAUMON</span><br>fumée</h4>
-                <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                <hr>
-            </figure>
-            <figure class="poulet">
-                <div class="fond_noir">
-                    <img src="./image/poulet_yassa.jpg" alt="">
-                </div>
-                <h4><span>poulet</span><br>yassa</h4>
-                <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                <hr>
-            </figure>
-            <figure class="poisson">
-                <div class="fond_noir">
-                    <img src="./image/poisson_morue.jpg" alt="">
-                </div>
-                <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
-                <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
-                <hr>
-            </figure>
-            <figure class="poulet">
-                <div class="fond_noir">
-                    <img src="./image/poulet_b_b.jpg" alt="">
-                </div>
-                <h4><span>poulet</span><br>boucané banane plantain</h4>
-                <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                <hr>
-            </figure>
-            <figure class="poisson">
-                <div class="fond_noir">
-                    <img src="./image/poisson_saumon.jpg" alt="">
-                </div>
-                <h4><span>SAUMON</span><br>fumée</h4>
-                <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                <hr>
-            </figure>
-            <figure class="poulet">
-                <div class="fond_noir">
-                    <img src="./image/poulet_yassa.jpg" alt="">
-                </div>
-                <h4><span>poulet</span><br>yassa</h4>
-                <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                <hr>
-            </figure>
-            <figure class="poisson">
-                <div class="fond_noir">
-                    <img src="./image/poisson_morue.jpg" alt="">
-                </div>
-                <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
-                <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
-                <hr>
-            </figure>
-        </div>
-        <p class="aligncenter">
-            <a id="push" class="btn" href="#">Voir tous les produits</a>
-        </p>
-    </aside>';
+    <div class="flex bokit" id="portfolio">
+        <figure class="poulet">
+            <div class="fond_noir">
+                <img src="./image/poulet_b_b.jpg" alt="">
+            </div>
+            <h4><span>poulet</span><br>boucané banane plantain</h4>
+            <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
+            <hr>
+        </figure>
+        <figure class="poisson">
+            <div class="fond_noir">
+                <img src="./image/poisson_saumon.jpg" alt="">
+            </div>
+            <h4><span>SAUMON</span><br>fumée</h4>
+            <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
+            <hr>
+        </figure>
+        <figure class="poulet">
+            <div class="fond_noir">
+                <img src="./image/poulet_yassa.jpg" alt="">
+            </div>
+            <h4><span>poulet</span><br>yassa</h4>
+            <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
+            <hr>
+        </figure>
+        <figure class="poisson">
+            <div class="fond_noir">
+                <img src="./image/poisson_morue.jpg" alt="">
+            </div>
+            <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
+            <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
+            <hr>
+        </figure>
+        <figure class="poulet">
+            <div class="fond_noir">
+                <img src="./image/poulet_b_b.jpg" alt="">
+            </div>
+            <h4><span>poulet</span><br>boucané banane plantain</h4>
+            <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
+            <hr>
+        </figure>
+        <figure class="poisson">
+            <div class="fond_noir">
+                <img src="./image/poisson_saumon.jpg" alt="">
+            </div>
+            <h4><span>SAUMON</span><br>fumée</h4>
+            <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
+            <hr>
+        </figure>
+        <figure class="poulet">
+            <div class="fond_noir">
+                <img src="./image/poulet_yassa.jpg" alt="">
+            </div>
+            <h4><span>poulet</span><br>yassa</h4>
+            <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
+            <hr>
+        </figure>
+        
+    </div>';
             break;
         case 1:
             $contenu = "<h1>François 1er</h1>
@@ -119,15 +107,25 @@ if (isset($_GET['carte'])) {
         </p>";
             break;
         case 3:
-            $contenu = "<h1>Louis XIV</h1>
-        <img src=\"./img/louis-14.jpg\" class=\"imgRoi\">
-        <p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.
-
-        Exsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletum sit.
-        </p>
-        <p>
-            Vita est illis semper in fuga uxoresque mercenariae conductae ad tempus ex pacto atque, ut sit species matrimonii, dotis nomine futura coniunx hastam et tabernaculum offert marito, post statum diem si id elegerit discessura, et incredibile est quo ardore apud eos in venerem uterque solvitur sexus.
-        </p>";
+            $contenu = '
+            <div class="fond_noir">
+            <img src="./image/poulet_yassa.jpg" alt="">
+            </div>
+            
+            <dl id="accordeon">
+                <dt>POULET CURRY</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>BEUF FROMAGE</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>CREVETTE</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>SAUMON</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+            </dl>
+            ';
             break;
 
         default:
@@ -152,7 +150,7 @@ if (isset($_GET['carte'])) {
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="./site.js"></script>
-    <script type="text/javascript" src="./site2.js"></script>
+    <script type="text/javascript" src="./accordeon.js"></script>
 </head>
 
 <body>
