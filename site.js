@@ -34,5 +34,7 @@ $(document).ready(function() {
 	});
 	
 	// $("#portfolio li a").lightBox();						// Effet lightbox sur les liens du portfolio
+
+
 		
 });

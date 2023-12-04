@@ -30,3 +30,19 @@
 .bokit{
     flex-wrap: wrap;
 }
+
+/* CSS Accordeon */
+
+#accordeon dt{
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#accordeon dd{
+    padding: 10px 20px;
+}
+
+.current{
+    background-color: #F8F3ED;
+}

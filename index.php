@@ -1,12 +1,12 @@
 <?php
 $contenu = "<p>Accedebant enim eius asperitati, ubi inminuta vel laesa amplitudo imperii dicebatur, et iracundae suspicionum quantitati proximorum cruentae blanditiae exaggerantium incidentia et dolere inpendio simulantium, si principis periclitetur vita, a cuius salute velut filo pendere statum orbis terrarum fictis vocibus exclamabant.</p>";
-if(isset($_GET['carte'])){
-$carte = $_GET['carte'];
+if (isset($_GET['carte'])) {
+    $carte = $_GET['carte'];
 
 
-switch ($carte) {
-    case 0:
-        $contenu = '
+    switch ($carte) {
+        case 0:
+            $contenu = '
     <div class="flex">
         <ul class="nav flex" id="filtre">
             <li class="active"><a href="#">Tout</a></li>
@@ -83,9 +83,9 @@ switch ($carte) {
             <hr>
         </figure>
     </div>';
-        break;
-    case 1:
-        $contenu = "<h1>François 1er</h1>
+            break;
+        case 1:
+            $contenu = "<h1>François 1er</h1>
         <img src=\"./img/francois-1.jpg\" class=\"imgRoi\">
         <p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.
 
@@ -101,9 +101,9 @@ switch ($carte) {
         <p>
             Vita est illis semper in fuga uxoresque mercenariae conductae ad tempus ex pacto atque, ut sit species matrimonii, dotis nomine futura coniunx hastam et tabernaculum offert marito, post statum diem si id elegerit discessura, et incredibile est quo ardore apud eos in venerem uterque solvitur sexus.
         </p>";
-        break;
-    case 2:
-        $contenu = "<h1>Charles IX</h1>
+            break;
+        case 2:
+            $contenu = "<h1>Charles IX</h1>
         <img src=\"./img/charles-9.jpg\" class=\"imgRoi\">
         <p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.
 
@@ -112,28 +112,38 @@ switch ($carte) {
         <p>
             Vita est illis semper in fuga uxoresque mercenariae conductae ad tempus ex pacto atque, ut sit species matrimonii, dotis nomine futura coniunx hastam et tabernaculum offert marito, post statum diem si id elegerit discessura, et incredibile est quo ardore apud eos in venerem uterque solvitur sexus.
         </p>";
-        break;
-    case 3:
-        $contenu = "<h1>Louis XIV</h1>
-        <img src=\"./img/louis-14.jpg\" class=\"imgRoi\">
-        <p>Quare talis improborum consensio non modo excusatione amicitiae tegenda non est sed potius supplicio omni vindicanda est, ut ne quis concessum putet amicum vel bellum patriae inferentem sequi; quod quidem, ut res ire coepit, haud scio an aliquando futurum sit. Mihi autem non minori curae est, qualis res publica post mortem meam futura, quam qualis hodie sit.
+            break;
+        case 3:
+            $contenu = '
+            <div class="fond_noir">
+                <img src="./image/poulet_yassa.jpg" alt="">
+            </div>
+            <dl id="accordeon">
+                <dt>POULET CURRY</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>BEUF FROMAGE</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>CREVETTE</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+                
+                <dt>SAUMON</dt>
+                <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
+            </dl>
+            ';
+            break;
 
-        Exsistit autem hoc loco quaedam quaestio subdifficilis, num quando amici novi, digni amicitia, veteribus sint anteponendi, ut equis vetulis teneros anteponere solemus. Indigna homine dubitatio! Non enim debent esse amicitiarum sicut aliarum rerum satietates; veterrima quaeque, ut ea vina, quae vetustatem ferunt, esse debet suavissima; verumque illud est, quod dicitur, multos modios salis simul edendos esse, ut amicitiae munus expletum sit.
-        </p>
-        <p>
-            Vita est illis semper in fuga uxoresque mercenariae conductae ad tempus ex pacto atque, ut sit species matrimonii, dotis nomine futura coniunx hastam et tabernaculum offert marito, post statum diem si id elegerit discessura, et incredibile est quo ardore apud eos in venerem uterque solvitur sexus.
-        </p>";
-        break;
-    
-    default:
-        # code...
-        break;
-}
+        default:
+            # code...
+            break;
+    }
 }
 
 ?>
 <!DOCTYPE html>
 <html lang="fr-FR">
+
 <head>
     <meta charset="UTF-8">
     <title>Obokit - Notre carte</title>
@@ -146,7 +156,9 @@ switch ($carte) {
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="./site.js"></script>
+    <script type="text/javascript" src="./accordeon.js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1><span>Notre</span>CARTE</h1>
@@ -161,8 +173,9 @@ switch ($carte) {
             <a href="?carte=6">BOISSON</a>
         </div>
         <div class="carte_contenu">
-        <?= $contenu ?>
+            <?= $contenu ?>
         </div>
     </div>
 </body>
+
 </html>
