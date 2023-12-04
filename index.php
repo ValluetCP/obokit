@@ -116,8 +116,9 @@ if (isset($_GET['carte'])) {
         case 3:
             $contenu = '
             <div class="fond_noir">
-                <img src="./image/poulet_yassa.jpg" alt="">
+            <img src="./image/poulet_yassa.jpg" alt="">
             </div>
+            
             <dl id="accordeon">
                 <dt>POULET CURRY</dt>
                 <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque dignissimos earum rerum suscipit! Nulla veniam, consequatur atque praesentium at et.</dd>
