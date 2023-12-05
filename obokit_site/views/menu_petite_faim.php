@@ -4,6 +4,8 @@ include_once "./inc/nav.php";
 ?>
 
 <div class="container">
+
+    <!-- Ajouter les sauces, images -->
     <h1 class="m-5">Ajouter une petite faim</h1>
     <form method="post" action="" onsubmit="return validerFormulaire()">
         <h4 class="mt-5">Petits plaisirs & Accompagnements</h4>
@@ -28,7 +30,7 @@ include_once "./inc/nav.php";
                     <option value="pastel_poulet">Poulet au curry</option>
                     <option value="pastel_boeuf">Boeuf fromage</option>
                     <option value="pastel_crevette">Crevette</option>
-                    <option value="pastel_saumon">Saumon</option>
+                    <option value="pastel_saumon">Saumon fumée</option>
                 </select>
             </div>
         </div>
@@ -51,10 +53,15 @@ include_once "./inc/nav.php";
             </div>
         </div>
 
+        <div class="form-floating mt-2" id="commentaireSection" style="display:none;">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="commentaire"></textarea>
+            <label for="floatingTextarea">Ingrédients</label>
+        </div>
+
         <input type="submit" value="Valider" class="mt-5">
     </form>
 
-    <div id="erreur" style="display:none; color: red;">
+    <div id="erreur" style="display:none; color: red;" class="mt-5">
         Veuillez sélectionner une option dans chaque menu.
     </div>
 </div>
@@ -75,6 +82,7 @@ include_once "./inc/nav.php";
         }
     }
 
+
     function afficherSousMenu() {
         var aperitifSelect = document.getElementById("aperitif");
         var menuAperitif = document.getElementById("menuAperitif");
@@ -82,16 +90,20 @@ include_once "./inc/nav.php";
         var accompagnementSelect = document.getElementById("accompagnement");
         var menuAccompagnement = document.getElementById("menuAccompagnement");
         var friteAccompagnement = document.getElementById("friteAccompagnement");
+        var commentaireSection = document.getElementById("commentaireSection");
 
         pastelAperitif.style.display = "none";
         friteAccompagnement.style.display = "none";
+        commentaireSection.style.display = "none";
 
         if (aperitifSelect.value === "pastel") {
             pastelAperitif.style.display = "block";
+            commentaireSection.style.display = "block";
         }
 
         if (accompagnementSelect.value === "frite") {
             friteAccompagnement.style.display = "block";
+            commentaireSection.style.display = "block";
         }
     }
 
@@ -136,3 +148,7 @@ include_once "./inc/nav.php";
         return true; // Permet la soumission du formulaire
     }
 </script>
+
+<?php
+include_once "./inc/footer.php";
+?>
