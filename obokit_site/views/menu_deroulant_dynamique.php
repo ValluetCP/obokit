@@ -62,6 +62,8 @@ include_once "./inc/nav.php";
 
 <script>
   function afficherMenu() {
+
+    // Ajouter un bokit
     var viandeSelect = document.getElementById("viande");
     var menuPoulet = document.getElementById("menuPoulet");
     var menuSaumon = document.getElementById("menuSaumon");

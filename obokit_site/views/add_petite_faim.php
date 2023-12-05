@@ -7,54 +7,51 @@ include_once "./inc/nav.php";
     <h1 class="m-5">Ajouter une petite faim</h1>
     <form method="post" action="" onsubmit="return validerFormulaire()">
         <h4 class="mt-5">Catégorie</h4>
-        <select name="categorie" id="categorie" class="form-select" onchange="afficherMenu()">
+        <select name="petite_faim" id="petite_faim" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
             <option value="aperitif">Apéritif</option>
             <option value="accompagnement">Accompagnement</option>
         </select>
 
-        <div id="menuPoulet" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <select class="form-select" name="poulet" id="poulet">
-                <option value="">Sélectionnez...</option>
-                <option value="boucane">Boucané</option>
-                <option value="yassa">Yassa</option>
-                <option value="boucaneBananePlantain">Boucané banane plantain</option>
-                <option value="marinadeMaison">Marinade maison</option>
-            </select>
-        </div>
-
-        <div id="menuSaumon" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <selec class="form-select"t name="plat2" id="plat2">
-                <option value="fumee">Fumée</option>
+        <div id="menuAperitif" style="display:none;">
+            <h4 class="mt-5">Apéritif</h4>
+            <selec class="form-select" name="aperitif" id="aperitif">
+                <option value="pastel">Pastel</option>
+                <option value="accras">Accras</option>
             </selec>
         </div>
 
-        <div id="menuMorue" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <select class="form-select" name="plat3" id="plat3">
-                <option value="chiquetaille">Chiquetaille</option>
+        <div id="menuAccompagnement" style="display:none;">
+            <h4 class="mt-5">Accompagnement</h4>
+            <select class="form-select" name="accompagnement" id="accompagnement">
+                <option value="frite">Frite</option>
+                <option value="alloco">Alloco</option>
             </select>
         </div>
 
-        <div id="menuLegume" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <select class="form-select" name="plat4" id="plat4">
-                <option value="vegetarien">Végétarien</option>
+        <div id="friteAccompagnement" style="display:none;">
+            <h4 class="mt-5">Frite</h4>
+            <select class="form-select" name="frite" id="frite">
+                <option value="pomme_de_terre">Pomme de terre</option>
+                <option value="patate_douce">Patate douce</option>
             </select>
         </div>
 
-        <div id="menuBoeuf" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <select class="form-select" name="plat5" id="plat5">
-                <option value="complet">Complet</option>
+        <div id="pastelAperitif" style="display:none;">
+            <h4 class="mt-5">Pastel</h4>
+            <select class="form-select" name="pastel" id="pastel">
+                <option value="pastel_poulet">poulet</option>
+                <option value="pastel_boeuf">Boeuf fromage</option>
+                <option value="pastel_crevette">Crevette</option>
+                <option value="pastel_saumon">Saumon</option>
             </select>
         </div>
 
         <input type="submit" value="Valider" class="mt-5">
     </form>
 </div>
+
+<script src="./asset/js/deroulant_petite_faim.js"></script>
 
 <?php
 include_once "./inc/footer.php";
