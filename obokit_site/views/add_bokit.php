@@ -5,56 +5,57 @@ include_once "./inc/nav.php";
 
 <div class="container">
     <h1 class="m-5 text-center">Ajouter un bokit</h1>
-    <form action="./traitement/action.php" method="post">
+    <form action="./traitement/action.php" method="post" onsubmit="return validerFormulaire()">
 
         <h2 class="mb-4 mt-5">Bokit</h2>
         <h4 class="mt-5">Protéines</h4>
-        <label class="m-2">ex : poulet, morue,...</label>
-        <select name="categorie" id="categorie" class="form-select" aria-label="Default select example">
-            <!-- <option selected>Open this select menu</option> -->
-            <option selected value="1">poulet</option>
-            <option value="2">saumon</option>
-            <option value="3">morue</option>
-            <option value="4">légume</option>
-            <option value="5">boeuf bacon oeuf</option>
-            <!-- <option value="6"></option> -->
+        <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
+            <option value="">Sélectionnez...</option>
+            <option value="poulet">Poulet</option>
+            <option value="saumon">Saumon</option>
+            <option value="morue">Morue</option>
+            <option value="legume">Légume</option>
+            <option value="boeuf">Steack bacon de boeuf</option>
         </select>
 
-        <h4 class="mt-5">Préparation</h4>
-        <ul class="list-group">
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="boucane" name="boucane">
-                <label class="form-check-label" for="boucane">boucané</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="boucane_banane_plantain" name="boucane_banane_plantain">
-                <label class="form-check-label" for="boucane_banane_plantain">boucané banane plantain</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="yassa" name="yassa">
-                <label class="form-check-label" for="yassa">yassa</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="marinade_maison" name="marinade_maison">
-                <label class="form-check-label" for="marinade_maison">marinade maison</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="fumee" name="fumee">
-                <label class="form-check-label" for="fumee">fumée</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="chiquetaille" name="chiquetaille">
-                <label class="form-check-label" for="chiquetaille">chiquetaille</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="vegetarien" name="vegetarien">
-                <label class="form-check-label" for="vegetarien">végétarien</label>
-            </li>
-            <li class="list-group-item">
-                <input class="form-check-input me-1" type="checkbox" value="" id="complet" name="complet">
-                <label class="form-check-label" for="complet">complet</label>
-            </li>
-        </ul>
+        <div id="menuPoulet" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="poulet" id="poulet">
+                <option value="">Sélectionnez...</option>
+                <option value="boucane">Boucané</option>
+                <option value="yassa">Yassa</option>
+                <option value="boucaneBananePlantain">Boucané banane plantain</option>
+                <option value="marinadeMaison">Marinade maison</option>
+            </select>
+        </div>
+
+        <div id="menuSaumon" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <selec class="form-select"t name="plat2" id="plat2">
+            <option value="fumee">Fumée</option>
+            </selec>
+        </div>
+
+        <div id="menuMorue" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat3" id="plat3">
+            <option value="chiquetaille">Chiquetaille</option>
+            </select>
+        </div>
+
+        <div id="menuLegume" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat4" id="plat4">
+            <option value="vegetarien">Végétarien</option>
+            </select>
+        </div>
+
+        <div id="menuBoeuf" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat5" id="plat5">
+            <option value="complet">Complet</option>
+            </select>
+        </div>
 
         <h4 class="mt-5">images</h4>
         <div class="mb-3">
@@ -134,14 +135,12 @@ include_once "./inc/nav.php";
         </ul>
 
 
+        <button type="submit" class="btn btn-primary mt-5 mb-5" name="ajouter" value="ajouter">Ajouter</button>
 
-
-
- 
-        <button type="submit" class="btn btn-primary mt-5 mb-5" name="ajouter" value="">Ajouter</button>
     </form>
 </div>
 
+<script src="./asset/js/menu_deroulant_dynamique.js"></script>
 <?php
 include_once "./inc/footer.php";
 ?>

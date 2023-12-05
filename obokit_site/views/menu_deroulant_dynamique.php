@@ -1,63 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu déroulant dynamique avec formulaire</title>
-</head>
-<body>
+<?php
+include_once "./inc/header.php";
+include_once "./inc/nav.php";
+?>
 
-<form method="post" action="">
-  <label for="viande">Choisissez une viande :</label>
-  <select name="viande" id="viande" onchange="afficherMenu()">
-    <option value="">Sélectionnez...</option>
-    <option value="poulet">Poulet</option>
-    <option value="saumon">Saumon</option>
-    <option value="morue">Morue</option>
-    <option value="legume">Légume</option>
-    <option value="boeuf">Steack bacon de boeuf</option>
-  </select>
+<div class="container">
+    <h1>Menu déroulant dynamique avec formulaire</h1>
+    <form method="post" action="" onsubmit="return validerFormulaire()">
+        <h4 class="mt-5">Protéines</h4>
+        <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
+            <option value="">Sélectionnez...</option>
+            <option value="poulet">Poulet</option>
+            <option value="saumon">Saumon</option>
+            <option value="morue">Morue</option>
+            <option value="legume">Légume</option>
+            <option value="boeuf">Steack bacon de boeuf</option>
+        </select>
 
-  <div id="menuPoulet" style="display:none;">
-    <label for="plat1">Choisissez un plat de poulet :</label>
-    <select name="plat1" id="plat1">
-      <option value="boucane">Boucané</option>
-      <option value="yassa">Yassa</option>
-      <option value="boucaneBananePlantain">Boucané banane plantain</option>
-      <option value="marinadeMaison">Marinade maison</option>
-    </select>
-  </div>
+        <div id="menuPoulet" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="poulet" id="poulet">
+                <option value="">Sélectionnez...</option>
+                <option value="boucane">Boucané</option>
+                <option value="yassa">Yassa</option>
+                <option value="boucaneBananePlantain">Boucané banane plantain</option>
+                <option value="marinadeMaison">Marinade maison</option>
+            </select>
+        </div>
 
-  <div id="menuSaumon" style="display:none;">
-    <label for="plat2">Choisissez un plat de saumon :</label>
-    <select name="plat2" id="plat2">
-      <option value="fumee">Fumée</option>
-    </select>
-  </div>
+        <div id="menuSaumon" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <selec class="form-select"t name="plat2" id="plat2">
+                <option value="fumee">Fumée</option>
+            </selec>
+        </div>
 
-  <div id="menuMorue" style="display:none;">
-    <label for="plat3">Choisissez un plat de morue :</label>
-    <select name="plat3" id="plat3">
-      <option value="chiquetaille">Chiquetaille</option>
-    </select>
-  </div>
+        <div id="menuMorue" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat3" id="plat3">
+                <option value="chiquetaille">Chiquetaille</option>
+            </select>
+        </div>
 
-  <div id="menuLegume" style="display:none;">
-    <label for="plat4">Choisissez un plat végétarien :</label>
-    <select name="plat4" id="plat4">
-      <option value="vegetarien">Végétarien</option>
-    </select>
-  </div>
+        <div id="menuLegume" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat4" id="plat4">
+                <option value="vegetarien">Végétarien</option>
+            </select>
+        </div>
 
-  <div id="menuBoeuf" style="display:none;">
-    <label for="plat5">Choisissez un plat de boeuf :</label>
-    <select name="plat5" id="plat5">
-      <option value="complet">Complet</option>
-    </select>
-  </div>
+        <div id="menuBoeuf" style="display:none;">
+            <h4 class="mt-5">Préparation</h4>
+            <select class="form-select" name="plat5" id="plat5">
+                <option value="complet">Complet</option>
+            </select>
+        </div>
 
-  <input type="submit" value="Valider">
-</form>
+        <input type="submit" value="Valider" class="mt-5">
+    </form>
+</div>
+
 
 <script>
   function afficherMenu() {
@@ -86,7 +87,26 @@
       menuBoeuf.style.display = "block";
     }
   }
+
+  function validerFormulaire() {
+    var viandeSelect = document.getElementById("viande");
+    var pouletSelect = document.getElementById("poulet");
+    
+    if (viandeSelect.value === "") {
+      alert("Veuillez sélectionner une viande.");
+      return false; // Empêche la soumission du formulaire
+    }
+    
+    if (pouletSelect.value === "") {
+      alert("Pour votre poulet, veuillez sélectionner une préparation.");
+      return false; // Empêche la soumission du formulaire
+    }
+
+    return true; // Permet la soumission du formulaire
+  }
 </script>
 
-</body>
-</html>
+
+<?php
+include_once "./inc/footer.php";
+?>
