@@ -53,6 +53,10 @@ include_once "./inc/nav.php";
 
         <input type="submit" value="Valider" class="mt-5">
     </form>
+
+    <div id="erreur" style="display:none; color: red;">
+        Veuillez sélectionner une option dans chaque menu.
+    </div>
 </div>
 
 <script>
@@ -91,9 +95,44 @@ include_once "./inc/nav.php";
         }
     }
 
-    
-</script>
+    function validerFormulaire() {
+        var petiteFaimSelect = document.getElementById("petite_faim");
+        var aperitifSelect = document.getElementById("aperitif");
+        var pastelSelect = document.getElementById("pastel");
+        var accompagnementSelect = document.getElementById("accompagnement");
+        var friteSelect = document.getElementById("frite");
 
-<?php
-include_once "./inc/footer.php";
-?>
+        var erreurDiv = document.getElementById("erreur");
+
+        // Réinitialise l'affichage de l'erreur à chaque validation
+        erreurDiv.style.display = "none";
+
+        // Vérifie chaque niveau de sélection et affiche une alerte si c'est vide
+        if (petiteFaimSelect.value === "") {
+            alert("Veuillez sélectionner une catégorie.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        if (petiteFaimSelect.value === "aperitif" && aperitifSelect.value === "") {
+            alert("Pour les petits plaisirs, veuillez sélectionner une option.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        if (aperitifSelect.value === "pastel" && pastelSelect.value === "") {
+            alert("Pour le pastel, veuillez sélectionner une option.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        if (petiteFaimSelect.value === "accompagnement" && accompagnementSelect.value === "") {
+            alert("Pour l'accompagnement, veuillez sélectionner une option.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        if (accompagnementSelect.value === "frite" && friteSelect.value === "") {
+            alert("Pour les frites, veuillez sélectionner une option.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        return true; // Permet la soumission du formulaire
+    }
+</script>
