@@ -53,9 +53,32 @@ include_once "./inc/nav.php";
             </div>
         </div>
 
+        <div id="sauce" style="display:none;">
+            <h4 class="mt-5">Sauce</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sauce" id="sauce_choix" checked>
+                <label class="form-check-label" for="sauce_choix">
+                    Sauce au choix
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sauce" id="sauce_tomate">
+                <label class="form-check-label" for="sauce_tomate">
+                    Sauce tomate maison
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="sauce" id="sauce_creoline">
+                <label class="form-check-label" for="sauce_creoline">
+                    Sauce créoline
+                </label>
+            </div>
+        </div>
+
+        <h4 class="mt-5" id="ingredientTitre" style="display:none;">Ingrédients</h4>
         <div class="form-floating mt-2" id="commentaireSection" style="display:none;">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="commentaire"></textarea>
-            <label for="floatingTextarea">Ingrédients</label>
+            <label for="floatingTextarea">Inscrire la liste des ingrédients</label>
         </div>
 
         <input type="submit" value="Valider" class="mt-5">
@@ -90,20 +113,28 @@ include_once "./inc/nav.php";
         var accompagnementSelect = document.getElementById("accompagnement");
         var menuAccompagnement = document.getElementById("menuAccompagnement");
         var friteAccompagnement = document.getElementById("friteAccompagnement");
+        var ingredientTitre = document.getElementById("ingredientTitre");
         var commentaireSection = document.getElementById("commentaireSection");
+        var sauceSelect = document.getElementById("sauce");
+        
 
         pastelAperitif.style.display = "none";
         friteAccompagnement.style.display = "none";
+        ingredientTitre.style.display = "none";
         commentaireSection.style.display = "none";
+        sauceSelect.style.display = "none";
+
 
         if (aperitifSelect.value === "pastel") {
             pastelAperitif.style.display = "block";
+            ingredientTitre.style.display = "block";
             commentaireSection.style.display = "block";
+            sauceSelect.style.display = "block";
         }
 
         if (accompagnementSelect.value === "frite") {
             friteAccompagnement.style.display = "block";
-            commentaireSection.style.display = "block";
+            sauceSelect.style.display = "block";
         }
     }
 
@@ -113,6 +144,7 @@ include_once "./inc/nav.php";
         var pastelSelect = document.getElementById("pastel");
         var accompagnementSelect = document.getElementById("accompagnement");
         var friteSelect = document.getElementById("frite");
+        var commentaire = document.getElementById('floatingTextarea');
 
         var erreurDiv = document.getElementById("erreur");
 
@@ -142,6 +174,11 @@ include_once "./inc/nav.php";
 
         if (accompagnementSelect.value === "frite" && friteSelect.value === "") {
             alert("Pour les frites, veuillez sélectionner une option.");
+            return false; // Empêche la soumission du formulaire
+        }
+
+        if (commentaire.value === "") {
+            alert("Veuillez saisir la liste des ingrédients.");
             return false; // Empêche la soumission du formulaire
         }
 
