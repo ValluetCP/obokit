@@ -62,7 +62,70 @@ include_once "../inc/nav.php";
             </select>
         </div>
 
-        <input type="submit" value="Valider" class="mt-5">
+
+        <h2 class="mb-4 mt-5">Ingrédients</h2>
+
+        <h4>Sauces</h4>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_chien" name="sauce_chien">
+                <label class="form-check-label" for="sauce_chien">sauce chien</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_blanche" name="sauce_blanche">
+                <label class="form-check-label" for="sauce_blanche">sauce blanche</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_cocktail" name="sauce_cocktail">
+                <label class="form-check-label" for="sauce_cocktail">sauce cocktail</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_poivre" name="sauce_poivre">
+                <label class="form-check-label" for="sauce_poivre">sauce poivre</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="moutarde" name="moutarde">
+                <label class="form-check-label" for="moutarde">moutarde</label>
+            </li>
+        </ul>
+
+        <h4 class="mt-5">Légumes & crudités</h4>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="salade" name="salade">
+                <label class="form-check-label" for="salade">salade</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="tomate" name="tomate">
+                <label class="form-check-label" for="tomate">tomate</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="oignon_rouge" name="oignon_rouge">
+                <label class="form-check-label" for="oignon_rouge">oignon rouge</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="carotte" name="carotte">
+                <label class="form-check-label" for="carotte">carotte</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="citron" name="citron">
+                <label class="form-check-label" for="citron">citron</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="olive" name="olive">
+                <label class="form-check-label" for="olive">olive</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="champignon" name="champignon">
+                <label class="form-check-label" for="champignon">champignon</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 legumes" type="checkbox" value="" id="avocat" name="avocat">
+                <label class="form-check-label" for="avocat">avocat</label>
+            </li>
+        </ul>
+
+        <input type="submit" value="Valider" class="my-5">
     </form>
 </div>
 
@@ -101,6 +164,13 @@ include_once "../inc/nav.php";
     var viandeSelect = document.getElementById("viande");
     var pouletSelect = document.getElementById("poulet");
 
+    // Sélectionnez toutes les cases à cocher avec le nom "sauces"
+    var casesSauces = document.querySelectorAll('.sauce:checked');
+
+    // Sélectionnez toutes les cases à cocher avec le nom "legumes"
+    var casesLegumes = document.querySelectorAll('.legumes:checked');
+
+
     var inputFichier = document.getElementById('formFile');
     var fichierSelectionne = inputFichier.files[0];
 
@@ -116,6 +186,17 @@ include_once "../inc/nav.php";
       return false; // Empêche la soumission du formulaire
     }
 
+    // Vérifiez si aucune case n'est cochée
+    if (casesSauces.length === 0) {
+            // Affichez une alerte si aucune case n'est cochée
+            alert("Veuillez choisir au moins une sauce.");
+        } 
+
+    // Vérifiez si aucune case n'est cochée
+    if (casesLegumes.length === 0) {
+            // Affichez une alerte si aucune case n'est cochée
+            alert("Veuillez choisir au moins un légume ou une crudité.");
+        }
     
     if (!fichierSelectionne) {
             alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
