@@ -50,20 +50,41 @@ function afficherMenu() {
 
 // empêcher l'envoi du formulaire si l'utilisateur n'a pas sélectionné de 'viande' ni de 'préparation'
 function validerFormulaire() {
-    var viandeSelect = document.getElementById("viande");
-    var pouletSelect = document.getElementById("poulet");
-    
-    if (viandeSelect.value === "") {
-        alert("Veuillez sélectionner une viande.");
-        return false; // Empêche la soumission du formulaire
-    }
-    
-    if (pouletSelect.value === "") {
-        alert("Pour votre poulet, veuillez sélectionner une préparation.");
-        return false; // Empêche la soumission du formulaire
+  var viandeSelect = document.getElementById("viande");
+  var pouletSelect = document.getElementById("poulet");
+
+  var inputFichier = document.getElementById('formFile');
+  var fichierSelectionne = inputFichier.files[0];
+
+  
+  if (viandeSelect.value === "") {
+    alert("Veuillez sélectionner une viande.");
+    return false; // Empêche la soumission du formulaire
+  }
+ 
+
+  if (viandeSelect.value === "poulet" && pouletSelect.value === "") {
+    alert("Pour votre poulet, veuillez sélectionner une préparation.");
+    return false; // Empêche la soumission du formulaire
+  }
+
+  
+  if (!fichierSelectionne) {
+          alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
+          return false; // Empêche la soumission du formulaire
+  }
+
+   // Vérifiez les autres sélections
+   if (
+          document.getElementById("plat2").value !== "" ||
+          document.getElementById("plat3").value !== "" ||
+          document.getElementById("plat4").value !== "" ||
+          document.getElementById("plat5").value !== ""
+      ) {
+        return true; // Permet la soumission du formulaire
     }
 
-    return true; // Permet la soumission du formulaire
+  return true; // Permet la soumission du formulaire
 }
 
 

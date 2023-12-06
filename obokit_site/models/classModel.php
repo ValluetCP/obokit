@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER["DOCUMENT_ROOT"]."/chemin_base_de_donnee/models/database.php";
+require_once $_SERVER["DOCUMENT_ROOT"]."/obokit_site/models/database.php";
 
 class NomDeLaClass{
 

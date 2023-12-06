@@ -5,9 +5,15 @@ include_once "./inc/nav.php";
 
 <div class="container">
     <h1 class="m-5 text-center">Ajouter un bokit</h1>
-    <form action="./traitement/action.php" method="post" onsubmit="return validerFormulaire()">
+    <form action="./traitement/action.php" method="post" onsubmit="return validerFormulaire()"  enctype="multipart/form-data">
 
         <h2 class="mb-4 mt-5">Bokit</h2>
+        <h4 class="mt-5">Images</h4>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Format image 363px x 247px</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+
         <h4 class="mt-5">Protéines</h4>
         <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
@@ -31,37 +37,32 @@ include_once "./inc/nav.php";
 
         <div id="menuSaumon" style="display:none;">
             <h4 class="mt-5">Préparation</h4>
-            <selec class="form-select"t name="plat2" id="plat2">
-            <option value="fumee">Fumée</option>
-            </selec>
+            <select class="form-select" name="plat2" id="plat2">
+                <option value="fumee">Fumée</option>
+            </select>
         </div>
 
         <div id="menuMorue" style="display:none;">
             <h4 class="mt-5">Préparation</h4>
             <select class="form-select" name="plat3" id="plat3">
-            <option value="chiquetaille">Chiquetaille</option>
+                <option value="chiquetaille">Chiquetaille</option>
             </select>
         </div>
 
         <div id="menuLegume" style="display:none;">
             <h4 class="mt-5">Préparation</h4>
             <select class="form-select" name="plat4" id="plat4">
-            <option value="vegetarien">Végétarien</option>
+                <option value="vegetarien">Végétarien</option>
             </select>
         </div>
 
         <div id="menuBoeuf" style="display:none;">
             <h4 class="mt-5">Préparation</h4>
             <select class="form-select" name="plat5" id="plat5">
-            <option value="complet">Complet</option>
+                <option value="complet">Complet</option>
             </select>
         </div>
-
-        <h4 class="mt-5">images</h4>
-        <div class="mb-3">
-            <label for="formFile" class="form-label">Format image 363px x 247px</label>
-            <input class="form-control" type="file" id="formFile">
-        </div>
+        
         <h2 class="mb-4 mt-5">Ingrédients</h2>
 
         <h4>Sauces</h4>
@@ -87,6 +88,7 @@ include_once "./inc/nav.php";
                 <label class="form-check-label" for="moutarde">moutarde</label>
             </li>
         </ul>
+        
         <h4 class="mt-5">Légumes & crudités</h4>
         <ul class="list-group">
             <li class="list-group-item">
@@ -138,9 +140,13 @@ include_once "./inc/nav.php";
         <button type="submit" class="btn btn-primary mt-5 mb-5" name="ajouter" value="ajouter">Ajouter</button>
 
     </form>
+
+    <div id="erreur" style="display:none; color: red;" class="mt-5">
+        Veuillez sélectionner une option dans chaque menu.
+    </div>
 </div>
 
-<script src="./asset/js/menu_deroulant_dynamique.js"></script>
+<script src="./asset/js/deroulant_bokit.js"></script>
 <?php
 include_once "./inc/footer.php";
 ?>

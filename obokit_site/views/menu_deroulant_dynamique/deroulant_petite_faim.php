@@ -1,13 +1,21 @@
 <?php
-include_once "./inc/header.php";
-include_once "./inc/nav.php";
+include_once "../inc/header.php";
+include_once "../inc/nav.php";
 ?>
 
 <div class="container">
 
-    <!-- Ajouter les sauces, images -->
-    <h1 class="m-5">Ajouter une petite faim</h1>
-    <form method="post" action="" onsubmit="return validerFormulaire()">
+        
+    <h1 class="m-5  text-center">Ajouter une petite faim</h1>
+    
+    <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()"  enctype="multipart/form-data">
+
+        <h4 class="mt-5">Images</h4>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Format image 363px x 247px</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+
         <h4 class="mt-5">Petits plaisirs & Accompagnements</h4>
         <select name="petite_faim" id="petite_faim" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
@@ -117,6 +125,7 @@ include_once "./inc/nav.php";
         var commentaireSection = document.getElementById("commentaireSection");
         var sauceSelect = document.getElementById("sauce");
         
+        
 
         pastelAperitif.style.display = "none";
         friteAccompagnement.style.display = "none";
@@ -146,7 +155,11 @@ include_once "./inc/nav.php";
         var friteSelect = document.getElementById("frite");
         var commentaire = document.getElementById('floatingTextarea');
 
+        var inputFichier = document.getElementById('formFile');
+        var fichierSelectionne = inputFichier.files[0];
+
         var erreurDiv = document.getElementById("erreur");
+
 
         // Réinitialise l'affichage de l'erreur à chaque validation
         erreurDiv.style.display = "none";
@@ -177,8 +190,13 @@ include_once "./inc/nav.php";
             return false; // Empêche la soumission du formulaire
         }
 
-        if (commentaire.value === "") {
+        if (aperitifSelect.value === "pastel" && pastelSelect.value === "" && commentaire.value === "") {
             alert("Veuillez saisir la liste des ingrédients.");
+            return false; // Empêche la soumission du formulaire
+        }
+        
+        if (!fichierSelectionne) {
+            alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
             return false; // Empêche la soumission du formulaire
         }
 
@@ -187,5 +205,5 @@ include_once "./inc/nav.php";
 </script>
 
 <?php
-include_once "./inc/footer.php";
+include_once "../inc/footer.php";
 ?>

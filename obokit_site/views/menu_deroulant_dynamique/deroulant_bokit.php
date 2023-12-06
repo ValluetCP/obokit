@@ -1,11 +1,18 @@
 <?php
-include_once "./inc/header.php";
-include_once "./inc/nav.php";
+include_once "../inc/header.php";
+include_once "../inc/nav.php";
 ?>
 
 <div class="container">
     <h1>Menu déroulant dynamique avec formulaire</h1>
-    <form method="post" action="" onsubmit="return validerFormulaire()">
+    <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()" enctype="multipart/form-data">
+
+        <h4 class="mt-5">Images</h4>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Format image 363px x 247px</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+
         <h4 class="mt-5">Protéines</h4>
         <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
@@ -29,9 +36,9 @@ include_once "./inc/nav.php";
 
         <div id="menuSaumon" style="display:none;">
             <h4 class="mt-5">Préparation</h4>
-            <selec class="form-select"t name="plat2" id="plat2">
+            <select class="form-select" name="plat2" id="plat2">
                 <option value="fumee">Fumée</option>
-            </selec>
+            </select>
         </div>
 
         <div id="menuMorue" style="display:none;">
@@ -93,16 +100,37 @@ include_once "./inc/nav.php";
   function validerFormulaire() {
     var viandeSelect = document.getElementById("viande");
     var pouletSelect = document.getElementById("poulet");
+
+    var inputFichier = document.getElementById('formFile');
+    var fichierSelectionne = inputFichier.files[0];
+
     
     if (viandeSelect.value === "") {
       alert("Veuillez sélectionner une viande.");
       return false; // Empêche la soumission du formulaire
     }
-    
-    if (pouletSelect.value === "") {
+   
+
+    if (viandeSelect.value === "poulet" && pouletSelect.value === "") {
       alert("Pour votre poulet, veuillez sélectionner une préparation.");
       return false; // Empêche la soumission du formulaire
     }
+
+    
+    if (!fichierSelectionne) {
+            alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
+            return false; // Empêche la soumission du formulaire
+    }
+
+     // Vérifiez les autres sélections
+     if (
+            document.getElementById("plat2").value !== "" ||
+            document.getElementById("plat3").value !== "" ||
+            document.getElementById("plat4").value !== "" ||
+            document.getElementById("plat5").value !== ""
+        ) {
+          return true; // Permet la soumission du formulaire
+      }
 
     return true; // Permet la soumission du formulaire
   }
@@ -110,5 +138,5 @@ include_once "./inc/nav.php";
 
 
 <?php
-include_once "./inc/footer.php";
+include_once "../inc/footer.php";
 ?>
