@@ -13,24 +13,32 @@ include_once "./inc/nav.php";
             <input class="form-control" type="file" id="formFile">
         </div>
 
+        <!-- 
+        <div id="base">
+            <h4 class="mt-5">Base au choix</h4>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="riz" id="riz" checked>
+                <label class="form-check-label" for="riz">
+                Riz
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="salade" id="salade">
+                <label class="form-check-label" for="salade">
+                    Salade
+                </label>
+            </div>
+        </div>
+         -->
+
         <h4 class="mt-5">Protéines</h4>
         <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
-            <option value="morue">Morue</option>
-            <option value="poulet">Poulet yassa</option>
-            <option value="vegetarien">végétarien</option>
+            <option value="bowl_morue">Morue</option>
+            <option value="bowl_poulet_yassa">Poulet yassa</option>
+            <option value="bowl_poulet_boucane">Poulet boucané</option>
+            <option value="bowl_vegetarien">Végétarien</option>
         </select>
-
-        <div id="menuPoulet" style="display:none;">
-            <h4 class="mt-5">Préparation</h4>
-            <select class="form-select" name="poulet" id="poulet">
-                <option value="">Sélectionnez...</option>
-                <option value="boucane">Boucané</option>
-                <option value="yassa">Yassa</option>
-                <option value="boucaneBananePlantain">Boucané banane plantain</option>
-                <option value="marinadeMaison">Marinade maison</option>
-            </select>
-        </div>
 
         <h2 class="mb-4 mt-5">Ingrédients</h2>
 
@@ -39,6 +47,10 @@ include_once "./inc/nav.php";
             <li class="list-group-item">
                 <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_chien" name="sauce_chien">
                 <label class="form-check-label" for="sauce_chien">sauce chien</label>
+            </li>
+            <li class="list-group-item">
+                <input class="form-check-input me-1 sauce" type="checkbox" value="" id="sauce_blanche" name="sauce_blanche">
+                <label class="form-check-label" for="sauce_blanche">sauce blanche</label>
             </li>
         </ul>
 
@@ -70,7 +82,7 @@ include_once "./inc/nav.php";
             </li>
         </ul>
 
-        <input type="submit" value="Ajouter" class="my-5" name="ajouter_bokit">
+        <input type="submit" value="Ajouter un bowl" class="my-5" name="ajouter_bowl">
     </form>
 </div>
 

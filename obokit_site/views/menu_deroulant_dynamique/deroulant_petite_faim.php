@@ -21,6 +21,7 @@ include_once "../inc/nav.php";
             <option value="">Sélectionnez...</option>
             <option value="aperitif">Petits plaisirs</option>
             <option value="accompagnement">Accompagnement</option>
+            
         </select>
 
         <div id="menuAperitif" style="display:none;">
