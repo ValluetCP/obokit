@@ -1,57 +1,45 @@
 
 
 
-// afficher la/ les préparations en fonction de la viande choisi
-
 function afficherMenu() {
 
-    // AJOUTER UN BOKIT => add_bokit.php
-    var viandeSelect = document.getElementById("viande");
-    var menuPoulet = document.getElementById("menuPoulet");
-    var menuSaumon = document.getElementById("menuSaumon");
-    var menuMorue = document.getElementById("menuMorue");
-    var menuLegume = document.getElementById("menuLegume");
-    var menuBoeuf = document.getElementById("menuBoeuf");
+  // Ajouter un bokit
+  var viandeSelect = document.getElementById("viande");
+  var menuPoulet = document.getElementById("menuPoulet");
+  var menuSaumon = document.getElementById("menuSaumon");
+  var menuMorue = document.getElementById("menuMorue");
+  var menuLegume = document.getElementById("menuLegume");
+  var menuBoeuf = document.getElementById("menuBoeuf");
 
-    menuPoulet.style.display = "none";
-    menuSaumon.style.display = "none";
-    menuMorue.style.display = "none";
-    menuLegume.style.display = "none";
-    menuBoeuf.style.display = "none";
+  menuPoulet.style.display = "none";
+  menuSaumon.style.display = "none";
+  menuMorue.style.display = "none";
+  menuLegume.style.display = "none";
+  menuBoeuf.style.display = "none";
 
-    if (viandeSelect.value === "poulet") {
-      menuPoulet.style.display = "block";
-    } else if (viandeSelect.value === "saumon") {
-      menuSaumon.style.display = "block";
-    } else if (viandeSelect.value === "morue") {
-      menuMorue.style.display = "block";
-    } else if (viandeSelect.value === "legume") {
-      menuLegume.style.display = "block";
-    } else if (viandeSelect.value === "boeuf") {
-      menuBoeuf.style.display = "block";
-    }
-
-
-    // AJOUTER UNE PETITE FAIM => add_petite_faim.php
-    var petiteFaimSelect = document.getElementById("petite_faim");
-    var menuAperitif = document.getElementById("menuAperitif");
-    var menuAccompagnement = document.getElementById("menuAccompagnement");
-
-    menuAperitif.style.display = "none";
-    menuAccompagnement.style.display = "none";
-
-    if (petiteFaimSelect.value === "aperitif") {
-        menuAperitif.style.display = "block";
-    } else if (petiteFaimSelect.value === "accompagnement") {
-        menuAccompagnement.style.display = "block";
-    }
+  if (viandeSelect.value === "poulet") {
+    menuPoulet.style.display = "block";
+  } else if (viandeSelect.value === "saumon") {
+    menuSaumon.style.display = "block";
+  } else if (viandeSelect.value === "morue") {
+    menuMorue.style.display = "block";
+  } else if (viandeSelect.value === "legume") {
+    menuLegume.style.display = "block";
+  } else if (viandeSelect.value === "boeuf") {
+    menuBoeuf.style.display = "block";
+  }
 }
 
-
-// empêcher l'envoi du formulaire si l'utilisateur n'a pas sélectionné de 'viande' ni de 'préparation'
 function validerFormulaire() {
   var viandeSelect = document.getElementById("viande");
   var pouletSelect = document.getElementById("poulet");
+
+  // Sélectionnez toutes les cases à cocher avec le nom "sauces"
+  var casesSauces = document.querySelectorAll('.sauce:checked');
+
+  // Sélectionnez toutes les cases à cocher avec le nom "legumes"
+  var casesLegumes = document.querySelectorAll('.legumes:checked');
+
 
   var inputFichier = document.getElementById('formFile');
   var fichierSelectionne = inputFichier.files[0];
@@ -68,6 +56,17 @@ function validerFormulaire() {
     return false; // Empêche la soumission du formulaire
   }
 
+  // Vérifiez si aucune case n'est cochée
+  if (casesSauces.length === 0) {
+          // Affichez une alerte si aucune case n'est cochée
+          alert("Veuillez choisir au moins une sauce.");
+      } 
+
+  // Vérifiez si aucune case n'est cochée
+  if (casesLegumes.length === 0) {
+          // Affichez une alerte si aucune case n'est cochée
+          alert("Veuillez choisir au moins un légume ou une crudité.");
+      }
   
   if (!fichierSelectionne) {
           alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
@@ -86,7 +85,6 @@ function validerFormulaire() {
 
   return true; // Permet la soumission du formulaire
 }
-
 
     
     
