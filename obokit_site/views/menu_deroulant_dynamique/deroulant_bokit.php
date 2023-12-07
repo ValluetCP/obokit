@@ -4,7 +4,7 @@ include_once "../inc/nav.php";
 ?>
 
 <div class="container">
-    <h1>Menu déroulant dynamique avec formulaire</h1>
+    <h1>Déroulant bokit</h1>
     <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()" enctype="multipart/form-data">
 
         <h4 class="mt-5">Images</h4>
@@ -21,6 +21,8 @@ include_once "../inc/nav.php";
             <option value="morue">Morue</option>
             <option value="legume">Légume</option>
             <option value="boeuf">Steack bacon de boeuf</option>
+            <option value="jambon">Jambon fromage</option>
+            <option value="vide">Aucun</option>
         </select>
 
         <div id="menuPoulet" style="display:none;">
@@ -32,6 +34,20 @@ include_once "../inc/nav.php";
                 <option value="boucaneBananePlantain">Boucané banane plantain</option>
                 <option value="marinadeMaison">Marinade maison</option>
             </select>
+        </div>
+
+        <div id="new_bokit" style="display:none;">
+            <h4 class="mt-5">Ajouter une nouvelle protéine</h4>
+            <div>
+                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine">
+            </div>
+        </div>
+
+        <div id="new_preparation" style="display:none;">
+            <h4 class="mt-5">Ajouter une nouvelle préparation</h4>
+            <div>
+                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation">
+            </div>
         </div>
 
         <div id="menuSaumon" style="display:none;">
@@ -125,7 +141,7 @@ include_once "../inc/nav.php";
             </li>
         </ul>
 
-        <input type="submit" value="Valider" class="my-5">
+        <input type="submit" value="Ajouter un bokit" class="my-5" name="ajouter_bokit">
     </form>
 </div>
 
@@ -140,25 +156,47 @@ include_once "../inc/nav.php";
     var menuMorue = document.getElementById("menuMorue");
     var menuLegume = document.getElementById("menuLegume");
     var menuBoeuf = document.getElementById("menuBoeuf");
+    var newBokit = document.getElementById("new_bokit");
+
+    // Fonction pour afficher ou masquer le new_preparation en fonction du champ new_proteine
+    var newProteineInput = document.getElementById('new_proteine');
+    var newPreparation = document.getElementById('new_preparation');
+
+    
 
     menuPoulet.style.display = "none";
     menuSaumon.style.display = "none";
     menuMorue.style.display = "none";
     menuLegume.style.display = "none";
     menuBoeuf.style.display = "none";
+    newBokit.style.display = "none";
+
+    newPreparation.style.display = 'none';
+
 
     if (viandeSelect.value === "poulet") {
-      menuPoulet.style.display = "block";
+        menuPoulet.style.display = "block";
     } else if (viandeSelect.value === "saumon") {
-      menuSaumon.style.display = "block";
+        menuSaumon.style.display = "block";
     } else if (viandeSelect.value === "morue") {
-      menuMorue.style.display = "block";
+        menuMorue.style.display = "block";
     } else if (viandeSelect.value === "legume") {
-      menuLegume.style.display = "block";
+        menuLegume.style.display = "block";
     } else if (viandeSelect.value === "boeuf") {
-      menuBoeuf.style.display = "block";
+        menuBoeuf.style.display = "block";
+    } else if (viandeSelect.value === "vide") {
+        newBokit.style.display = "block";
+    }
+    
+    // Vérifier si le champ new_proteine est rempli
+    if (newProteineInput.value !== '') {
+        // Afficher le new_preparation
+        newPreparation.style.display = 'block';
     }
   }
+
+
+
 
   function validerFormulaire() {
     var viandeSelect = document.getElementById("viande");
@@ -170,7 +208,11 @@ include_once "../inc/nav.php";
     // Sélectionnez toutes les cases à cocher avec le nom "legumes"
     var casesLegumes = document.querySelectorAll('.legumes:checked');
 
+    // Remplir tous les champs
+    var newProteineInput = document.getElementById('new_proteine');
+    var newPreparation = document.getElementById('new_preparation');
 
+    // Sélectionner obligatoirement une image
     var inputFichier = document.getElementById('formFile');
     var fichierSelectionne = inputFichier.files[0];
 
@@ -180,6 +222,10 @@ include_once "../inc/nav.php";
       return false; // Empêche la soumission du formulaire
     }
    
+    if (viandeSelect.value === "aucun" && newProteineInput.value === "") {
+      alert("Pour votre bokit, veuillez saisir une protéine.");
+      return false; // Empêche la soumission du formulaire
+    }
 
     if (viandeSelect.value === "poulet" && pouletSelect.value === "") {
       alert("Pour votre poulet, veuillez sélectionner une préparation.");
@@ -203,6 +249,12 @@ include_once "../inc/nav.php";
             return false; // Empêche la soumission du formulaire
     }
 
+    // Vérifier si le champ new_proteine est vide
+    // if (newProteineInput.value === '') {
+    //         // Afficher une alerte
+    //         alert("Veuillez remplir le champ 'Viande ou autre aliment central'");
+    // }
+
      // Vérifiez les autres sélections
      if (
             document.getElementById("plat2").value !== "" ||
@@ -215,6 +267,11 @@ include_once "../inc/nav.php";
 
     return true; // Permet la soumission du formulaire
   }
+
+
+  
+// Ajouter un écouteur d'événement pour le champ new_proteine
+document.getElementById('new_proteine').addEventListener('input', afficherMenu);
 </script>
 
 

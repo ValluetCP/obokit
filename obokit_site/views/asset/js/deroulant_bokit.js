@@ -1,6 +1,4 @@
 
-
-
 function afficherMenu() {
 
   // Ajouter un bokit
@@ -10,25 +8,47 @@ function afficherMenu() {
   var menuMorue = document.getElementById("menuMorue");
   var menuLegume = document.getElementById("menuLegume");
   var menuBoeuf = document.getElementById("menuBoeuf");
+  var newBokit = document.getElementById("new_bokit");
+
+  // Fonction pour afficher ou masquer le new_preparation en fonction du champ new_proteine
+  var newProteineInput = document.getElementById('new_proteine');
+  var newPreparation = document.getElementById('new_preparation');
+
+  
 
   menuPoulet.style.display = "none";
   menuSaumon.style.display = "none";
   menuMorue.style.display = "none";
   menuLegume.style.display = "none";
   menuBoeuf.style.display = "none";
+  newBokit.style.display = "none";
+
+  newPreparation.style.display = 'none';
+
 
   if (viandeSelect.value === "poulet") {
-    menuPoulet.style.display = "block";
+      menuPoulet.style.display = "block";
   } else if (viandeSelect.value === "saumon") {
-    menuSaumon.style.display = "block";
+      menuSaumon.style.display = "block";
   } else if (viandeSelect.value === "morue") {
-    menuMorue.style.display = "block";
+      menuMorue.style.display = "block";
   } else if (viandeSelect.value === "legume") {
-    menuLegume.style.display = "block";
+      menuLegume.style.display = "block";
   } else if (viandeSelect.value === "boeuf") {
-    menuBoeuf.style.display = "block";
+      menuBoeuf.style.display = "block";
+  } else if (viandeSelect.value === "vide") {
+      newBokit.style.display = "block";
+  }
+  
+  // Vérifier si le champ new_proteine est rempli
+  if (newProteineInput.value !== '') {
+      // Afficher le new_preparation
+      newPreparation.style.display = 'block';
   }
 }
+
+// Ajouter un écouteur d'événement pour le champ new_proteine
+document.getElementById('new_proteine').addEventListener('input', afficherMenu);
 
 function validerFormulaire() {
   var viandeSelect = document.getElementById("viande");

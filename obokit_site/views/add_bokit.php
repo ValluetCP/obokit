@@ -4,7 +4,7 @@ include_once "./inc/nav.php";
 ?>
 
 <div class="container">
-    <h1>Ajouter un bokit</h1>
+    <h1>Déroulant bokit</h1>
     <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()" enctype="multipart/form-data">
 
         <h4 class="mt-5">Images</h4>
@@ -21,6 +21,8 @@ include_once "./inc/nav.php";
             <option value="morue">Morue</option>
             <option value="legume">Légume</option>
             <option value="boeuf">Steack bacon de boeuf</option>
+            <option value="jambon">Jambon fromage</option>
+            <option value="vide">Aucun</option>
         </select>
 
         <div id="menuPoulet" style="display:none;">
@@ -32,6 +34,20 @@ include_once "./inc/nav.php";
                 <option value="boucaneBananePlantain">Boucané banane plantain</option>
                 <option value="marinadeMaison">Marinade maison</option>
             </select>
+        </div>
+
+        <div id="new_bokit" style="display:none;">
+            <h4 class="mt-5">Ajouter une nouvelle protéine</h4>
+            <div>
+                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine">
+            </div>
+        </div>
+
+        <div id="new_preparation" style="display:none;">
+            <h4 class="mt-5">Ajouter une nouvelle préparation</h4>
+            <div>
+                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation">
+            </div>
         </div>
 
         <div id="menuSaumon" style="display:none;">
@@ -125,11 +141,12 @@ include_once "./inc/nav.php";
             </li>
         </ul>
 
-        <input type="submit" value="Ajouter" class="my-5" name="ajouter_bokit">
+        <input type="submit" value="Ajouter un bokit" class="my-5" name="ajouter_bokit">
     </form>
 </div>
 
 <script src="./asset/js/deroulant_bokit.js"></script>
+
 <?php
 include_once "./inc/footer.php";
 ?>
