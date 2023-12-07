@@ -13,7 +13,7 @@ include_once "../inc/nav.php";
             <input class="form-control" type="file" id="formFile">
         </div>
 
-        <h4 class="mt-5">Protéines</h4>
+        <h4 class="mt-5"> Viande ou autre aliment central</h4>
         <select name="viande" id="viande" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
             <option value="poulet">Poulet</option>
@@ -22,7 +22,7 @@ include_once "../inc/nav.php";
             <option value="legume">Légume</option>
             <option value="boeuf">Steack bacon de boeuf</option>
             <option value="jambon">Jambon fromage</option>
-            <option value="vide">Aucun</option>
+            <option value="vide">Aucune - ajouter une nouvelle viande ou autre aliment central</option>
         </select>
 
         <div id="menuPoulet" style="display:none;">
@@ -39,14 +39,14 @@ include_once "../inc/nav.php";
         <div id="new_bokit" style="display:none;">
             <h4 class="mt-5">Ajouter une nouvelle protéine</h4>
             <div>
-                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine">
+                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine" name="new_proteine">
             </div>
         </div>
 
         <div id="new_preparation" style="display:none;">
             <h4 class="mt-5">Ajouter une nouvelle préparation</h4>
             <div>
-                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation">
+                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation" name="add_preparation">
             </div>
         </div>
 
@@ -147,6 +147,7 @@ include_once "../inc/nav.php";
 
 
 <script>
+    
   function afficherMenu() {
 
     // Ajouter un bokit
@@ -226,7 +227,7 @@ include_once "../inc/nav.php";
     // Vérifier si le champ new_proteine est vide
     if (newProteineInput.value === '') {
             // Afficher une alerte
-            alert("Veuillez remplir le champ 'Pour votre bokit, veuillez saisir une protéine.'");
+            alert("Veuillez remplir le champ 'Pour votre bokit, veuillez saisir une viande ou autre aliment central.'");
     }
 
     if (addPreparationInput.value === '') {

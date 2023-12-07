@@ -1,4 +1,3 @@
-
 function afficherMenu() {
 
   // Ajouter un bokit
@@ -47,8 +46,8 @@ function afficherMenu() {
   }
 }
 
-// Ajouter un écouteur d'événement pour le champ new_proteine
-document.getElementById('new_proteine').addEventListener('input', afficherMenu);
+
+
 
 function validerFormulaire() {
   var viandeSelect = document.getElementById("viande");
@@ -60,7 +59,12 @@ function validerFormulaire() {
   // Sélectionnez toutes les cases à cocher avec le nom "legumes"
   var casesLegumes = document.querySelectorAll('.legumes:checked');
 
+  // Remplir tous les champs
+  var newProteineInput = document.getElementById('new_proteine');
+  var newPreparation = document.getElementById('new_preparation');
+  var addPreparationInput = document.getElementById('add_preparation');
 
+  // Sélectionner obligatoirement une image
   var inputFichier = document.getElementById('formFile');
   var fichierSelectionne = inputFichier.files[0];
 
@@ -69,7 +73,17 @@ function validerFormulaire() {
     alert("Veuillez sélectionner une viande.");
     return false; // Empêche la soumission du formulaire
   }
- 
+  
+  // Vérifier si le champ new_proteine est vide
+  if (newProteineInput.value === '') {
+          // Afficher une alerte
+          alert("Veuillez remplir le champ 'Pour votre bokit, veuillez saisir une protéine.'");
+  }
+
+  if (addPreparationInput.value === '') {
+          // Afficher une alerte
+          alert("Pour votre viande ou autre aliment central, veuillez saisir une préparation");
+  }
 
   if (viandeSelect.value === "poulet" && pouletSelect.value === "") {
     alert("Pour votre poulet, veuillez sélectionner une préparation.");
@@ -93,6 +107,7 @@ function validerFormulaire() {
           return false; // Empêche la soumission du formulaire
   }
 
+
    // Vérifiez les autres sélections
    if (
           document.getElementById("plat2").value !== "" ||
@@ -106,8 +121,7 @@ function validerFormulaire() {
   return true; // Permet la soumission du formulaire
 }
 
-    
-    
-  
 
-  
+
+// Ajouter un écouteur d'événement pour le champ new_proteine
+document.getElementById('new_proteine').addEventListener('input', afficherMenu);
