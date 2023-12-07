@@ -39,14 +39,14 @@ include_once "./inc/nav.php";
         <div id="new_bokit" style="display:none;">
             <h4 class="mt-5">Ajouter une nouvelle protéine</h4>
             <div>
-                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine">
+                <input class="form-control" type="text" placeholder="Viande ou autre aliment central" id="new_proteine" name="new_proteine">
             </div>
         </div>
 
         <div id="new_preparation" style="display:none;">
             <h4 class="mt-5">Ajouter une nouvelle préparation</h4>
             <div>
-                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation">
+                <input class="form-control" type="text" placeholder="Assaisonnement ou autre " id="add_preparation" name="add_preparation">
             </div>
         </div>
 

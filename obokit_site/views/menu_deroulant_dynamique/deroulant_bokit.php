@@ -211,6 +211,7 @@ include_once "../inc/nav.php";
     // Remplir tous les champs
     var newProteineInput = document.getElementById('new_proteine');
     var newPreparation = document.getElementById('new_preparation');
+    var addPreparationInput = document.getElementById('add_preparation');
 
     // Sélectionner obligatoirement une image
     var inputFichier = document.getElementById('formFile');
@@ -221,10 +222,16 @@ include_once "../inc/nav.php";
       alert("Veuillez sélectionner une viande.");
       return false; // Empêche la soumission du formulaire
     }
-   
-    if (viandeSelect.value === "aucun" && newProteineInput.value === "") {
-      alert("Pour votre bokit, veuillez saisir une protéine.");
-      return false; // Empêche la soumission du formulaire
+    
+    // Vérifier si le champ new_proteine est vide
+    if (newProteineInput.value === '') {
+            // Afficher une alerte
+            alert("Veuillez remplir le champ 'Pour votre bokit, veuillez saisir une protéine.'");
+    }
+
+    if (addPreparationInput.value === '') {
+            // Afficher une alerte
+            alert("Pour votre viande ou autre aliment central, veuillez saisir une préparation");
     }
 
     if (viandeSelect.value === "poulet" && pouletSelect.value === "") {
@@ -249,11 +256,6 @@ include_once "../inc/nav.php";
             return false; // Empêche la soumission du formulaire
     }
 
-    // Vérifier si le champ new_proteine est vide
-    // if (newProteineInput.value === '') {
-    //         // Afficher une alerte
-    //         alert("Veuillez remplir le champ 'Viande ou autre aliment central'");
-    // }
 
      // Vérifiez les autres sélections
      if (
