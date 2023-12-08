@@ -22,6 +22,7 @@ include_once "../inc/nav.php";
             <option value="legume">Légume</option>
             <option value="boeuf">Steack bacon de boeuf</option>
             <option value="jambon">Jambon fromage</option>
+            <option value="crevette">crevette</option>
             <option value="vide">Aucune - ajouter une nouvelle viande ou autre aliment central</option>
         </select>
 
@@ -33,6 +34,7 @@ include_once "../inc/nav.php";
                 <option value="yassa">Yassa</option>
                 <option value="boucaneBananePlantain">Boucané banane plantain</option>
                 <option value="marinadeMaison">Marinade maison</option>
+                <option value="massala">Massala</option>
             </select>
         </div>
 
@@ -195,7 +197,6 @@ include_once "../inc/nav.php";
         newPreparation.style.display = 'block';
     }
   }
-
 
 
 

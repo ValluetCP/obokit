@@ -122,6 +122,8 @@ include_once "../inc/nav.php";
 
     });
 
+    
+
 function afficherMenu() {
 
     // --- BOISSON ARTISANALE --- //
