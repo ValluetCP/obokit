@@ -13,7 +13,7 @@ include_once "../inc/nav.php";
         <h4 class="mt-5 mb-3">Veuillez choisir le type de boisson à ajouter</h4>
         <div id="boisson_choix">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="boisson" id="artisanale_boisson" checked>
+                <input class="form-check-input" type="radio" name="boisson" id="artisanale_boisson">
                 <label class="form-check-label" for="artisanale_boisson">
                 Boisson artisanale
                 </label>
@@ -104,6 +104,24 @@ include_once "../inc/nav.php";
 
 <script>
 
+    // Au chargement de la page, faire apparaître uniquement le menu radio "choix des boissons"
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Masquer les sections autres que "choix de boisson" au chargement initial
+        document.getElementById('titre_image').style.display = 'none';
+        document.getElementById('image_section').style.display = 'none';
+        document.getElementById('titre_boisson_artisanale').style.display = 'none';
+        document.getElementById('boisson_artisanale').style.display = 'none';
+        document.getElementById('new_boisson_artisanale').style.display = 'none';
+        document.getElementById('titre_boisson_gazeuse').style.display = 'none';
+        document.getElementById('boisson_gazeuse').style.display = 'none';
+        document.getElementById('new_boisson_gazeuse').style.display = 'none';
+        document.getElementById('titre_boisson_non_gazeuse').style.display = 'none';
+        document.getElementById('boisson_non_gazeuse').style.display = 'none';
+        document.getElementById('new_non_boisson_gazeuse').style.display = 'none';
+
+    });
+
 function afficherMenu() {
 
     // --- BOISSON ARTISANALE --- //
@@ -174,6 +192,30 @@ function afficherMenu() {
     addBoissonNonGazeuseInput.style.display = "none";
 
 
+
+    // Réinitialiser les champs input en fonction du choix de boisson
+    addBoissonArtisanaleInput.value = '';
+    addBoissonGazeuseInput.value = '';
+    addBoissonNonGazeuseInput.value = '';
+
+
+    // Réinitialiser les champs de sélection en fonction du choix de boisson
+    if (artisanaleBoissonRadio.checked) {
+        boissonGazeuseSelect.value = '';
+        boissonNonGazeuseSelect.value = '';
+    }
+
+    if (gazeuseBoissonRadio.checked) {
+        boissonArtisanaleSelect.value = '';
+        boissonNonGazeuseSelect.value = '';
+    }
+
+    if (nonGazeuseBoissonRadio.checked) {
+        boissonGazeuseSelect.value = '';
+        boissonArtisanaleSelect.value = '';
+    }
+
+
     // --- BOISSON ARTISANALE - AFFICHER --- //
     // Vérifier si le choix de boisson est "artisanale_boisson"
     if (artisanaleBoissonRadio.checked) {
@@ -234,19 +276,22 @@ function afficherMenu() {
 
 
         // Vérifiez si aucune boisson n'est sélectionnée
-        var boissonSelectionnee = document.getElementById("boisson").value;
+        // var boissonSelectionnee = document.getElementById("boisson").value;
+        var boissonArtisanaleSelect = document.getElementById("boisson_artisanale");
+
 
         // Vérifiez si aucun fichier n'est sélectionné
         var fichierSelectionne = document.getElementById("formFile").files[0];
 
 
-        if (boissonSelectionnee === "") {
+
+        if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect === " ") {
                 // Affichez une alerte si aucune sauce n'est sélectionnée
                 alert("Veuillez sélectionner un boisson.");
                 return false; // Empêche l'envoi du formulaire
         }
 
-        if (!fichierSelectionne) {
+        if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
             // Affichez une alerte si aucun fichier n'est sélectionné
             alert("Veuillez sélectionner un fichier.");
             return false; // Empêche l'envoi du formulaire
