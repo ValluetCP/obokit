@@ -259,18 +259,18 @@ include_once "../inc/nav.php";
     }
 
 
-     // Vérifiez les autres sélections
-     if (
-            document.getElementById("plat2").value !== "" ||
-            document.getElementById("plat3").value !== "" ||
-            document.getElementById("plat4").value !== "" ||
-            document.getElementById("plat5").value !== ""
-        ) {
-          return true; // Permet la soumission du formulaire
-      }
+    // Vérifiez les autres sélections
+    if (
+        document.getElementById("plat2").value !== "" ||
+        document.getElementById("plat3").value !== "" ||
+        document.getElementById("plat4").value !== "" ||
+        document.getElementById("plat5").value !== ""
+    ) {
+        return true; // Permet la soumission du formulaire
+    }
 
-    return true; // Permet la soumission du formulaire
-  }
+return true; // Permet la soumission du formulaire
+}
 
 
   

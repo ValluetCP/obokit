@@ -288,7 +288,7 @@ include_once "../inc/nav.php";
         var fichierSelectionne = document.getElementById("formFile").files[0];
         // SAUCE BOKIT
         var bokitSauceRadio = document.getElementById('bokit_sauce');
-        var sauceBokitSelect = document.getElementById("sauce_bokit").value;
+        var sauceBokitSelect = document.getElementById("sauce_bokit");
         var addSauceBokitInput = document.getElementById("add_sauce_bokit");
         // SAUCES MAISON
         var maisonSauceRadio = document.getElementById('maison_sauce');
@@ -300,18 +300,40 @@ include_once "../inc/nav.php";
         var addSauceAutreInput = document.getElementById('add_sauce_autre');
 
 
+        // Vérifiez les autres sélections
+        // if (
+        //     document.getElementById("sauce_bokit").value !== "" ||
+        //     // document.getElementById("add_sauce_bokit").value !== "" ||
+        //     document.getElementById("sauce_maison").value !== "" ||
+        //     document.getElementById("add_sauce_maison").value !== ""
+        // ) {
+        //     return true; // Permet la soumission du formulaire
+        // }
 
         // SAUCE BOKIT
-        if (bokitSauceRadio.checked && sauceBokitSelect === "") {
+        if (bokitSauceRadio.checked && sauceBokitSelect.value === "" && addSauceBokitInput.value.trim() == "") {
             // Affichez une alerte si aucune sauce n'est sélectionnée
             alert("Veuillez sélectionner une sauce bokit avant de valider.");
             return false; // Empêche l'envoi du formulaire
+        } else if (sauceBokitSelect.value !== "0" && sauceBokitSelect.value !== "1" ){
+            return true; // Permet la soumission du formulaire
+        }else if (bokitSauceRadio.checked && sauceBokitSelect.value === "0" && addSauceBokitInput.value.trim() !== ""){
+            return true; // Permet la soumission du formulaire
         }
-        if (bokitSauceRadio.checked && addSauceBokitInput.value.trim() === "") {
-            // Affichez une alerte si le champ est vide
-            alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
-            return false; // Empêche l'envoi du formulaire
-        }
+        
+        // if (bokitSauceRadio.checked && sauceBokitSelect.value == "0" && addSauceBokitInput.value.trim() === "") {
+        //     // Affichez une alerte si le champ est vide
+        //     alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
+        //     return false; // Empêche l'envoi du formulaire
+        // } 
+
+        // if (bokitSauceRadio.checked && addSauceBokitInput.value.trim() === "") {
+        //     // Affichez une alerte si le champ est vide
+        //     alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
+        //     return false; // Empêche l'envoi du formulaire
+        // } else if(bokitSauceRadio.checked && addSauceBokitInput.value.trim() !== ""){
+        //     return true; // Permet la soumission du formulaire
+        // }
 
         // SAUCES MAISON
         if (maisonSauceRadio.checked && sauceMaisonSelect.value === "") {
@@ -345,6 +367,9 @@ include_once "../inc/nav.php";
             alert("Veuillez sélectionner un fichier.");
             return false; // Empêche l'envoi du formulaire
         }
+
+
+        
 
     return true; // Permet la soumission du formulaire
     }
