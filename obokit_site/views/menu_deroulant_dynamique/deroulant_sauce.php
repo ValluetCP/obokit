@@ -315,7 +315,7 @@ include_once "../inc/nav.php";
             // Affichez une alerte si aucune sauce n'est sélectionnée
             alert("Veuillez sélectionner une sauce bokit avant de valider.");
             return false; // Empêche l'envoi du formulaire
-        } else if (sauceBokitSelect.value !== "0" && sauceBokitSelect.value !== "1" ){
+        }else if (sauceBokitSelect.value !== "0" && sauceBokitSelect.value !== "1" ){
             return true; // Permet la soumission du formulaire
         }else if (bokitSauceRadio.checked && sauceBokitSelect.value === "0" && addSauceBokitInput.value.trim() !== ""){
             return true; // Permet la soumission du formulaire
