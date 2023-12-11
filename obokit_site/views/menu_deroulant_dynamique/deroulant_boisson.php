@@ -5,7 +5,7 @@ include_once "../inc/nav.php";
 
 <div class="container">
 
-    <h1 class=" text-center">Ajouter un boisson</h1>
+    <h1 class=" text-center">Ajouter une boisson</h1>
 
     <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()" enctype="multipart/form-data">
 
@@ -276,28 +276,107 @@ function afficherMenu() {
 
     function validerFormulaire() {
 
-
-        // Vérifiez si aucune boisson n'est sélectionnée
-        // var boissonSelectionnee = document.getElementById("boisson").value;
-        var boissonArtisanaleSelect = document.getElementById("boisson_artisanale");
-
-
-        // Vérifiez si aucun fichier n'est sélectionné
+        // IMAGE - Vérifiez si aucun fichier n'est sélectionné
         var fichierSelectionne = document.getElementById("formFile").files[0];
+        // BOISSON ARTISANALE
+        var artisanaleBoissonRadio = document.getElementById('artisanale_boisson');
+        var boissonArtisanaleSelect = document.getElementById("boisson_artisanale");
+        var addBoissonArtisanaleInput = document.getElementById("add_boisson_artisanale");
+        // BOISSON GAZEUSE
+        var gazeuseBoissonRadio = document.getElementById('gazeuse_boisson');
+        var boissonGazeuseSelect = document.getElementById('boisson_gazeuse');
+        var addBoissonGazeuseInput = document.getElementById('add_boisson_gazeuse');
+        // BOISSON NON GAZEUSE
+        var nonGazeuseBoissonRadio = document.getElementById('non_gazeuse_boisson');
+        var boissonNonGazeuseSelect = document.getElementById('boisson_non_gazeuse');
+        var addBoissonNonGazeuseInput = document.getElementById('add_boisson_non_gazeuse');
+
+
+        // CHOISIR UNE BOISSON
+        // Récupérer tous les éléments de type radio avec le nom "boisson"
+        // var radios = document.getElementsByName("boisson");
+        // var isChecked = false;
+
+        // // Afficher l'alerte si aucune case n'est cochée
+        // if (!isChecked) {
+        //     alert("Veuillez choisir une boisson !");
+        //     return false; // Empêcher l'envoi du formulaire
+        // }
 
 
 
-        if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect === " ") {
-                // Affichez une alerte si aucune sauce n'est sélectionnée
-                alert("Veuillez sélectionner un boisson.");
-                return false; // Empêche l'envoi du formulaire
-        }
+        // IMAGE - Vérifiez si aucun fichier n'est sélectionné
+        // if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
+        //     // Affichez une alerte si aucun fichier n'est sélectionné
+        //     alert("Veuillez sélectionner un fichier.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }
 
-        if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
-            // Affichez une alerte si aucun fichier n'est sélectionné
-            alert("Veuillez sélectionner un fichier.");
+
+
+        // BOISSON ARTISANALE
+        // if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect.value === "") {
+        //     // Affichez une alerte si aucune sauce n'est sélectionnée
+        //     alert("Veuillez sélectionner une boisson artisanale avant de valider.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (boissonArtisanaleSelect.value !== "0" && boissonArtisanaleSelect.value !== "" ){
+        //     return true; // Permet la soumission du formulaire
+        // }else if (addBoissonArtisanaleInput.value.trim() == ""){
+        //     alert("Veuillez inscrire le nom de la nouvelle boisson artisanale.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (bokitSauceRadio.checked && boissonArtisanaleSelect.value === "0" && addBoissonArtisanaleInput.value.trim() !== ""){
+        //     return true; // Permet la soumission du formulaire
+        // }
+
+
+
+        // BOISSON GAZEUSE
+        // if (gazeuseBoissonRadio.checked && boissonGazeuseSelect.value === "") {
+        //     // Affichez une alerte si aucune sauce n'est sélectionnée
+        //     alert("Veuillez sélectionner une boisson gazeuse avant de valider.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (boissonGazeuseSelect.value !== "0" && boissonGazeuseSelect.value !== "" ){
+        //     return true; // Permet la soumission du formulaire
+        // }else if (addBoissonGazeuseInput.value.trim() == ""){
+        //     alert("Veuillez inscrire le nom de la nouvelle boisson gazeuse.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (bokitSauceRadio.checked && boissonGazeuseSelect.value === "0" && addBoissonGazeuseInput.value.trim() !== ""){
+        //     return true; // Permet la soumission du formulaire
+        // }
+
+
+        // BOISSON NON GAZEUSE
+        if (nonGazeuseBoissonRadio.checked && boissonNonGazeuseSelect.value === "") {
+            // Affichez une alerte si aucune sauce n'est sélectionnée
+            alert("Veuillez sélectionner une boisson non gazeuse avant de valider.");
             return false; // Empêche l'envoi du formulaire
+        }else if (boissonNonGazeuseSelect.value !== "0" && boissonNonGazeuseSelect.value !== "" ){
+            return true; // Permet la soumission du formulaire
+        }else if (addBoissonNonGazeuseInput.value.trim() == ""){
+            alert("Veuillez inscrire le nom de la nouvelle boisson non gazeuse.");
+            return false; // Empêche l'envoi du formulaire
+        }else if (bokitSauceRadio.checked && boissonNonGazeuseSelect.value === "0" && addBoissonNonGazeuseInput.value.trim() !== ""){
+            return true; // Permet la soumission du formulaire
         }
+
+
+
+
+        
+
+        // if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect === " ") {
+        //         // Affichez une alerte si aucune sauce n'est sélectionnée
+        //         alert("Veuillez sélectionner un boisson.");
+        //         return false; // Empêche l'envoi du formulaire
+        // }
+
+        // if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
+        //     // Affichez une alerte si aucun fichier n'est sélectionné
+        //     alert("Veuillez sélectionner un fichier.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }
+
+
 
         return true; // Permet la soumission du formulaire
     }
