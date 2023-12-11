@@ -300,78 +300,88 @@ include_once "../inc/nav.php";
         var addSauceAutreInput = document.getElementById('add_sauce_autre');
 
 
-        // Vérifiez les autres sélections
-        // if (
-        //     document.getElementById("sauce_bokit").value !== "" ||
-        //     // document.getElementById("add_sauce_bokit").value !== "" ||
-        //     document.getElementById("sauce_maison").value !== "" ||
-        //     document.getElementById("add_sauce_maison").value !== ""
-        // ) {
+
+        // // CHOISIR UNE SAUCE
+        // // Récupérer tous les éléments de type radio avec le nom "sauce"
+        // var radios = document.getElementsByName("sauce");
+        // var isChecked = false;
+
+        // // Vérifier si au moins une case est cochée
+        // for (var i = 0; i < radios.length; i++) {
+        //     if (radios[i].checked) {
+        //         isChecked = true;
+        //         break;
+        //     }
+        // }
+
+        // // Afficher l'alerte si aucune case n'est cochée
+        // if (!isChecked) {
+        //     alert("Veuillez choisir une sauce !");
+        //     return false; // Empêcher l'envoi du formulaire
+        // }
+
+        // // Si au moins une case est cochée, le formulaire peut être soumis
+        // return true;
+
+
+
+        // // SAUCE BOKIT
+        // if (bokitSauceRadio.checked && sauceBokitSelect.value === "") {
+        // // if (bokitSauceRadio.checked && sauceBokitSelect.value === "" && addSauceBokitInput.value.trim() == "") {
+        //     // Affichez une alerte si aucune sauce n'est sélectionnée
+        //     alert("Veuillez sélectionner une sauce bokit avant de valider.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (sauceBokitSelect.value !== "0" && sauceBokitSelect.value !== "" ){
+        //     return true; // Permet la soumission du formulaire
+        // }else if (addSauceBokitInput.value.trim() == ""){
+        //     alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (bokitSauceRadio.checked && sauceBokitSelect.value === "0" && addSauceBokitInput.value.trim() !== ""){
         //     return true; // Permet la soumission du formulaire
         // }
 
-        // SAUCE BOKIT
-        if (bokitSauceRadio.checked && sauceBokitSelect.value === "" && addSauceBokitInput.value.trim() == "") {
-            // Affichez une alerte si aucune sauce n'est sélectionnée
-            alert("Veuillez sélectionner une sauce bokit avant de valider.");
-            return false; // Empêche l'envoi du formulaire
-        }else if (sauceBokitSelect.value !== "0" && sauceBokitSelect.value !== "1" ){
-            return true; // Permet la soumission du formulaire
-        }else if (bokitSauceRadio.checked && sauceBokitSelect.value === "0" && addSauceBokitInput.value.trim() !== ""){
-            return true; // Permet la soumission du formulaire
-        }
-        
-        // if (bokitSauceRadio.checked && sauceBokitSelect.value == "0" && addSauceBokitInput.value.trim() === "") {
-        //     // Affichez une alerte si le champ est vide
-        //     alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
-        //     return false; // Empêche l'envoi du formulaire
-        // } 
 
-        // if (bokitSauceRadio.checked && addSauceBokitInput.value.trim() === "") {
-        //     // Affichez une alerte si le champ est vide
-        //     alert("Veuillez inscrire le nom de la nouvelle sauce bokit.");
+
+        // // IMAGE - Vérifiez si aucun fichier n'est sélectionné
+        // if (maisonSauceRadio.checked && !fichierSelectionne) {
+        //     // Affichez une alerte si aucun fichier n'est sélectionné
+        //     alert("Veuillez sélectionner un fichier.");
         //     return false; // Empêche l'envoi du formulaire
-        // } else if(bokitSauceRadio.checked && addSauceBokitInput.value.trim() !== ""){
+        // }
+
+
+        // // SAUCES MAISON
+        // if (maisonSauceRadio.checked && sauceMaisonSelect.value === "") {
+        //     // Affichez une alerte si aucune sauce n'est sélectionnée
+        //     alert("Veuillez sélectionner une sauce maison avant de valider.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (sauceMaisonSelect.value !== "0" && sauceMaisonSelect.value !== "" ){
+        //     return true; // Permet la soumission du formulaire
+        // }else if (addSauceMaisonInput.value.trim() == ""){
+        //     alert("Veuillez inscrire le nom de la nouvelle sauce maison.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (maisonSauceRadio.checked && sauceMaisonSelect.value === "0" && addSauceMaisonInput.value.trim() !== ""){
         //     return true; // Permet la soumission du formulaire
         // }
 
-        // SAUCES MAISON
-        if (maisonSauceRadio.checked && sauceMaisonSelect.value === "") {
-        // Affichez une alerte si aucune sauce maison n'est sélectionnée
-            alert("Veuillez sélectionner une sauce maison.");
-            return false; // Empêche l'envoi du formulaire
-        }
-        if (maisonSauceRadio.checked && addSauceMaisonInput.value.trim() === "") {
-            // Affichez une alerte si le champ est vide
-            alert("Veuillez inscrire le nom de la nouvelle sauce maison.");
-            return false; // Empêche l'envoi du formulaire
-        }
-
-        // AUTRES SAUCES
-        if (sauceAutreSelect.value === "") {
-            // Affichez une alerte si aucune sauce maison n'est sélectionnée
-            alert("Veuillez sélectionner une sauce.");
-            return false; // Empêche l'envoi du formulaire
-        }
-        if (autreSauceRadio.checked && addSauceAutreInput.value.trim() === "") {
-            // Affichez une alerte si le champ est vide
-            alert("Veuillez inscrire le nom de la nouvelle maison.");
-            return false; // Empêche l'envoi du formulaire
-        }
 
 
+        // // AUTRES SAUCES
+        // if (autreSauceRadio.checked && sauceAutreSelect.value === "") {
+        //     // Affichez une alerte si aucune sauce n'est sélectionnée
+        //     alert("Veuillez sélectionner une sauce avant de valider.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (sauceAutreSelect.value !== "0" && sauceAutreSelect.value !== "" ){
+        //     return true; // Permet la soumission du formulaire
+        // }else if (addSauceAutreInput.value.trim() == ""){
+        //     alert("Veuillez inscrire le nom de la nouvelle sauce.");
+        //     return false; // Empêche l'envoi du formulaire
+        // }else if (autreSauceRadio.checked && sauceAutreSelect.value === "0" && addSauceAutreInput.value.trim() !== ""){
+        //     return true; // Permet la soumission du formulaire
+        // }
+       
 
-        // IMAGE - Vérifiez si aucun fichier n'est sélectionné
-        if (maisonSauceRadio.checked && !fichierSelectionne) {
-            // Affichez une alerte si aucun fichier n'est sélectionné
-            alert("Veuillez sélectionner un fichier.");
-            return false; // Empêche l'envoi du formulaire
-        }
-
-
-        
-
-    return true; // Permet la soumission du formulaire
+        return true; // Permet la soumission du formulaire
     }
 
     
