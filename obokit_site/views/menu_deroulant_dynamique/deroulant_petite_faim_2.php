@@ -10,126 +10,23 @@ include_once "../inc/nav.php";
     
     <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()"  enctype="multipart/form-data">
 
-        <!-- CHOIX PETITE FAIM -->
-        <h4 class="mt-5 mb-3">Veuillez faire un choix</h4>
-        <div id="faim_choix">
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="faim" id="petit_plaisir">
-                <label class="form-check-label" for="petit_plaisir">
-                Petit plaisir
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="faim" id="accompagnement">
-                <label class="form-check-label" for="accompagnement">
-                Accompagnement
-                </label>
-            </div> 
-        </div>
-
-        
-        <!-- IMAGE - uniquement réservée aux BOISSONS ARTISANALES -->
-        <h4 class="mt-5" id="titre_image">Image</h4>
-        <div class="mb-3" id="image_section">
+        <h4 class="mt-5">Images</h4>
+        <div class="mb-3">
             <label for="formFile" class="form-label">Format image 363px x 247px</label>
             <input class="form-control" type="file" id="formFile">
         </div>
 
-        <!-- PETIT PLAISIR - Choisir, Sélectionner (input caché) -->
-        <h4 class="mt-5" id="titre_plaisir" >Petit plaisir</h4>
-        <select name="plaisir" id="plaisir" class="form-select" onchange="afficherMenu()">
+        <h4 class="mt-5">Petits plaisirs & Accompagnements</h4>
+        <select name="petite_faim" id="petite_faim" class="form-select" onchange="afficherMenu()">
             <option value="">Sélectionnez...</option>
-            <option value="0">Aucune - Ajouter un  nouveau petit plaisir</option>
-            <option value="pastel">Pastel</option>
-            <option value="accras">Accras de morue</option>
+            <option value="aperitif">Petits plaisirs</option>
+            <option value="accompagnement">Accompagnement</option>
+            
         </select>
 
-        <!-- PETIT PLAISIR - Ajouter une nouvelle (input caché) -->
-        <div id="new_plaisir" class="mt-3" style="display:none;">
-            <h4 class="mt-5" id="titre_new_plaisir">Ajouter un nouveau petit plaisir</h4>
-            <div>
-                <input class="form-control" type="text" placeholder="Inscrivez le nom du 'petit plaisir'" id="add_plaisir" name="add_plaisir">
-            </div>
-        </div>
-
-        <!-- PASTEL - Choisir, Sélectionner (input caché) -->
-        <div id="pastelChoix" style="display:none;">
-            <h4 class="mt-5" id="titre_pastel">Pastel</h4>
-            <select class="form-select" name="pastel" id="pastel">
-                <option value="">Sélectionnez...</option>
-                <option value="0">Aucune - Ajouter un nouveau pastel</option>
-                <option value="pastel_poulet">Poulet au curry</option>
-                <option value="pastel_boeuf">Boeuf fromage</option>
-                <option value="pastel_crevette">Crevette</option>
-                <option value="pastel_saumon">Saumon fumée</option>
-            </select>
-        </div>
- 
-        <!-- PASTEL - Ajouter un nouveeau (input caché) -->
-        <div id="new_pastel" class="mt-3" style="display:none;">
-            <h4 class="mt-5" id="titre_new_pastel">Ajouter un nouveau petit pastel</h4>
-            <div>
-                <input class="form-control" type="text" placeholder="Inscrivez le nom du 'petit pastel'" id="add_pastel" name="add_pastel">
-            </div>
-        </div>
-
-        <!-- ACCOMPAGNEMENT - Choisir, Sélectionner (input caché) -->
-        <div id="menuAccompagnement" style="display:none;">
-            <h4 class="mt-5">Accompagnement</h4>
-            <select class="form-select" name="accompagnement" id="accompagnement" onchange="afficherSousMenu()">
-                <option value="">Sélectionnez...</option>
-                <option value="0">Aucune - Ajouter un nouvel accompagnement</option>
-                <option value="frite">Frite</option>
-                <option value="alloco">Alloco</option>
-            </select>
-        </div>
-
-        <!-- ACCOMPAGNEMENT - Ajouter un nouvel (input caché) -->
-        <div id="new_pastel" class="mt-3" style="display:none;">
-            <h4 class="mt-5" id="titre_new_pastel">Ajouter un nouveau petit pastel</h4>
-            <div>
-                <input class="form-control" type="text" placeholder="Inscrivez le nom du 'petit pastel'" id="add_pastel" name="add_pastel">
-            </div>
-        </div>
-
-
-        <!-- FRITE - Ajouter un nouvel (input caché) -->
-
-
-        <!-- SAUCE PASTEL & ACCOMPAGNEMENT- Ajouter une nouvelle (input caché) -->
-        <div id="sauce" style="display:none;">
-            <h4 class="mt-5" id="titre_sauce">Sauce</h4>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="sauce" id="sauce_choix" checked>
-                <label class="form-check-label" for="sauce_choix">
-                    Sauce au choix
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="sauce" id="sauce_tomate">
-                <label class="form-check-label" for="sauce_tomate">
-                    Sauce tomate maison
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="sauce" id="sauce_creoline">
-                <label class="form-check-label" for="sauce_creoline">
-                    Sauce créoline
-                </label>
-            </div>
-        </div>
-
-        <!-- PASTEL - Ajouter un nouvel ingrédient (input caché) -->
-        <h4 class="mt-5" id="titre_ingredient" style="display:none;">Ingrédients</h4>
-        <div class="form-floating mt-2" id="commentaireSection" style="display:none;">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="commentaire"></textarea>
-            <label for="floatingTextarea">Inscrire la liste des ingrédients</label>
-        </div>
-
-
-        <div id="menuPetitPlaisir" style="display:none;">
+        <div id="menuAperitif" style="display:none;">
             <h4 class="mt-5">Petits plaisirs</h4>
-            <select class="form-select" name="petit_plaisir" id="petit_plaisir" onchange="afficherSousMenu()">
+            <select class="form-select" name="aperitif" id="aperitif" onchange="afficherSousMenu()">
                 <option value="">Sélectionnez...</option>
                 <option value="pastel">Pastel</option>
                 <option value="accras">Accras de morue</option>
