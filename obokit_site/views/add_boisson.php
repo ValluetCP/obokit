@@ -4,7 +4,9 @@ include_once "./inc/nav.php";
 ?>
 
 <div class="container">
-    <h1>Ajouter un boisson</h1>
+
+    <h1 class=" text-center">Ajouter une boisson</h1>
+
     <form method="post" action="../traitement/action.php" onsubmit="return validerFormulaire()" enctype="multipart/form-data">
 
         <!-- CHOIX DE BOISSON -->

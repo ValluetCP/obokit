@@ -292,89 +292,66 @@ function afficherMenu() {
         var addBoissonNonGazeuseInput = document.getElementById('add_boisson_non_gazeuse');
 
 
+
+
+        // Vérifier si au moins une case est cochée
+        var isChecked = artisanaleBoissonRadio.checked || gazeuseBoissonRadio.checked || nonGazeuseBoissonRadio.checked;
+
+
         // CHOISIR UNE BOISSON
-        // Récupérer tous les éléments de type radio avec le nom "boisson"
-        // var radios = document.getElementsByName("boisson");
-        // var isChecked = false;
-
-        // // Afficher l'alerte si aucune case n'est cochée
-        // if (!isChecked) {
-        //     alert("Veuillez choisir une boisson !");
-        //     return false; // Empêcher l'envoi du formulaire
-        // }
-
-
-
-        // IMAGE - Vérifiez si aucun fichier n'est sélectionné
-        // if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
-        //     // Affichez une alerte si aucun fichier n'est sélectionné
-        //     alert("Veuillez sélectionner un fichier.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }
-
-
+        // Afficher l'alerte si aucune case n'est cochée
+        if (!isChecked) {
+                alert("Veuillez choisir une boisson !");
+                return false; // Empêcher l'envoi du formulaire
+        }
 
         // BOISSON ARTISANALE
-        // if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect.value === "") {
-        //     // Affichez une alerte si aucune sauce n'est sélectionnée
-        //     alert("Veuillez sélectionner une boisson artisanale avant de valider.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }else if (boissonArtisanaleSelect.value !== "0" && boissonArtisanaleSelect.value !== "" ){
-        //     return true; // Permet la soumission du formulaire
-        // }else if (addBoissonArtisanaleInput.value.trim() == ""){
-        //     alert("Veuillez inscrire le nom de la nouvelle boisson artisanale.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }else if (bokitSauceRadio.checked && boissonArtisanaleSelect.value === "0" && addBoissonArtisanaleInput.value.trim() !== ""){
-        //     return true; // Permet la soumission du formulaire
-        // }
+        // Vérifier spécifiquement pour la boisson artisanale
+        if (artisanaleBoissonRadio.checked) {
+            if (!fichierSelectionne) {
+            // Affichez une alerte si aucun fichier n'est sélectionné
+            alert("Veuillez sélectionner un fichier.");
+            return false; // Empêche l'envoi du formulaire
+            } else if (boissonArtisanaleSelect.value === "") {
+                alert("Veuillez sélectionner une boisson artisanale avant de valider.");
+                return false; // Empêche l'envoi du formulaire
+            } else if (boissonArtisanaleSelect.value === "0" && addBoissonArtisanaleInput.value.trim() === "") {
+                alert("Veuillez inscrire le nom de la nouvelle boisson artisanale.");
+                return false; // Empêche l'envoi du formulaire  
+            } else if (boissonArtisanaleSelect.value !== "0" || boissonArtisanaleSelect.value !== "") {
+                return true; // Permet la soumission du formulaire
+            }
+        }
 
-
-
+        
         // BOISSON GAZEUSE
-        // if (gazeuseBoissonRadio.checked && boissonGazeuseSelect.value === "") {
-        //     // Affichez une alerte si aucune sauce n'est sélectionnée
-        //     alert("Veuillez sélectionner une boisson gazeuse avant de valider.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }else if (boissonGazeuseSelect.value !== "0" && boissonGazeuseSelect.value !== "" ){
-        //     return true; // Permet la soumission du formulaire
-        // }else if (addBoissonGazeuseInput.value.trim() == ""){
-        //     alert("Veuillez inscrire le nom de la nouvelle boisson gazeuse.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }else if (bokitSauceRadio.checked && boissonGazeuseSelect.value === "0" && addBoissonGazeuseInput.value.trim() !== ""){
-        //     return true; // Permet la soumission du formulaire
-        // }
-
-
-        // BOISSON NON GAZEUSE
-        if (nonGazeuseBoissonRadio.checked && boissonNonGazeuseSelect.value === "") {
-            // Affichez une alerte si aucune sauce n'est sélectionnée
-            alert("Veuillez sélectionner une boisson non gazeuse avant de valider.");
-            return false; // Empêche l'envoi du formulaire
-        }else if (boissonNonGazeuseSelect.value !== "0" && boissonNonGazeuseSelect.value !== "" ){
-            return true; // Permet la soumission du formulaire
-        }else if (addBoissonNonGazeuseInput.value.trim() == ""){
-            alert("Veuillez inscrire le nom de la nouvelle boisson non gazeuse.");
-            return false; // Empêche l'envoi du formulaire
-        }else if (bokitSauceRadio.checked && boissonNonGazeuseSelect.value === "0" && addBoissonNonGazeuseInput.value.trim() !== ""){
-            return true; // Permet la soumission du formulaire
+        // Vérifier spécifiquement pour la boisson gazeuse
+        if (gazeuseBoissonRadio.checked) {
+            if (boissonGazeuseSelect.value === "") {
+                alert("Veuillez sélectionner une boisson gazeuse avant de valider.");
+                return false; // Empêche l'envoi du formulaire
+            } else if (boissonGazeuseSelect.value === "0" && addBoissonGazeuseInput.value.trim() === "") {
+                alert("Veuillez inscrire le nom de la nouvelle boisson gazeuse.");
+                return false; // Empêche l'envoi du formulaire  
+            } else if (boissonGazeuseSelect.value !== "0" || boissonGazeuseSelect.value !== "") {
+                return true; // Permet la soumission du formulaire
+            }
         }
 
 
-
-
-        
-
-        // if (artisanaleBoissonRadio.checked && boissonArtisanaleSelect === " ") {
-        //         // Affichez une alerte si aucune sauce n'est sélectionnée
-        //         alert("Veuillez sélectionner un boisson.");
-        //         return false; // Empêche l'envoi du formulaire
-        // }
-
-        // if (artisanaleBoissonRadio.checked && !fichierSelectionne) {
-        //     // Affichez une alerte si aucun fichier n'est sélectionné
-        //     alert("Veuillez sélectionner un fichier.");
-        //     return false; // Empêche l'envoi du formulaire
-        // }
+        // BOISSON NON GAZEUSE
+        // Vérifier spécifiquement pour la boisson non gazeuse
+        if (nonGazeuseBoissonRadio.checked) {
+            if (boissonNonGazeuseSelect.value === "") {
+                alert("Veuillez sélectionner une boisson non gazeuse avant de valider.");
+                return false; // Empêche l'envoi du formulaire
+            } else if (boissonNonGazeuseSelect.value === "0" && addBoissonNonGazeuseInput.value.trim() === "") {
+                alert("Veuillez inscrire le nom de la nouvelle boisson non gazeuse.");
+                return false; // Empêche l'envoi du formulaire  
+            } else if (boissonNonGazeuseSelect.value !== "0" || boissonNonGazeuseSelect.value !== "") {
+                return true; // Permet la soumission du formulaire
+            }
+        }
 
 
 
