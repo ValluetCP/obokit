@@ -89,6 +89,7 @@ include_once "./inc/nav.php";
             <option value="2">Tropico tropical</option>
             <option value="3">Ice tea</option>
         </select>
+        
         <!-- BOISSON NON GAZEUSE - Ajouter une nouvelle (input caché) -->               
         <div id="new_non_boisson_gazeuse" style="display:none;">
             <h4 class="mt-5"  id="titre_new_boisson_non_gazeuse">Ajouter une nouvelle boisson non gazeuse</h4>
