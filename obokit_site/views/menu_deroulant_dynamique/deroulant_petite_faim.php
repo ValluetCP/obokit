@@ -14,14 +14,14 @@ include_once "../inc/nav.php";
         <h4 class="mt-5 mb-3">Veuillez faire un choix</h4>
         <div id="faim_choix">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="faim" id="petit_plaisir">
-                <label class="form-check-label" for="petit_plaisir">
+                <input class="form-check-input" type="radio" name="faim" id="petit_plaisir_radio">
+                <label class="form-check-label" for="petit_plaisir_radio">
                 Petit plaisir
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="faim" id="accompagnement">
-                <label class="form-check-label" for="accompagnement">
+                <input class="form-check-input" type="radio" name="faim" id="accompagnement_radio">
+                <label class="form-check-label" for="accompagnement_radio">
                 Accompagnement
                 </label>
             </div> 
@@ -36,14 +36,16 @@ include_once "../inc/nav.php";
         </div>
 
         <!-- PETIT PLAISIR - Choisir, Sélectionner (input caché) -->
-        <h4 class="mt-5" id="titre_plaisir" >Petit plaisir</h4>
-        <select name="plaisir" id="plaisir" class="form-select" onchange="afficherMenu()">
-            <option value="">Sélectionnez...</option>
-            <option value="0">Aucune - Ajouter un  nouveau petit plaisir</option>
-            <option value="pastel">Pastel</option>
-            <option value="accras">Accras de morue</option>
-        </select>
-
+        <div id="menuPetitPlaisir" class="mt-3" style="display:none;">
+            <h4 class="mt-5" id="titre_plaisir" >Petit plaisir</h4>
+            <select name="plaisir" id="plaisir" class="form-select" onchange="afficherMenu()">
+                <option value="">Sélectionnez...</option>
+                <option value="0">Aucune - Ajouter un nouveau petit plaisir</option>
+                <option value="pastel">Pastel</option>
+                <option value="accras">Accras de morue</option>
+            </select>
+        </div>
+        
         <!-- PETIT PLAISIR - Ajouter une nouvelle (input caché) -->
         <div id="new_plaisir" class="mt-3" style="display:none;">
             <h4 class="mt-5" id="titre_new_plaisir">Ajouter un nouveau petit plaisir</h4>
@@ -75,7 +77,7 @@ include_once "../inc/nav.php";
 
         <!-- ACCOMPAGNEMENT - Choisir, Sélectionner (input caché) -->
         <div id="menuAccompagnement" style="display:none;">
-            <h4 class="mt-5">Accompagnement</h4>
+            <h4 class="mt-5" id="titre_accompagnement">Accompagnement</h4>
             <select class="form-select" name="accompagnement" id="accompagnement" onchange="afficherSousMenu()">
                 <option value="">Sélectionnez...</option>
                 <option value="0">Aucune - Ajouter un nouvel accompagnement</option>
@@ -85,15 +87,23 @@ include_once "../inc/nav.php";
         </div>
 
         <!-- ACCOMPAGNEMENT - Ajouter un nouvel (input caché) -->
-        <div id="new_pastel" class="mt-3" style="display:none;">
-            <h4 class="mt-5" id="titre_new_pastel">Ajouter un nouveau petit pastel</h4>
+        <div id="new_accompagnement" class="mt-3" style="display:none;">
+            <h4 class="mt-5" id="titre_new_accompagnement">Ajouter un nouvel accompagnement</h4>
             <div>
-                <input class="form-control" type="text" placeholder="Inscrivez le nom du 'petit pastel'" id="add_pastel" name="add_pastel">
+                <input class="form-control" type="text" placeholder="Inscrivez le nom du 'petit accompagnement'" id="add_accompagnement" name="add_accompagnement">
             </div>
         </div>
 
 
-        <!-- FRITE - Ajouter un nouvel (input caché) -->
+        <!-- FRITE - Choisir, Sélectionner (input caché) -->
+        <div id="frite_choix" style="display:none;">
+            <h4 class="mt-5" id="titre_frite">Frite</h4>
+            <select class="form-select" name="frite" id="frite">
+                <option value="">Sélectionnez...</option>
+                <option value="pomme_de_terre">Pomme de terre</option>
+                <option value="patate_douce">Patate douce</option>
+            </select>
+        </div>
 
 
         <!-- SAUCE PASTEL & ACCOMPAGNEMENT- Ajouter une nouvelle (input caché) -->
@@ -202,110 +212,85 @@ include_once "../inc/nav.php";
 </div>
 
 <script>
+    
     function afficherMenu() {
-        var petiteFaimSelect = document.getElementById("petite_faim");
-        var menuAperitif = document.getElementById("menuAperitif");
-        var menuAccompagnement = document.getElementById("menuAccompagnement");
 
-        menuAperitif.style.display = "none";
-        menuAccompagnement.style.display = "none";
-
-        if (petiteFaimSelect.value === "aperitif") {
-            menuAperitif.style.display = "block";
-        } else if (petiteFaimSelect.value === "accompagnement") {
-            menuAccompagnement.style.display = "block";
-        }
-    }
-
-
-    function afficherSousMenu() {
-        var aperitifSelect = document.getElementById("aperitif");
-        var menuAperitif = document.getElementById("menuAperitif");
-        var pastelAperitif = document.getElementById("pastelAperitif");
-        var accompagnementSelect = document.getElementById("accompagnement");
-        var menuAccompagnement = document.getElementById("menuAccompagnement");
-        var friteAccompagnement = document.getElementById("friteAccompagnement");
-        var ingredientTitre = document.getElementById("ingredientTitre");
-        var commentaireSection = document.getElementById("commentaireSection");
-        var sauceSelect = document.getElementById("sauce");
-        
+        // Choisir bouton radio : Petit plaisir
+        var petitPlaisirRadio = document.getElementById('petit_plaisir_radio');
+        // Sélectionner un Petit plaisir
+        var menuPetitPlaisir = document.getElementById('menuPetitPlaisir');
+        var titrePlaisir = document.getElementById('titre_plaisir');
+        var plaisirSelect = document.getElementById('plaisir');
+        // Ajouter un Petit plaisir
+        var newPlaisir = document.getElementById('new_plaisir');
+        var titreNewPlaisir = document.getElementById("titre_new_plaisir");
+        var addPlaisir = document.getElementById("add_plaisir");
         
 
-        pastelAperitif.style.display = "none";
-        friteAccompagnement.style.display = "none";
-        ingredientTitre.style.display = "none";
-        commentaireSection.style.display = "none";
-        sauceSelect.style.display = "none";
+        // Sélectionner une Pastel
+        var pastelChoix = document.getElementById('pastelChoix');
+        var titrePastel = document.getElementById('titre_pastel');
+        var pastelSelect = document.getElementById('pastel');
+        // Ajouter une Pastel
+        var newPastel = document.getElementById('new_pastel');
+        var titreNewPastel = document.getElementById("titre_new_pastel");
+        var addPastel = document.getElementById("add_pastel");
 
 
-        if (aperitifSelect.value === "pastel") {
-            pastelAperitif.style.display = "block";
-            ingredientTitre.style.display = "block";
-            commentaireSection.style.display = "block";
-            sauceSelect.style.display = "block";
-        }
-
-        if (accompagnementSelect.value === "frite") {
-            friteAccompagnement.style.display = "block";
-            sauceSelect.style.display = "block";
-        }
-    }
-
-    function validerFormulaire() {
-        var petiteFaimSelect = document.getElementById("petite_faim");
-        var aperitifSelect = document.getElementById("aperitif");
-        var pastelSelect = document.getElementById("pastel");
-        var accompagnementSelect = document.getElementById("accompagnement");
-        var friteSelect = document.getElementById("frite");
-        var commentaire = document.getElementById('floatingTextarea');
-
-        var inputFichier = document.getElementById('formFile');
-        var fichierSelectionne = inputFichier.files[0];
-
-        var erreurDiv = document.getElementById("erreur");
+        // Choisir bouton radio : Accompagnement
+        var accompagnementRadio = document.getElementById('accompagnement_radio');
+        // Sélectionner un Accompagnement
+        var menuAccompagnement = document.getElementById('menuAccompagnement');
+        var titreAccompagnement = document.getElementById('titre_accompagnement');
+        var accompagnementSelect = document.getElementById('accompagnement');
+        // Ajouter un Accompagnement
+        var newAccompagnement = document.getElementById('new_accompagnement');
+        var titreNewAccompagnement = document.getElementById("titre_new_accompagnement");
+        var addAccompagnement = document.getElementById("add_accompagnement");
 
 
-        // Réinitialise l'affichage de l'erreur à chaque validation
-        erreurDiv.style.display = "none";
+        // Sélectionner une frite
+        var friteChoix = document.getElementById('frite_choix');
+        var titreFrite = document.getElementById('titre_frite');
+        var friteSelect = document.getElementById('frite');
 
-        // Vérifie chaque niveau de sélection et affiche une alerte si c'est vide
-        if (petiteFaimSelect.value === "") {
-            alert("Veuillez sélectionner une catégorie.");
-            return false; // Empêche la soumission du formulaire
-        }
 
-        if (petiteFaimSelect.value === "aperitif" && aperitifSelect.value === "") {
-            alert("Pour les petits plaisirs, veuillez sélectionner une option.");
-            return false; // Empêche la soumission du formulaire
-        }
+        
+        // --- PETIT PLAISIR - MASQUER --- //
 
-        if (aperitifSelect.value === "pastel" && pastelSelect.value === "") {
-            alert("Pour le pastel, veuillez sélectionner une option.");
-            return false; // Empêche la soumission du formulaire
-        }
+        // Masquer - ajouter Petit plaisir
+        menuPetitPlaisir.style.display = 'none';
+        titrePlaisir.style.display = 'none';
+        plaisirSelect.style.display = 'none';
+        // Masquer - nouveau Petit plaisir
+        newPlaisir.style.display = "none";
+        titreNewPlaisir.style.display = "none";
+        addPlaisir.style.display = "none";
 
-        if (petiteFaimSelect.value === "accompagnement" && accompagnementSelect.value === "") {
-            alert("Pour l'accompagnement, veuillez sélectionner une option.");
-            return false; // Empêche la soumission du formulaire
-        }
 
-        if (accompagnementSelect.value === "frite" && friteSelect.value === "") {
-            alert("Pour les frites, veuillez sélectionner une option.");
-            return false; // Empêche la soumission du formulaire
-        }
+        // Réinitialiser les champs input en fonction du choix de boisson
+        addBoissonArtisanaleInput.value = '';
+        addBoissonGazeuseInput.value = '';
+        addBoissonNonGazeuseInput.value = '';
 
-        if (aperitifSelect.value === "pastel" && pastelSelect.value === "" && commentaire.value === "") {
-            alert("Veuillez saisir la liste des ingrédients.");
-            return false; // Empêche la soumission du formulaire
+
+        // --- PETIT PLAISIR - AFFICHER --- //
+        // Vérifier si le choix de boisson est "artisanale_boisson"
+        if (petitPlaisirRadio.checked) {
+            // Afficher les sections : images & choisir une boisson artisanale
+            menuPetitPlaisir.style.display = 'block';
+            titrePlaisir.style.display = 'block';
+            plaisirSelect.style.display = 'block';
         }
         
-        if (!fichierSelectionne) {
-            alert("Veuillez sélectionner un fichier avant de soumettre le formulaire.");
-            return false; // Empêche la soumission du formulaire
-        }
-
-        return true; // Permet la soumission du formulaire
     }
+
+    // Ajouter des écouteurs d'événement pour les boutons radio
+    document.getElementById('petit_plaisir_radio').addEventListener('change', afficherMenu);
+    document.getElementById('accompagnement_radio').addEventListener('change', afficherMenu);
+
+
+    
 </script>
 
 <?php
