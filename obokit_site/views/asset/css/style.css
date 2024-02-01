@@ -22,6 +22,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --beige: #F8F3ED;
     --noir:#0D0803;
     --textNoir:#161616;
+    --textGris:#AFAFAF;
 }
 
 /* PARAMETRAGE */
@@ -171,7 +172,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .section5 h2 {
     font-family: 'ivyMode', sans-serif;
     color: var(--textNoir);
-    font-size: 94px;
+    font-size: 77px;
     font-style: italic;
     margin-bottom: 76px;
     letter-spacing: 1px;
@@ -179,7 +180,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 .section5 h2 span{
-    font-size: 123px;
+    font-size: 106px;
     font-style: normal;
     line-height: 127px;
     letter-spacing: 4px; 
@@ -195,17 +196,58 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .list_menu_principale{
     justify-content: center;
+    margin-bottom: 35px;
 }
 
 .list_menu_principale a{
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--textGris);
     text-decoration: none;
+    margin: 0 10px;
 }
 
-/* CARTE - liste menu secondaire */
+/* CARTE - btn liste menu secondaire */
 
 .list_menu_secondaire ul{
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+}
+
+.btnChoix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 160px;
+    height: 54px;
+    border-radius: 28px;
+    margin: 0 10px;
+}
+
+/* Icones */
+.icone{
+    width: 46px;
+    padding-right: 10px;
+}
+
+.icone_crevette{
+    width: 35px;
+}
+
+.icone_viande{
+    width: 50px;
+}
+
+.icone_poulet{
+    width: 41px;
+}
+
+.icone_legende {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: uppercase;
 }

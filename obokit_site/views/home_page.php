@@ -87,7 +87,7 @@ include_once "./inc/nav.php";
             </div>
 
             <!-- CARTE - liste menu secondaire -->
-            <div class="list_menu_secondaire">
+            <!-- <div class="list_menu_secondaire">
                 <ul class="flex" id="filtre">
                     <li class="active"><a href="#">Tout</a></li>
                     <li><a href="#">Poisson</a></li>
@@ -96,6 +96,43 @@ include_once "./inc/nav.php";
                     <li><a href="#">Crevette</a></li>
                     <li><a href="#">Viande</a></li>
                 </ul>
+            </div> -->
+            <div class="list_menu_secondaire flex">
+                <div class="btnChoix">
+                    <div class="icone_legende">
+                        <p>Tous</p>
+                    </div>
+                </div>
+                <div class="btnChoix" title="poisson">
+                    <div class="icone">
+                        <img src="./asset/img/poisson.svg" alt="icone poisson">
+                    </div>
+                    <p class="icone_legende">poisson</p>
+                </div>
+                <div class="btnChoix" title="poulet">
+                    <div class="icone icone_poulet">
+                        <img src="./asset/img/poulet.svg" alt="icone poulet">
+                    </div>
+                    <p class="icone_legende">poulet</p>
+                </div>
+                <div class="btnChoix" title="legume">
+                    <div class="icone">
+                        <img src="./asset/img/legume.svg" alt="icone legume">
+                    </div>
+                    <p class="icone_legende">légume</p>
+                </div>
+                <div class="btnChoix" title="crevette">
+                    <div class="icone icone_crevette">
+                        <img src="./asset/img/crevette.svg" alt="icone crevette">
+                    </div>
+                    <p class="icone_legende">crevette</p>
+                </div>
+                <div class="btnChoix" title="viande">
+                    <div class="icone icone_viande">
+                        <img src="./asset/img/steack.svg" alt="icone viande">
+                    </div>
+                    <p class="icone_legende">viande</p>
+                </div>
             </div>
 
             
