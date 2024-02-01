@@ -72,6 +72,35 @@ include_once "./inc/nav.php";
     <!-- SECTION 5 -->
     <section  class="section5">
 
+        <h2>Notre<br><span>Carte</span></h2>
+
+        <div class="carte">
+            <!-- CARTE - liste menu principale -->
+            <div class="list_menu_principale flex">
+                <a href="?carte=0">MENU</a>
+                <a href="?carte=1">BOKIT</a>
+                <a href="?carte=2">BOWL</a>
+                <a href="?carte=3">PETITE FAIM & ACCOMPAGNEMENT</a>
+                <a href="?carte=4">SAUCE</a>
+                <a href="?carte=5">DESSERT</a>
+                <a href="?carte=6">BOISSON</a>
+            </div>
+
+            <!-- CARTE - liste menu secondaire -->
+            <div class="list_menu_secondaire">
+                <ul class="flex" id="filtre">
+                    <li class="active"><a href="#">Tout</a></li>
+                    <li><a href="#">Poisson</a></li>
+                    <li><a href="#">Poulet</a></li>
+                    <li><a href="#">Legume</a></li>
+                    <li><a href="#">Crevette</a></li>
+                    <li><a href="#">Viande</a></li>
+                </ul>
+            </div>
+
+            
+        </div>
+
     </section>
 </div>
 

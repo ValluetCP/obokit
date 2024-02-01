@@ -24,6 +24,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --textNoir:#161616;
 }
 
+/* PARAMETRAGE */
+.flex{
+    display: flex;
+}
+
 
 /* ----- SECTION 3 ----- */
 .section3{
@@ -79,7 +84,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 .section4{
     background-image: url(../img/fond_section4.jpg);
-    width: 100vw;
+    width: 100%;
     height: 1200px;
     color: var(--beige);
 }
@@ -152,4 +157,55 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .section4 hr{
     color: var(--beige);
     border: 1px solid var(--beige);
+}
+
+
+/* ----- SECTION 5 ----- */
+
+.section5{
+    width: 100%;
+    height: 1200px;
+    background-color: white;
+}
+
+.section5 h2 {
+    font-family: 'ivyMode', sans-serif;
+    color: var(--textNoir);
+    font-size: 94px;
+    font-style: italic;
+    margin-bottom: 76px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section5 h2 span{
+    font-size: 123px;
+    font-style: normal;
+    line-height: 127px;
+    letter-spacing: 4px; 
+    text-transform: uppercase; 
+}
+
+/* CARTE - liste menu principale */
+
+.carte{
+    width: 1000px;
+    margin: auto;
+}
+
+.list_menu_principale{
+    justify-content: center;
+}
+
+.list_menu_principale a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+/* CARTE - liste menu secondaire */
+
+.list_menu_secondaire ul{
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
