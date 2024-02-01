@@ -105,13 +105,13 @@ include_once "./inc/nav.php";
                 </div>
                 <div class="btnChoix" title="poisson">
                     <div class="icone">
-                        <img src="./asset/img/poisson.svg" alt="icone poisson">
+                        <img src="./asset/img/poisson2.svg" alt="icone poisson">
                     </div>
                     <p class="icone_legende">poisson</p>
                 </div>
                 <div class="btnChoix" title="poulet">
                     <div class="icone icone_poulet">
-                        <img src="./asset/img/poulet.svg" alt="icone poulet">
+                        <img src="./asset/img/poulet2.svg" alt="icone poulet">
                     </div>
                     <p class="icone_legende">poulet</p>
                 </div>
