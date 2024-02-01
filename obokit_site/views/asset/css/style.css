@@ -93,16 +93,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .section4 h2 {
     font-family: 'ivyMode', sans-serif;
     color: var(--beige);
-    font-size: 90px;
+    font-size: 77px;
     font-style: italic;
-    padding-top: 149px;
+    padding-top: 105px;
     letter-spacing: 1px;
     text-align: center;
     padding-bottom: 75px;
 }
 
 .section4 h2 span {
-    font-size: 115px;
+    font-size: 106px;
     font-style: normal;
     line-height: 180px;
     letter-spacing: 4px;
@@ -137,18 +137,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .heure,
 .adresse{
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    text-transform: lowercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /* text-transform: lowercase; */
 }
 
 .heure span,
 .adresse span{
-    line-height: 29px;
+    line-height: 34px;
 }
 
-.adresse{
-    font-style: italic;
-}
 
 .plusDetail{
     width: 20px;
@@ -158,6 +156,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .section4 hr{
     color: var(--beige);
     border: 1px solid var(--beige);
+    margin: 5px 0;
 }
 
 
@@ -177,6 +176,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     margin-bottom: 76px;
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 50px;
 }
 
 .section5 h2 span{
@@ -205,6 +205,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     color: var(--textGris);
     text-decoration: none;
     margin: 0 10px;
+}
+
+.active{
+    font-size: 20px;
+    color: var(--textNoir); 
+    font-weight: 400;
+    font-style: italic;
 }
 
 /* CARTE - btn liste menu secondaire */
@@ -241,12 +248,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 .icone_poulet{
-    width: 41px;
+    width: 37px;
 }
 
 .icone_legende {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     font-style: italic;
     text-transform: uppercase;

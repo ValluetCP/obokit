@@ -35,35 +35,35 @@ include_once "./inc/nav.php";
             <div class="semaine">
                 <div class="jour">LUNDI</div>
                 <div class="heure">18h00-22h00</div>
-                <div class="adresse">Place Léo-lagrange, 94800 Villejuif</div>
+                <div class="adresse">Place Léo-lagrange, 94800 VILLEJUIF</div>
                 <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
             </div>
             <hr>
             <div class="semaine semaine_fond">
                 <div class="jour">MARDI</div>
                 <div class="heure">11h30-15h00<br><span>17h00-22h00</span></div>
-                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 Bourg la reine</span></div>
+                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
                 <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
             </div>
             <hr>
             <div class="semaine">
                 <div class="jour">JEUDI</div>
                 <div class="heure">11h30-15h00<br><span>17h00-22h00</span></div>
-                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 Bourg la reine</span></div>
+                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
                 <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
             </div>
             <hr>
             <div class="semaine semaine_fond">
                 <div class="jour">VENDREDI</div>
                 <div class="heure">11h30-22h00</div>
-                <div class="adresse">Place Léo-lagrange, 94800 Villejuif</div>
+                <div class="adresse">Place Léo-lagrange, 94800 VILLEJUIF</div>
                 <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
             </div>
             <hr>
             <div class="semaine">
                 <div class="jour">SAMEDI</div>
                 <div class="heure">11h30-15h00</div>
-                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 Bourg la reine</span></div>
+                <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
                 <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
             </div>
         </div>
@@ -80,7 +80,7 @@ include_once "./inc/nav.php";
                 <a href="?carte=0">MENU</a>
                 <a href="?carte=1">BOKIT</a>
                 <a href="?carte=2">BOWL</a>
-                <a href="?carte=3">PETITE FAIM & ACCOMPAGNEMENT</a>
+                <a href="?carte=3" class="active">PETITE FAIM & ACCOMPAGNEMENT</a>
                 <a href="?carte=4">SAUCE</a>
                 <a href="?carte=5">DESSERT</a>
                 <a href="?carte=6">BOISSON</a>
@@ -105,31 +105,31 @@ include_once "./inc/nav.php";
                 </div>
                 <div class="btnChoix" title="poisson">
                     <div class="icone">
-                        <img src="./asset/img/poisson2.svg" alt="icone poisson">
+                        <img src="./asset/img/poisson3.svg" alt="icone poisson">
                     </div>
                     <p class="icone_legende">poisson</p>
                 </div>
                 <div class="btnChoix" title="poulet">
                     <div class="icone icone_poulet">
-                        <img src="./asset/img/poulet2.svg" alt="icone poulet">
+                        <img src="./asset/img/poulet3.svg" alt="icone poulet">
                     </div>
                     <p class="icone_legende">poulet</p>
                 </div>
                 <div class="btnChoix" title="legume">
                     <div class="icone">
-                        <img src="./asset/img/legume.svg" alt="icone legume">
+                        <img src="./asset/img/legume3.svg" alt="icone legume">
                     </div>
                     <p class="icone_legende">légume</p>
                 </div>
                 <div class="btnChoix" title="crevette">
                     <div class="icone icone_crevette">
-                        <img src="./asset/img/crevette.svg" alt="icone crevette">
+                        <img src="./asset/img/crevette3.svg" alt="icone crevette">
                     </div>
                     <p class="icone_legende">crevette</p>
                 </div>
                 <div class="btnChoix" title="viande">
                     <div class="icone icone_viande">
-                        <img src="./asset/img/steack.svg" alt="icone viande">
+                        <img src="./asset/img/viande3.svg" alt="icone viande">
                     </div>
                     <p class="icone_legende">viande</p>
                 </div>
