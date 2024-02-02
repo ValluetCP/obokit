@@ -19,7 +19,7 @@ $(document).ready(function() {
 		if (valeurFiltre == 'tout') {						// On teste si le filtre appliqué est sur "tout"
             $('#portfolio figure').show('slow');  				// Alors on montre tous les projets
         }
-		else {  
+		else {
 			// alert('hello');
 			$('#portfolio figure').each(function() {			// Sinon c'est que l'on est dans une catégorie
 				if(!$(this).hasClass(valeurFiltre)) {  		// On vérifie le "li" n'a pas la classe du filtre appliqué
