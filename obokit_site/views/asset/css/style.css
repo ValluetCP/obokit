@@ -77,18 +77,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-family: 'Montserrat', sans-serif;
     color: var(--textNoir);
     font-size: 16px;
+    font-weight: 400;
     font-style: italic; 
 }
 
 
-/* ----- SECTION 4 ----- */
-
-.section4{
-    background-image: url(../img/fond_section4.jpg);
-    width: 100%;
-    height: 1200px;
-    color: var(--beige);
+.ouverture p:nth-last-child(2){
+    margin-bottom: 10px;
 }
+
+.ouverture p span{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* ----- SECTION 4 ----- */
 
 .section4 h2 {
     font-family: 'ivyMode', sans-serif;
@@ -115,12 +118,19 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     margin: auto;
 }
 
-.semaine{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 76px;
-    padding: 0 50px;
+.section4{
+    background-image: url(../img/fond_section4.jpg);
+    width: 100%;
+    height: 1000px;
+    color: var(--beige);
+}
+
+.semaine {
+    display: grid;
+    grid-template-columns: 185px 212px auto 50px;
+    grid-template-areas: 
+    "jour heure adresse plusDetail";
+    padding: 12px 12px 0px;
 }
 
 .semaine_fond{
@@ -128,6 +138,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 .jour{
+    grid-area: jour;
     font-family: ivyMode, sans-serif;
     font-size: 25px;
     font-style: italic;
@@ -139,14 +150,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
-    /* text-transform: lowercase; */
 }
+
 
 .heure span,
 .adresse span{
     line-height: 34px;
 }
-
 
 .plusDetail{
     width: 20px;

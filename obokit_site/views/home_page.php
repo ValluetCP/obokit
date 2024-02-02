@@ -20,7 +20,8 @@ include_once "./inc/nav.php";
         <h2>Nous vous<br><span>ACCUEILLONS</span></h2>
         <div class="ouverture">
             <h3>Jours D'ouvertures</h3>
-            <p>lundi, mardi, jeudi, vendredi et samedi</p>
+            <p><span>Villejuif : </span>lundi et vendredi</p>
+            <p><span>BOURG-LA-REINE : </span>mardi, jeudi et samedi</p>
         </div>
         <div class="fermeture">
             <h3>Jours De Fermetures</h3>
@@ -28,43 +29,43 @@ include_once "./inc/nav.php";
         </div>
     </section>
     
-    <!-- SECTION 4 -->
+    <!-- SECTION 4 - GRID -->
     <section class="section4">
         <h2>Où nous<br><span>TROUVER ?</span></h2>
         <div class="nous_trouver">
             <div class="semaine">
                 <div class="jour">LUNDI</div>
                 <div class="heure">18h00-22h00</div>
-                <div class="adresse">Place Léo-lagrange, 94800 VILLEJUIF</div>
-                <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
+                <div class="adresse">Place Léo-lagrange,<br><span>94800 VILLEJUIF</span></div>
+                <div class="plusDetail"  title="plus de détail"><a href=""><img src="./asset/img/plus_detail.svg" alt=""></a></div>
             </div>
             <hr>
             <div class="semaine semaine_fond">
                 <div class="jour">MARDI</div>
                 <div class="heure">11h30-15h00<br><span>17h00-22h00</span></div>
                 <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
-                <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
+                <div class="plusDetail"  title="plus de détail"><a href=""><img src="./asset/img/plus_detail.svg" alt=""></a></div>
             </div>
             <hr>
             <div class="semaine">
                 <div class="jour">JEUDI</div>
                 <div class="heure">11h30-15h00<br><span>17h00-22h00</span></div>
                 <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
-                <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
+                <div class="plusDetail"  title="plus de détail"><a href=""><img src="./asset/img/plus_detail.svg" alt=""></a></div>
             </div>
             <hr>
             <div class="semaine semaine_fond">
                 <div class="jour">VENDREDI</div>
                 <div class="heure">11h30-22h00</div>
-                <div class="adresse">Place Léo-lagrange, 94800 VILLEJUIF</div>
-                <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
+                <div class="adresse">Place Léo-lagrange,<br><span>94800 VILLEJUIF</span></div>
+                <div class="plusDetail"  title="plus de détail"><a href=""><img src="./asset/img/plus_detail.svg" alt=""></a></div>
             </div>
             <hr>
             <div class="semaine">
                 <div class="jour">SAMEDI</div>
                 <div class="heure">11h30-15h00</div>
                 <div class="adresse">Place Condorcet, centre ville près du café Leffe,<br><span>92340 BOURG-LA-REINE</span></div>
-                <div class="plusDetail"><img src="./asset/img/plus_detail.svg" alt=""></div>
+                <div class="plusDetail"  title="plus de détail"><a href=""><img src="./asset/img/plus_detail.svg" alt=""></a></div>
             </div>
         </div>
     </section>
@@ -77,13 +78,13 @@ include_once "./inc/nav.php";
         <div class="carte">
             <!-- CARTE - liste menu principale -->
             <div class="list_menu_principale flex">
-                <a href="?carte=0">MENU</a>
-                <a href="?carte=1">BOKIT</a>
-                <a href="?carte=2">BOWL</a>
-                <a href="?carte=3" class="active">PETITE FAIM & ACCOMPAGNEMENT</a>
-                <a href="?carte=4">SAUCE</a>
-                <a href="?carte=5">DESSERT</a>
-                <a href="?carte=6">BOISSON</a>
+                <a href="#">MENU</a>
+                <a href="#">BOKIT</a>
+                <a href="#">BOWL</a>
+                <a href="#" class="active">PETITE FAIM & ACCOMPAGNEMENT</a>
+                <a href="#">SAUCE</a>
+                <a href="#">DESSERT</a>
+                <a href="#">BOISSON</a>
             </div>
 
             <!-- CARTE - liste menu secondaire -->
@@ -134,8 +135,6 @@ include_once "./inc/nav.php";
                     <p class="icone_legende">viande</p>
                 </div>
             </div>
-
-            
         </div>
 
     </section>

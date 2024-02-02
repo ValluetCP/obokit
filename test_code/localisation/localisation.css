@@ -1,0 +1,111 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{box-sizing:border-box}*,::after,::before{box-sizing:inherit}img,video{width:100%;vertical-align:middle;}
+
+
+/* FONT */
+
+@font-face {
+    font-family: 'ivyMode';
+    src: 
+        url('../font/ivy-mode/IvyMode-Regular.woff') format('woff'),
+        url('../font/ivy-mode/IvyMode-Regular.woff2') format('woff2'),
+        url('../font/ivy-mode/IvyMode-Regular.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* COULEUR */
+
+:root{
+    /* Couleurs (principales) */
+    --beige: #F8F3ED;
+    --noir:#0D0803;
+    --textNoir:#161616;
+    --textGris:#AFAFAF;
+}
+
+/* PARAMETRAGE */
+.flex{
+    display: flex;
+}
+
+
+
+/* ----- SECTION 4 ----- */
+
+.section4 h2 {
+    font-family: 'ivyMode', sans-serif;
+    color: var(--beige);
+    font-size: 77px;
+    font-style: italic;
+    padding-top: 105px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+.section4 h2 span {
+    font-size: 106px;
+    font-style: normal;
+    line-height: 180px;
+    letter-spacing: 4px;
+}
+
+/* SEMAINE */
+
+.nous_trouver{
+    width: 1000px;
+    margin: auto;
+}
+
+.section4{
+    background-image: url(../image/fond_section4.jpg);
+    width: 100%;
+    height: 1200px;
+    color: var(--beige);
+}
+
+.semaine {
+    display: grid;
+    grid-template-columns: 185px 212px auto 50px;
+    grid-template-areas: 
+    "jour heure adresse plusDetail";
+    padding: 12px 12px 0px;
+}
+
+.semaine_fond{
+    background-color: #ffffff1f;
+}
+
+.jour{
+    grid-area: jour;
+    font-family: ivyMode, sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    text-transform: uppercase; 
+}
+
+.heure,
+.adresse{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.heure span,
+.adresse span{
+    line-height: 34px;
+}
+
+.plusDetail{
+    width: 20px;
+    height: 20px;
+}
+
+.section4 hr{
+    color: var(--beige);
+    border: 1px solid var(--beige);
+    margin: 5px 0;
+}
