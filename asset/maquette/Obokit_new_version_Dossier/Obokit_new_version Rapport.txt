@@ -1,0 +1,58 @@
+Rapport d'assemblage
+
+-----------------------------------------------------------------------------
+Document :
+Nom : Obokit_new_version.ai
+Mode : Couleurs RVB
+Profil colorimétrique : sRGB IEC61966-2.1
+Unité : pixels
+Dimensions : 1920 px x 4232 px
+Afficher les images en mode Tracés : INACTIF
+Mettre en évidence les polices substituées : INACTIF
+Mettre en évidence les glyphes substitués : INACTIF
+Conserver le caractère modifiable du texte
+Simuler le papier couleur : INACTIF
+
+-----------------------------------------------------------------------------
+Objets en tons directs :
+
+-----------------------------------------------------------------------------
+Polices manquantes :SANS
+
+-----------------------------------------------------------------------------
+Polices protégées non assemblées :SANS
+
+-----------------------------------------------------------------------------
+Polices :
+Montserrat Regular (OTF)
+Bebas Neue Regular (OTF)
+Bebas Neue Light (OTF)
+Bebas Neue Bold (OTF)
+
+-----------------------------------------------------------------------------
+Polices incorporées :
+SANS
+
+-----------------------------------------------------------------------------
+Liens manquants :
+SANS
+
+-----------------------------------------------------------------------------
+Images liées :
+
+C:\xampp\htdocs\obokit\test_code\image\bokit_vegan_uber.JPG
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 709K, 492 x 492 pixels
+Dimensions : 666,639 x 666,639 points 
+Résolution : 53,138 x 53,138 pixels par pouce
+
+
+C:\xampp\htdocs\obokit\test_code\image\bokit_vegan_uber.JPG
+Type : RVB
+Bits par pixel : 24
+Couches : 3
+Taille : 709K, 492 x 492 pixels
+Dimensions : 475 x 475 points 
+Résolution : 74,577 x 74,577 pixels par pouce

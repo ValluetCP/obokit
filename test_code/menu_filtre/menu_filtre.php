@@ -83,7 +83,7 @@
                     </figure>
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="../image/poulet_yassa.jpg" alt="">
+                            <img src="../image/bokit_banane_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
