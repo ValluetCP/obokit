@@ -8,20 +8,25 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="../menu_test/menu.css"> -->
+    <link rel="stylesheet" href="menu_filtre.css">
     <link rel="stylesheet" href="lightbox.css" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="./site.js"></script>
     <script type="text/javascript" src="./accordeon.js"></script>
+    
 </head>
 
 <body>
 
+    <!-- SECTION 5 -->
     <div class="section5">
-
         <h2>Notre<br><span>Carte</span></h2>
-    
+
         <div class="carte">
 
             <!-- CARTE - liste menu principale -->
@@ -36,81 +41,93 @@
             </div>
 
             <div class="carte_contenu">
-                <div class="flex">
-                    <ul class="nav flex" id="filtre">
-                        <li class="active"><a href="#">Tout</a></li>
-                        <li><a href="#">Poisson</a></li>
-                        <li><a href="#">Poulet</a></li>
-                        <li><a href="#">Legume</a></li>
-                        <li><a href="#">Crevette</a></li>
-                        <li><a href="#">Viande</a></li>
+                <div>
+                    <ul class="list_menu_secondaire flex" id="filtre">
+                        <li class="btnChoix active" id="tout">
+                            <a href="#">Tout</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btnChoix" id="poisson" title="poisson">Poisson</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btnChoix" id="poulet" title="poulet">Poulet</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btnChoix" id="legume" title="legume">Légume</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btnChoix" id="crevette" title="crevette">Crevette</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btnChoix" id="viande" title="viande">Viande</a>
+                        </li>
                     </ul>
                 </div>
     
                 <div class="flex bokit" id="portfolio">
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="./image/poulet_b_b.jpg" alt="">
+                            <img src="../image/bokit_poulet_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>boucané banane plantain</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="./image/poisson_saumon.jpg" alt="">
+                            <img src="../image/bokit_vegan_uber.JPG" alt="">
                         </div>
                         <h4><span>SAUMON</span><br>fumée</h4>
                         <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="./image/poulet_yassa.jpg" alt="">
+                            <img src="../image/poulet_yassa.jpg" alt="">
                         </div>
                         <h4><span>poulet</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="./image/poisson_morue.jpg" alt="">
+                            <img src="../image/poisson_morue.jpg" alt="">
                         </div>
                         <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
                         <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="./image/poulet_b_b.jpg" alt="">
+                            <img src="../image/poulet_b_b.jpg" alt="">
                         </div>
                         <h4><span>poulet</span><br>boucané banane plantain</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="./image/poisson_saumon.jpg" alt="">
+                            <img src="../image/poisson_saumon.jpg" alt="">
                         </div>
                         <h4><span>SAUMON</span><br>fumée</h4>
                         <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="./image/poulet_yassa.jpg" alt="">
+                            <img src="../image/poulet_yassa.jpg" alt="">
                         </div>
                         <h4><span>poulet</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        <hr>
+                        
                     </figure>
                     <figure class="viande">
                         <div class="fond_noir">
-                            <img src="./image/poulet_yassa.jpg" alt="">
+                            <img src="../image/poulet_yassa.jpg" alt="">
                         </div>
                         <h4><span>viande</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        <hr>
+                        
                     </figure>
                 </div>
             </div>

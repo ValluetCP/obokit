@@ -194,7 +194,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-style: normal;
     line-height: 127px;
     letter-spacing: 4px; 
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 /* CARTE - liste menu principale */
@@ -267,4 +267,5 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-weight: 400;
     font-style: italic;
     text-transform: uppercase;
+    color: var(--noir);
 }
