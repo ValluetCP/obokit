@@ -102,7 +102,7 @@
                 </div>
 
                 <!-- BOKIT -->
-                <div class="flex list_bokit filtre_ingredient">
+                <div class="flex filtre_ingredient" id="list_bokit">
                     <figure class="poulet">
                         <div class="fond_noir">
                             <img src="../image/bokit_poulet_uber.JPG" alt="">
@@ -162,7 +162,7 @@
                 
                 
                 <!-- PETITE FAIM -->
-                <div class="flex list_bokit filtre_ingredient">
+                <div class="flex filtre_ingredient"  id="list_petite_faim">
                     <figure class="petite_faim">
                         <div class="fond_noir">
                             <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
@@ -181,7 +181,7 @@
 
                     <figure class="accompagenement">
                         <div class="fond_noir">
-                            <img src="../image/poulet_b_b.jpg" alt="">
+                            <img src="../image/frite_pommeDeTerre_uber.JPG" alt="">
                         </div>
                         <h4><span>frite</span><br>pomme de terre</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
@@ -189,7 +189,7 @@
 
                     <figure class="accompagenement">
                         <div class="fond_noir">
-                            <img src="../image/bokit_vegan_uber.JPG" alt="">
+                            <img src="../image/frite_patateDouce_uber.JPG" alt="">
                         </div>
                         <h4><span>frite</span><br>patate douce</h4>
                         <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
@@ -197,7 +197,7 @@
 
                     <figure class="accompagenement">
                         <div class="fond_noir">
-                            <img src="../image/poisson_morue.jpg" alt="">
+                            <img src="../image/alloco_uber.JPG" alt="">
                         </div>
                         <h4><span>alloco</span><br>banane plantain</h4>
                         <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
@@ -219,6 +219,7 @@
                 $('#list_menu_secondaire').find('.btnChoix').show();
                 $('#list_bokit').show();
                 $('#list_bowl').hide();
+                $('#list_petite_faim').hide();
             }
 
             // Appel de la fonction pour afficher les éléments requis lors du chargement de la page
@@ -229,20 +230,27 @@
                 e.preventDefault();
                 $('#list_menu_secondaire').find('#poisson,#poulet,#legume,#viande').show();
                 $('#list_menu_secondaire').find('#crevette').hide();
-                $('.list_bokit').hide();
                 $('#list_bowl').show();
-                // Mettre à jour l'état du lien "BOKIT"
-                bokitActive = false;
+                $('#list_bokit').hide();
+                $('#list_petite_faim').hide();
             });
 
             // Gérer le clic sur le lien "BOKIT"
             $('.bokit-link').click(function(e) {
                 e.preventDefault();
                 $('#list_menu_secondaire').find('.btnChoix').show();
-                $('.list_bokit').show();
+                $('#list_bokit').show();
                 $('#list_bowl').hide();
-                // Mettre à jour l'état du lien "BOKIT"
-                bokitActive = true;
+                $('#list_petite_faim').hide();
+            });
+
+            // Gérer le clic sur le lien "PETITE FAIM"
+            $('.petiteFaim-link').click(function(e) {
+                e.preventDefault();
+                $('#list_menu_secondaire').find('.btnChoix').show();
+                $('#list_petite_faim').show();
+                $('#list_bokit').hide();
+                $('#list_bowl').hide();
             });
 
 
