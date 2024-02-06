@@ -32,7 +32,7 @@
             <!-- CARTE - liste menu principale -->
             <div class="list_menu_principale flex">
                 <a href="#" class="menu-link">MENU</a>
-                <a href="#" class="bokit-link">BOKIT</a>
+                <a href="#" class="bokit-link" id="bokit-link">BOKIT</a>
                 <a href="#" class="bowl-link">BOWL</a>
                 <a href="#" class="petiteFaim-link" class="active">PETITE FAIM & ACCOMPAGNEMENT</a>
                 <a href="#" class="sauce-link">SAUCE</a>
@@ -41,19 +41,20 @@
             </div>
 
             <div class="carte_contenu">
-                <div>
+                <div id="filtre_choix" style="display:none;">
+
                     <ul class="list_menu_secondaire flex" id="filtre">
                         <li class="btnChoix active" id="tout">
                             <a href="#">Tout</a>
                         </li>
                         <li>
-                            <a href="#" class="btnChoix" id="poisson" title="poisson">Poisson</a>
+                            <a href="#" class="btnChoix bowl" id="poisson" title="poisson">Poisson</a>
                         </li>
                         <li>
-                            <a href="#" class="btnChoix" id="poulet" title="poulet">Poulet</a>
+                            <a href="#" class="btnChoix bowl" id="poulet" title="poulet">Poulet</a>
                         </li>
                         <li>
-                            <a href="#" class="btnChoix" id="legume" title="legume">Légume</a>
+                            <a href="#" class="btnChoix bowl" id="legume" title="legume">Legume</a>
                         </li>
                         <li>
                             <a href="#" class="btnChoix" id="crevette" title="crevette">Crevette</a>
@@ -63,71 +64,107 @@
                         </li>
                     </ul>
                 </div>
-    
-                <div class="flex bokit" id="portfolio">
+
+
+                <!-- BOWL -->
+                <!-- <div class="flex bokit" id="portfolio" style="display:none;">
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="../image/bokit_poulet_uber.JPG" alt="">
+                            <img src="../image/bowl_complet_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>boucané banane plantain</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                        
                     </figure>
+
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="../image/bokit_vegan_uber.JPG" alt="">
+                            <img src="../image/bowl_morue_uber.JPG" alt="">
                         </div>
                         <h4><span>SAUMON</span><br>fumée</h4>
                         <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                        
                     </figure>
-                    <figure class="poulet">
+
+                    <figure class="viande">
                         <div class="fond_noir">
                             <img src="../image/bokit_banane_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        
                     </figure>
+
                     <figure class="poisson">
                         <div class="fond_noir">
                             <img src="../image/poisson_morue.jpg" alt="">
                         </div>
                         <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
                         <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
-                        
                     </figure>
+
                     <figure class="poulet">
                         <div class="fond_noir">
                             <img src="../image/poulet_b_b.jpg" alt="">
                         </div>
                         <h4><span>poulet</span><br>boucané banane plantain</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
-                        
                     </figure>
-                    <figure class="poisson">
-                        <div class="fond_noir">
-                            <img src="../image/poisson_saumon.jpg" alt="">
-                        </div>
-                        <h4><span>SAUMON</span><br>fumée</h4>
-                        <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                        
-                    </figure>
+                </div> -->
+
+                <!-- BOKIT -->
+                <div class="flex bokit" id="portfolio" style="display:none;">
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="../image/poulet_yassa.jpg" alt="">
+                            <img src="../image/bokit_poulet_uber.JPG" alt="">
+                        </div>
+                        <h4><span>poulet</span><br>boucané banane plantain</h4>
+                        <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
+                    </figure>
+                    
+                    <figure class="poulet">
+                        <div class="fond_noir">
+                            <img src="../image/bokit_banane_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        
                     </figure>
+
+                    <figure class="poulet">
+                        <div class="fond_noir">
+                            <img src="../image/poulet_b_b.jpg" alt="">
+                        </div>
+                        <h4><span>poulet</span><br>boucané banane plantain</h4>
+                        <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
+                    </figure>
+
+                    <figure class="poisson">
+                        <div class="fond_noir">
+                            <img src="../image/bokit_vegan_uber.JPG" alt="">
+                        </div>
+                        <h4><span>SAUMON</span><br>fumée</h4>
+                        <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
+                    </figure>
+
+                    <figure class="poisson">
+                        <div class="fond_noir">
+                            <img src="../image/poisson_morue.jpg" alt="">
+                        </div>
+                        <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
+                        <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
+                    </figure>
+
+                    <figure class="legume">
+                        <div class="fond_noir">
+                            <img src="../image/poulet_yassa.jpg" alt="">
+                        </div>
+                        <h4><span>legume</span><br>yassa</h4>
+                        <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
+                    </figure>
+
                     <figure class="viande">
                         <div class="fond_noir">
                             <img src="../image/poulet_yassa.jpg" alt="">
                         </div>
                         <h4><span>viande</span><br>yassa</h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        
                     </figure>
                 </div>
             </div>
@@ -136,40 +173,41 @@
 
     <script>
 
-        
-
         $(document).ready(function() {
 
-            $('#filtre li a').click(function() {					// On clique sur un filtre
-                
-                $('#filtre li').removeClass('active');				// Supprimer la classe "active" sur tous les liens du filtre
-                $(this).parent().addClass('active');				// Ajouter la classe "active" sur le parent (li) du "a" cliqué
-                
-                var valeurFiltre = $(this).text().toLowerCase();	// On stocke dans une variable la valeur du lien cliqué, en minuscule
-                
-                $('#portfolio figure').hide();							// Cacher tous les projets
-                
-                if (valeurFiltre == 'tout') {						// On teste si le filtre appliqué est sur "tout"
-                    $('#portfolio figure').show('slow');  				// Alors on montre tous les projets
-                }
-                else {
-                    // alert('hello');
-                    $('#portfolio figure').each(function() {			// Sinon c'est que l'on est dans une catégorie
-                        if(!$(this).hasClass(valeurFiltre)) {  		// On vérifie le "li" n'a pas la classe du filtre appliqué
-                            $(this).hide('slow');					// On cache les projets qui n'ont pas cette classe
-                        } else {  
-                            $(this).show('slow');  					// Sinon on les montre
-                        }  
-                    });
-                }  
-
-                return false;										// Bloque l'action initiale du lien
+            $('#bokit-link').click(function() {
+                $('#filtre_choix').show();
+                $('#portfolio').show();
+                return false;
             });
 
-            // $("#portfolio li a").lightBox();						// Effet lightbox sur les liens du portfolio
+            $('#filtre li a').click(function() { // On clique sur un filtre
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $(this).parent().addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+
+                var valeurFiltre = $(this).text().toLowerCase(); // On stocke dans une variable la valeur du lien cliqué, en minuscule
+
+                $('#portfolio figure').hide(); // Cacher tous les projets
+
+                if (valeurFiltre == 'tout') { // On teste si le filtre appliqué est sur "tout"
+                    $('#portfolio figure').show('slow'); // Alors on montre tous les projets
+                } else {
+                    // alert('hello');
+                    $('#portfolio figure').each(function() { // Sinon c'est que l'on est dans une catégorie
+                        if (!$(this).hasClass(valeurFiltre)) { // On vérifie le "li" n'a pas la classe du filtre appliqué
+                            $(this).hide('slow'); // On cache les projets qui n'ont pas cette classe
+                        } else {
+                            $(this).show('slow'); // Sinon on les montre
+                        }
+                    });
+                }
+
+                return false; // Bloque l'action initiale du lien
+            });
+
+            // $("#portfolio li a").lightBox(); // Effet lightbox sur les liens du portfolio
 
 
-            
         });
     </script>
 </body>
