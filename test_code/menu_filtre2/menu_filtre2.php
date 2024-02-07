@@ -69,9 +69,9 @@
 
 
                 <!-- BOWL -->
-                <div class="flex  filtre_ingredient" id="list_bowl">
+                <div class="filtre_ingredient" id="list_bowl">
                     
-                    <figure class="poulet">
+                    <figure class="poulet fig1">
                         <div class="fond_noir">
                             <img src="../image/bowl_complet_uber.JPG" alt="">
                         </div>
@@ -79,7 +79,7 @@
                         <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
                     </figure>
                     
-                    <figure class="poulet">
+                    <figure class="poulet fig2">
                         <div class="fond_noir">
                             <img src="../image/bowl_complet_uber.JPG" alt="">
                         </div>
@@ -87,7 +87,7 @@
                         <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
                     </figure>
 
-                    <figure class="viande">
+                    <figure class="viande fig3">
                         <div class="fond_noir">
                             <img src="../image/bowl_complet_uber.JPG" alt="">
                         </div>
@@ -95,7 +95,7 @@
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
                     </figure>
 
-                    <figure class="poisson">
+                    <figure class="poisson fig4">
                         <div class="fond_noir">
                             <img src="../image/bowl_morue_uber.JPG" alt="">
                         </div>
@@ -103,7 +103,7 @@
                         <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
                     </figure>
 
-                    <figure class="legume">
+                    <figure class="legume fig5">
                         <div class="fond_noir">
                             <img src="../image/bowl_vegan_uber.JPG" alt="">
                         </div>
@@ -151,7 +151,7 @@
                             <img src="../image/bokit_vegan_uber.JPG" alt="">
                         </div>
                         <h4><span>SAUMON</span><br>fumée</h4>
-                        <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
+                        <!-- <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p> -->
                     </figure>
 
                     <figure class="poisson">
@@ -181,7 +181,7 @@
                 
                 
                 <!-- PETITE FAIM -->
-                <div class="flex filtre_ingredient"  id="list_petite_faim">
+                <div class="grid filtre_ingredient"  id="list_petite_faim">
                     <figure class="poulet">
                         <div class="fond_noir">
                             <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
