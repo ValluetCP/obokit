@@ -18,6 +18,7 @@
     <script type="text/javascript" src="js/lightbox.js"></script>
     <script type="text/javascript" src="./site.js"></script>
     <script type="text/javascript" src="./accordeon.js"></script>
+
 </head>
 
 <body>
@@ -321,8 +322,15 @@
                 var valeurFiltre = $(this).text().toLowerCase();	// On stocke dans une variable la valeur du lien cliqué, en minuscule
                 
                 $('.filtre_ingredient figure').hide();							// Cacher tous les projets
+
+
+                $('figure').addClass('hide'); // Ajoutez la classe hide pour masquer avec transition
+                setTimeout(function() {
+                    $('figure').removeClass('hide'); // Supprimez la classe hide après que la transition soit terminée
+                }, 500); // Attendre 500ms pour que la transition se termine
+
                 
-                if (valeurFiltre == 'tout') {						// On teste si le filtre appliqué est sur "tout"
+                if (valeurFiltre == 'tout') {						// On teste si le filtre appliqué est sur "tout"				
                     $('.filtre_ingredient figure').show('slow');  				// Alors on montre tous les projets
                 }
                 else {

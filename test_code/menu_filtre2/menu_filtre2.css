@@ -154,8 +154,18 @@ figure{
     grid-template-columns: 1fr;
     grid-gap: 10px;
     grid-template-rows: 275px 34px 60px;
-
 }
+
+
+figure {
+    opacity: 1;
+    transition: opacity 0.8s ease; /* Transition de l'opacité pendant 0.5 secondes */
+}
+
+figure.hide {
+    opacity: 0;
+}
+
 
 /* MENU - Miniature */
 
