@@ -147,6 +147,16 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 
+/* MENU */
+
+figure{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 275px 34px 60px;
+
+}
+
 /* MENU - Miniature */
 
 .filtre_ingredient {
