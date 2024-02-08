@@ -25,6 +25,8 @@
 
     <!-- SECTION 5 -->
     <div class="section5">
+
+    <div class="container_sect5">
         <h2>Notre<br><span>Carte</span></h2>
 
         <div class="carte">
@@ -34,7 +36,7 @@
                 <a href="#" class="menu-link">MENU</a>
                 <a href="#" class="bokit-link" id="bokit-link">BOKIT</a>
                 <a href="#" class="bowl-link">BOWL</a>
-                <a href="#" class="petiteFaim-link" class="active">PETITE FAIM & ACCOMPAGNEMENT</a>
+                <a href="#" class="petiteFaim-link" class="activeMenu1">PETITE FAIM & ACCOMPAGNEMENT</a>
                 <a href="#" class="sauce-link">SAUCE</a>
                 <a href="#" class="dessert-link">DESSERT</a>
                 <a href="#" class="boisson-link">BOISSON</a>
@@ -44,8 +46,8 @@
                 <div id="list_menu_secondaire">
 
                     <ul class="filtre_choix flex" id="filtre">
-                        <li class="btnChoix active" id="tout">
-                            <a href="#">Tout</a>
+                        <li class="active" id="tout">
+                            <a href="#" class="btnChoix">Tout</a>
                         </li>
                         <li>
                             <a href="#" class="btnChoix" id="poisson" title="poisson">Poisson</a>
@@ -127,24 +129,24 @@
                         <div class="fond_noir">
                             <img src="../image/bokit_banane_uber.JPG" alt="">
                         </div>
-                        <h4><span>poulet</span><br>yassa</h4>
-                        <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                    </figure>
-
-                    <figure class="poulet">
-                        <div class="fond_noir">
-                            <img src="../image/poulet_b_b.jpg" alt="">
-                        </div>
                         <h4><span>poulet</span><br>boucané banane plantain</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
                     </figure>
 
                     <figure class="poulet">
                         <div class="fond_noir">
-                            <img src="../image/poulet_b_b.jpg" alt="">
+                            <img src="../image/bokit_pouletMarine_uber.JPG" alt="">
                         </div>
                         <h4><span>poulet</span><br>Marinade maison</h4>
                         <p>Sauce chien, sauce blanche, champignon, salade, tomate, oignon rouge, cheddar.</p>
+                    </figure>
+
+                    <figure class="poulet">
+                        <div class="fond_noir">
+                            <img src="../image/bokit_banane_uber.JPG" alt="">
+                        </div>
+                        <h4><span>poulet</span><br>yassa</h4>
+                        <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
                     </figure>
 
                     <figure class="poisson">
@@ -157,7 +159,6 @@
 
                     <figure class="poisson">
                         <div class="fond_noir">
-                            <img src="../image/poisson_morue.jpg" alt="">
                         </div>
                         <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
                         <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
@@ -165,7 +166,7 @@
 
                     <figure class="legume">
                         <div class="fond_noir">
-                            <img src="../image/poulet_yassa.jpg" alt="">
+                            <img src="../image/bokit_vegan_uber.JPG" alt="">
                         </div>
                         <h4><span>Végétarien</span><br>légumes marinés</h4>
                         <p>Sauce chien, sauce blanche, mélanges de légumes marinés, salade, tomate, oignon rouge.</p>
@@ -173,7 +174,7 @@
 
                     <figure class="viande">
                         <div class="fond_noir">
-                            <img src="../image/poulet_yassa.jpg" alt="">
+                            <img src="../image/bokit_jambon_uber.JPG" alt="">
                         </div>
                         <h4><span>steak & bacon bœuf</span><br>complet</h4>
                         <p>Sauce poivre, salade, tomates, oignons, steak, bacon bœuf, œuf et Cheddar.</p>
@@ -189,6 +190,30 @@
                         </div>
                         <h4><span>Pastel</span><br>poulet curry</h4>
                         <p>filet de blanc de poulet, curry, nokoss, oignons, persil et épices spéciales pour poulet.</p>
+                    </figure>
+
+                    <figure class="accompagenement">
+                        <div class="fond_noir">
+                            <img src="../image/frite_pommeDeTerre_uber.JPG" alt="">
+                        </div>
+                        <h4><span>frite</span><br>pomme de terre</h4>
+                        <p>Servi avec une sauce de votre choix.</p>
+                    </figure>
+
+                    <figure class="accompagenement">
+                        <div class="fond_noir">
+                            <img src="../image/frite_patateDouce_uber.JPG" alt="">
+                        </div>
+                        <h4><span>frite</span><br>patate douce</h4>
+                        <p>Servi avec une sauce de votre choix.</p>
+                    </figure>
+
+                    <figure class="accompagenement">
+                        <div class="fond_noir">
+                            <img src="../image/alloco_uber.JPG" alt="">
+                        </div>
+                        <h4><span>alloco</span><br>banane plantain</h4>
+                        <p>Servi avec une sauce de votre choix.</p>
                     </figure>
 
                     <figure class="viande">
@@ -222,40 +247,20 @@
                         <h4><span>accras</span><br>morue </h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
                     </figure>
-
-                    <figure class="accompagenement">
-                        <div class="fond_noir">
-                            <img src="../image/frite_pommeDeTerre_uber.JPG" alt="">
-                        </div>
-                        <h4><span>frite</span><br>pomme de terre</h4>
-                        <p>Servi avec une sauce de votre choix.</p>
-                    </figure>
-
-                    <figure class="accompagenement">
-                        <div class="fond_noir">
-                            <img src="../image/frite_patateDouce_uber.JPG" alt="">
-                        </div>
-                        <h4><span>frite</span><br>patate douce</h4>
-                        <p>Servi avec une sauce de votre choix.</p>
-                    </figure>
-
-                    <figure class="accompagenement">
-                        <div class="fond_noir">
-                            <img src="../image/alloco_uber.JPG" alt="">
-                        </div>
-                        <h4><span>alloco</span><br>banane plantain</h4>
-                        <p>Servi avec une sauce de votre choix.</p>
-                    </figure>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script>
         $(document).ready(function() {
 
+            // ------ LISTE PRINCIPALE ------ //
+
             // Variable pour garder une trace de l'état du lien "BOKIT"
             var bokitActive = false;
+
 
             // Fonction pour afficher uniquement les éléments requis dans la section5
             function afficherElementsSection5() {
@@ -278,25 +283,44 @@
                 $('#list_bokit').hide();
                 $('#list_petite_faim').hide();
                 // Réinitialiser l'affichage à 'tout'
-                $('#filtre li').removeClass('active');
-                $('#filtre #tout').addClass('active');
+                $('#filtre li').removeClass('activeMenu1');
+                $('#filtre #tout').addClass('activeMenu1');
                 $('#list_bowl').find('figure').show();
 
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
             });
+
+            // Gérer le cas où le lien perd le focus
+            $('.bowl-link').blur(function() {
+                // Retirer la classe pour spécifier la couleur du texte
+                $(this).removeClass('activeLink');
+            });
+
 
             // Gérer le clic sur le lien "BOKIT"
             $('.bokit-link').click(function(e) {
                 e.preventDefault();
                 $('#list_menu_secondaire').find('.btnChoix').show();
-                $('#list_menu_secondaire').find('#accompagenement').hide();
+                $('#list_menu_secondaire').find('#crevette,#accompagenement').hide();
                 $('#list_bokit').show();
                 $('#list_bowl').hide();
                 $('#list_petite_faim').hide();
                 // Réinitialiser l'affichage à 'tout'
-                $('#filtre li').removeClass('active');
-                $('#filtre #tout').addClass('active');
+                $('#filtre li').removeClass('activeMenu1');
+                $('#filtre #tout').addClass('activeMenu1');
                 $('#list_bokit').find('figure').show();
+
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
             });
+
+            // Gérer le cas où le lien perd le focus
+            $('.bokit-link').blur(function() {
+                // Retirer la classe pour spécifier la couleur du texte
+                $(this).removeClass('activeLink');
+            });
+
 
             // Gérer le clic sur le lien "PETITE FAIM"
             $('.petiteFaim-link').click(function(e) {
@@ -307,11 +331,23 @@
                 $('#list_bokit').hide();
                 $('#list_bowl').hide();
                 // Réinitialiser l'affichage à 'tout'
-                $('#filtre li').removeClass('active');
-                $('#filtre #tout').addClass('active');
+                $('#filtre li').removeClass('activeMenu1');
+                $('#filtre #tout').addClass('activeMenu1');
                 $('#list_petite_faim').find('figure').show();
+
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
             });
 
+            // Gérer le cas où le lien perd le focus
+            $('.petiteFaim-link').blur(function() {
+                // Retirer la classe pour spécifier la couleur du texte
+                $(this).removeClass('activeLink');
+            });
+
+
+
+            // ------ LISTE SECONDAIRE ------ //
 
             $('#filtre li a').click(function() { // On clique sur un filtre
 
