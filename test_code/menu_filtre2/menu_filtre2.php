@@ -43,7 +43,7 @@
             <div class="carte_contenu">
                 <div id="list_menu_secondaire">
 
-                    <ul class="filtre_choix flex"  id="filtre">
+                    <ul class="filtre_choix flex" id="filtre">
                         <li class="btnChoix active" id="tout">
                             <a href="#">Tout</a>
                         </li>
@@ -71,7 +71,7 @@
 
                 <!-- BOWL -->
                 <div class="filtre_ingredient" id="list_bowl">
-                    
+
                     <figure class="poulet fig1">
                         <div class="fond_noir">
                             <img src="../image/bowl_complet_uber.JPG" alt="">
@@ -79,7 +79,7 @@
                         <h4>poulet boucané</h4>
                         <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
                     </figure>
-                    
+
                     <figure class="poulet fig2">
                         <div class="fond_noir">
                             <img src="../image/bowl_complet_uber.JPG" alt="">
@@ -122,7 +122,7 @@
                         <h4><span>poulet</span><br>boucané</h4>
                         <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
                     </figure>
-                    
+
                     <figure class="poulet">
                         <div class="fond_noir">
                             <img src="../image/bokit_banane_uber.JPG" alt="">
@@ -152,7 +152,7 @@
                             <img src="../image/bokit_vegan_uber.JPG" alt="">
                         </div>
                         <h4><span>SAUMON</span><br>fumée</h4>
-                        <!-- <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p> -->
+                        <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
                     </figure>
 
                     <figure class="poisson">
@@ -167,7 +167,7 @@
                         <div class="fond_noir">
                             <img src="../image/poulet_yassa.jpg" alt="">
                         </div>
-                        <h4>Végétarien</h4>
+                        <h4><span>Végétarien</span><br>légumes marinés</h4>
                         <p>Sauce chien, sauce blanche, mélanges de légumes marinés, salade, tomate, oignon rouge.</p>
                     </figure>
 
@@ -179,10 +179,10 @@
                         <p>Sauce poivre, salade, tomates, oignons, steak, bacon bœuf, œuf et Cheddar.</p>
                     </figure>
                 </div>
-                
-                
+
+
                 <!-- PETITE FAIM -->
-                <div class="grid filtre_ingredient"  id="list_petite_faim">
+                <div class="grid filtre_ingredient" id="list_petite_faim">
                     <figure class="poulet">
                         <div class="fond_noir">
                             <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
@@ -190,7 +190,7 @@
                         <h4><span>Pastel</span><br>poulet curry</h4>
                         <p>filet de blanc de poulet, curry, nokoss, oignons, persil et épices spéciales pour poulet.</p>
                     </figure>
-                    
+
                     <figure class="viande">
                         <div class="fond_noir">
                             <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
@@ -214,12 +214,12 @@
                         <h4><span>Pastel</span><br>saumon </h4>
                         <p>saumon fumé, ciboulette, fromage, ail et fines herbes, parfait pour une collaboration raffinée.</p>
                     </figure>
-                    
+
                     <figure class="poisson">
                         <div class="fond_noir">
                             <img src="../image/Obokit-food-truck_accras.jpg" alt="">
                         </div>
-                        <h4>accras de morue</h4>
+                        <h4><span>accras</span><br>morue </h4>
                         <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
                     </figure>
 
@@ -252,7 +252,6 @@
     </div>
 
     <script>
-
         $(document).ready(function() {
 
             // Variable pour garder une trace de l'état du lien "BOKIT"
@@ -282,7 +281,7 @@
                 $('#filtre li').removeClass('active');
                 $('#filtre #tout').addClass('active');
                 $('#list_bowl').find('figure').show();
-                
+
             });
 
             // Gérer le clic sur le lien "BOKIT"
@@ -314,14 +313,14 @@
             });
 
 
-            $('#filtre li a').click(function() {					// On clique sur un filtre
-                    
-                $('#filtre li').removeClass('active');				// Supprimer la classe "active" sur tous les liens du filtre
-                $(this).parent().addClass('active');				// Ajouter la classe "active" sur le parent (li) du "a" cliqué
-                
-                var valeurFiltre = $(this).text().toLowerCase();	// On stocke dans une variable la valeur du lien cliqué, en minuscule
-                
-                $('.filtre_ingredient figure').hide();							// Cacher tous les projets
+            $('#filtre li a').click(function() { // On clique sur un filtre
+
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $(this).parent().addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+
+                var valeurFiltre = $(this).text().toLowerCase(); // On stocke dans une variable la valeur du lien cliqué, en minuscule
+
+                $('.filtre_ingredient figure').hide(); // Cacher tous les projets
 
 
                 $('figure').addClass('hide'); // Ajoutez la classe hide pour masquer avec transition
@@ -329,27 +328,24 @@
                     $('figure').removeClass('hide'); // Supprimez la classe hide après que la transition soit terminée
                 }, 500); // Attendre 500ms pour que la transition se termine
 
-                
-                if (valeurFiltre == 'tout') {						// On teste si le filtre appliqué est sur "tout"				
-                    $('.filtre_ingredient figure').show('slow');  				// Alors on montre tous les projets
-                }
-                else {
-                    // alert('hello');
-                    $('.filtre_ingredient figure').each(function() {			// Sinon c'est que l'on est dans une catégorie
-                        if(!$(this).hasClass(valeurFiltre)) {  		// On vérifie le "li" n'a pas la classe du filtre appliqué
-                            $(this).hide('slow');					// On cache les projets qui n'ont pas cette classe
-                        } else {  
-                            $(this).show('slow');  					// Sinon on les montre
-                        }  
-                    });
-                }  
 
-                return false;										// Bloque l'action initiale du lien
+                if (valeurFiltre == 'tout') { // On teste si le filtre appliqué est sur "tout"				
+                    $('.filtre_ingredient figure').show('slow'); // Alors on montre tous les projets
+                } else {
+                    // alert('hello');
+                    $('.filtre_ingredient figure').each(function() { // Sinon c'est que l'on est dans une catégorie
+                        if (!$(this).hasClass(valeurFiltre)) { // On vérifie le "li" n'a pas la classe du filtre appliqué
+                            $(this).hide('slow'); // On cache les projets qui n'ont pas cette classe
+                        } else {
+                            $(this).show('slow'); // Sinon on les montre
+                        }
+                    });
+                }
+
+                return false; // Bloque l'action initiale du lien
             });
 
         });
-
-
     </script>
 
 </body>
