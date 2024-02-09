@@ -73,58 +73,102 @@
 
                     <!-- BOWL -->
                     <div class="filtre_ingredient" id="list_bowl">
+                        
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_vegan_uber.JPG" alt="">
+                            </div>
+                            <h4>Végétarien</h4>
+                            <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
+                        </figure>
+                        
+                        <figure class="poulet">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>poulet yassa</h4>
+                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                        </figure>
 
-                        <figure class="poulet fig1">
+                        <figure class="poisson">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_morue_uber.JPG" alt="">
+                            </div>
+                            <h4>MORUE</h4>
+                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        <figure class="viande">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_complet_uber.JPG" alt="">
+                            </div>
+                            <h4>Complet</h4>
+                            <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        <p class="asterisque">*BASE DE RIZ OU SALADE</p>
+
+                        <!-- <figure class="poulet fig1">
                             <div class="fond_noir">
                                 <img src="../image/bowl_complet_uber.JPG" alt="">
                             </div>
                             <h4>poulet boucané</h4>
                             <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                        </figure>
-
-                        <figure class="poulet fig2">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_complet_uber.JPG" alt="">
-                            </div>
-                            <h4>poulet yassa</h4>
-                            <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                        </figure>
-
-                        <figure class="viande fig3">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_complet_uber.JPG" alt="">
-                            </div>
-                            <h4>Complet</h4>
-                            <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        </figure>
-
-                        <figure class="poisson fig4">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_morue_uber.JPG" alt="">
-                            </div>
-                            <h4>MORUE</h4>
-                            <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                        </figure>
-
-                        <figure class="legume fig5">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_vegan_uber.JPG" alt="">
-                            </div>
-                            <h4>Végétarien</h4>
-                            <p>Sauce chien, mélanges de légumes mariné, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                        </figure>
+                        </figure>-->
                     </div>
 
                     <!-- BOKIT -->
                     <div class="flex filtre_ingredient" id="list_bokit">
+
+                        <figure class="poisson">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
+                            <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
+                        </figure>
+
                         <figure class="poulet">
                             <div class="fond_noir">
                                 <img src="../image/bokit_poulet_uber.JPG" alt="">
                             </div>
                             <h4><span>poulet</span><br>boucané</h4>
-                            <p>Sauce chien, sauce cocktail, salade, tomate, oignon rouge, cheddar.</p>
+                            <p>Sauce chien, sauce boucané, salade, tomate, oignon rouge, cheddar.</p>
                         </figure>
 
+                        <figure class="poulet">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4><span>poulet</span><br>yassa</h4>
+                            <p>Salade, tomate, olives, oignon rouge, carotte, moutarde, citron.</p>
+                        </figure>
+
+                        <figure class="viande">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4><span>steak & bacon de bœuf</span><br>complet</h4>
+                            <p>Sauce poivre, salade, tomates, oignons, œuf et Cheddar.</p>
+                        </figure>
+
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <img src="../image/bokit_vegan_uber.JPG" alt="">
+                            </div>
+                            <h4><span>légumes marinés</span><br>Végétarien</h4>
+                            <p>Sauce chien, sauce blanche, mélange de légumes marinés, salade, tomate, oignon rouge.</p>
+                        </figure>
+
+                        <figure class="poulet">
+                            <div class="fond_noir">
+                            <img src="../image/bokit_jambon_uber.JPG" alt="">
+                            </div>
+                            <h4><span>jambon de dinde & fromage</span><br>classique</h4>
+                            <p>Sauce chien, sauce boucané, salade, tomate, oignon rouge, duo de fromage rapé.</p>
+                        </figure>
+
+                        <!-- 
                         <figure class="poulet">
                             <div class="fond_noir">
                                 <img src="../image/bokit_banane_uber.JPG" alt="">
@@ -141,57 +185,35 @@
                             <p>Sauce chien, sauce blanche, champignon, salade, tomate, oignon rouge, cheddar.</p>
                         </figure>
 
-                        <figure class="poulet">
-                            <div class="fond_noir">
-                                <img src="../image/bokit_banane_uber.JPG" alt="">
-                            </div>
-                            <h4><span>poulet</span><br>yassa</h4>
-                            <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        </figure>
-
                         <figure class="poisson">
                             <div class="fond_noir">
                                 <img src="../image/bokit_vegan_uber.JPG" alt="">
                             </div>
                             <h4><span>SAUMON</span><br>fumée</h4>
                             <p>Sauce blanche, salade, tomate, oignon rouge, avocat, parmesan.</p>
-                        </figure>
-
-                        <figure class="poisson">
-                            <div class="fond_noir">
-                            </div>
-                            <h4><span>MORUE</span><br>CHIQUETAILLE</h4>
-                            <p>Sauce chien, sauce blanche, salade, tomate, oignon rouge, avocat.</p>
-                        </figure>
-
-                        <figure class="legume">
-                            <div class="fond_noir">
-                                <img src="../image/bokit_vegan_uber.JPG" alt="">
-                            </div>
-                            <h4><span>Végétarien</span><br>légumes marinés</h4>
-                            <p>Sauce chien, sauce blanche, mélanges de légumes marinés, salade, tomate, oignon rouge.</p>
-                        </figure>
-
-                        <figure class="viande">
-                            <div class="fond_noir">
-                                <img src="../image/bokit_jambon_uber.JPG" alt="">
-                            </div>
-                            <h4><span>steak & bacon bœuf</span><br>complet</h4>
-                            <p>Sauce poivre, salade, tomates, oignons, steak, bacon bœuf, œuf et Cheddar.</p>
-                        </figure>
+                        </figure> -->
                     </div>
 
 
                     <!-- PETITE FAIM -->
                     <div class="grid filtre_ingredient" id="list_petite_faim">
-                        <figure class="poulet">
+
+                        <figure class="viande">
                             <div class="fond_noir">
                                 <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
                             </div>
-                            <h4><span>Pastel</span><br>poulet curry</h4>
-                            <p>filet de blanc de poulet, curry, nokoss, oignons, persil et épices spéciales pour poulet.</p>
+                            <h4><span>Pastel</span><br>bœuf fromage</h4>
+                            <p>viande hachée, nokoss, persil, oignons, ail, épice grill et cheddar. Accompagné d'une sauce.</p>
                         </figure>
 
+                        <figure class="poisson">
+                            <div class="fond_noir">
+                                <img src="../image/Obokit-food-truck_accras.jpg" alt="">
+                            </div>
+                            <h4><span>accras</span><br>morue </h4>
+                            <p>Accompagné d'une sauce.</p>
+                        </figure>
+                        
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/frite_pommeDeTerre_uber.JPG" alt="">
@@ -199,7 +221,7 @@
                             <h4><span>frite</span><br>pomme de terre</h4>
                             <p>Servi avec une sauce de votre choix.</p>
                         </figure>
-
+                        
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/frite_patateDouce_uber.JPG" alt="">
@@ -207,7 +229,7 @@
                             <h4><span>frite</span><br>patate douce</h4>
                             <p>Servi avec une sauce de votre choix.</p>
                         </figure>
-
+                        
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/alloco_uber.JPG" alt="">
@@ -216,12 +238,20 @@
                             <p>Servi avec une sauce de votre choix.</p>
                         </figure>
 
-                        <figure class="viande">
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4><span>accras</span><br>Végétarien</h4>
+                            <p>Accompagné d'une sauce.</p>
+                        </figure>
+                        <!-- 
+                        <figure class="poulet">
                             <div class="fond_noir">
                                 <img src="../image/Obokit-food-truck_pastel.jpg" alt="">
                             </div>
-                            <h4><span>Pastel</span><br>bœuf fromage</h4>
-                            <p>viande hachée, nokoss, persil, oignons, ail, épice grill et cheddar.</p>
+                            <h4><span>Pastel</span><br>poulet curry</h4>
+                            <p>filet de blanc de poulet, curry, nokoss, oignons, persil et épices spéciales pour poulet.</p>
                         </figure>
 
                         <figure class="crevette">
@@ -238,15 +268,7 @@
                             </div>
                             <h4><span>Pastel</span><br>saumon </h4>
                             <p>saumon fumé, ciboulette, fromage, ail et fines herbes, parfait pour une collaboration raffinée.</p>
-                        </figure>
-
-                        <figure class="poisson">
-                            <div class="fond_noir">
-                                <img src="../image/Obokit-food-truck_accras.jpg" alt="">
-                            </div>
-                            <h4><span>accras</span><br>morue </h4>
-                            <p>Salade, tomate, olive, oignon rouge, carotte,moutarde, citron.</p>
-                        </figure>
+                        </figure> -->
                     </div>
                 </div>
             </div>
@@ -320,8 +342,8 @@
             // Gérer le clic sur le lien "PETITE FAIM"
             $('.petiteFaim-link').click(function(e) {
                 e.preventDefault();
-                $('#list_menu_secondaire').find('#poisson,#poulet,#crevette,#viande,#accompagenement').show();
-                $('#list_menu_secondaire').find('#legume').hide();
+                $('#list_menu_secondaire').find('#poisson,#viande,#accompagenement,#legume').show();
+                $('#list_menu_secondaire').find('#crevette,#poulet').hide();
                 $('#list_petite_faim').show();
                 $('#list_bokit').hide();
                 $('#list_bowl').hide();
