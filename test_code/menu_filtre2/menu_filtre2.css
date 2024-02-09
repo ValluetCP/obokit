@@ -63,7 +63,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 .container_sect5{
-    width: 1018px;
+    width: 1190px;
     margin: auto;
 }
 
@@ -206,10 +206,10 @@ figure.hide {
 /* MENU - Miniature */
 
 .filtre_ingredient {
-    width: 960px;
+    width: 1190px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 5px;
     grid-template-rows: repeat(3, auto);
     
