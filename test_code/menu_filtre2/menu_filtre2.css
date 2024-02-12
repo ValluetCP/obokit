@@ -37,8 +37,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     --beige3: #D1C7A3;
     --beige4: #B2A887;
     --beigeLumineux: #FFF0CA;
-    --noirDore: #1E1C17;
+    --beigeDoree: #C9AB67;
 
+     /* Couleurs (palette des noires) */
+     --grisClair: #CCCCCC;
+     --grisMoyen: #7C7C7C;
+     --noirDore: #1E1C17;
+     
 }
 
 /* PARAMETRAGE */
@@ -54,11 +59,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 
 
-/* ---------------------------------- SECTION 5 ---------------------------------- */
+/* ---------------------------- SECTION 5 - DEBUT---------------------------- */
 
 .section5{
     width: 100%;
-    height: 1200px;
+    height: 1562px;
     background-color: white;
 }
 
@@ -291,5 +296,128 @@ figure.hide {
     letter-spacing: 1px;
 }
 
+/* BOUTON - Carte menu PDF */
+.menuPdf {
+    text-align: center;
+    border: 1px solid var(--noir);
+    width: 318px;
+    padding: 15px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.menuPdf a{
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--noir);
+}
 
 
+/* ---------------------------- SECTION 5 - FIN---------------------------- */
+
+
+/* ---------------------------- SECTION 6 - DEBUT---------------------------- */
+
+.section6 {
+    background-color: var(--noirDore);
+    width: 100%;
+    height: 1314px;
+    position: relative;
+    padding-top: 420px;
+}
+
+.plante {
+    position: absolute;
+    top: -140px;
+    right: 7%;
+}
+
+.localisation {
+    position: absolute;
+    top: 50px;
+    left: 11%;
+}
+
+.img_bokit {
+    position: absolute;
+    top: 238px;
+    left: 378px;
+}
+
+
+/* ZONE TEXTE */
+
+.container_sect6 {
+    display: flex;
+    justify-content: end;
+    margin-right: 168px;
+}
+
+.sect6_txt{
+    text-transform: uppercase;
+}
+
+.section6 h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 76px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+.section6 h2 span {
+    font-size: 90px;
+    line-height: 98px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* OUVERTURE & FERMETURE */
+
+.sect6_txt h3{
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--beigeDoree);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sect6_txt h4{
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-size: 45px; 
+    margin-bottom: 18px;
+}
+
+.adresse{
+    font-family: 'bebas', sans-serif;
+    color: var(--grisMoyen);
+    font-size: 38px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.horaire{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--grisClair);
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 255px 1fr;
+}
+
+.jour p{
+    margin-bottom: 10px;
+}
+
+.heure p{
+    margin-bottom: 10px;
+}
+
+/* ---------------------------- SECTION 6 - FIN---------------------------- */

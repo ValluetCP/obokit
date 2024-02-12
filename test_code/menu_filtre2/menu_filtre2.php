@@ -73,7 +73,7 @@
 
                     <!-- BOWL -->
                     <div class="filtre_ingredient" id="list_bowl">
-                        
+
                         <figure class="legume">
                             <div class="fond_noir">
                                 <img src="../image/bowl_vegan_uber.JPG" alt="">
@@ -81,7 +81,7 @@
                             <h4>Végétarien</h4>
                             <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
                         </figure>
-                        
+
                         <figure class="poulet">
                             <div class="fond_noir">
                                 <!-- Attente de l'image -->
@@ -162,7 +162,7 @@
 
                         <figure class="poulet">
                             <div class="fond_noir">
-                            <img src="../image/bokit_jambon_uber.JPG" alt="">
+                                <img src="../image/bokit_jambon_uber.JPG" alt="">
                             </div>
                             <h4><span>jambon de dinde & fromage</span><br>classique</h4>
                             <p>Sauce chien, sauce boucané, salade, tomate, oignon rouge, duo de fromage rapé.</p>
@@ -213,7 +213,7 @@
                             <h4><span>accras</span><br>morue </h4>
                             <p>Accompagné d'une sauce.</p>
                         </figure>
-                        
+
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/frite_pommeDeTerre_uber.JPG" alt="">
@@ -221,7 +221,7 @@
                             <h4><span>frite</span><br>pomme de terre</h4>
                             <p>Servi avec une sauce de votre choix.</p>
                         </figure>
-                        
+
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/frite_patateDouce_uber.JPG" alt="">
@@ -229,7 +229,7 @@
                             <h4><span>frite</span><br>patate douce</h4>
                             <p>Servi avec une sauce de votre choix.</p>
                         </figure>
-                        
+
                         <figure class="accompagenement">
                             <div class="fond_noir">
                                 <img src="../image/alloco_uber.JPG" alt="">
@@ -272,8 +272,73 @@
                     </div>
                 </div>
             </div>
+            <p class="menuPdf"><a href="http://" target="_blank" rel="noopener noreferrer">AFFICHER TOUTE LA CARTE</a></p>
         </div>
     </div>
+
+    <!-- SECTION 6 -->
+    <div class="section6">
+        <div class="plante">
+            <img src="../image/sect6_plante2.jpg" alt="image végétation">
+        </div>
+        <div class="localisation">
+            <img src="../image/sect6_localisation.png" alt="titre localisation">
+        </div>
+        <div class="img_bokit">
+            <img src="../image/sect6_bokit.jpg" alt="image bokit">
+        </div>
+
+        <!-- ZONE TEXTE -->
+        <div class="container_sect6">
+            <div class="sect6_txt">
+                <h2>suivez nos<br><span>horaires & déplacements</span></h2>
+
+                <!-- OUVERTURE -->
+                <h3>Jours d’ouvertures</h3>
+
+                <!-- VILLEJUIF -->
+                <h4>villejuif // </h4>
+                <p class="adresse">
+                    adresse : Place Léo-lagrange, 94800 Villejuif
+                </p>
+                <div class="horaire">
+                    <div class="jour">
+                        <p>lundi</p>
+                        <p>Vendredi</p>
+                    </div>
+                    <div class="heure">
+                        <p>18h00 - 22h00</p>
+                        <p>11h30 - 22h00</p>
+                    </div>
+                </div>
+                <!-- BOURG-LA-REINE -->
+                <h4>bourg-la-reine // </h4>
+                <p class="adresse">
+                    adresse : Place Condorcet, centre ville près <br>du café Leffe, 92340 Bourg la reine
+                </p>
+                <div class="horaire">
+                    <div class="jour">
+                        <p>mardi</p>
+                        <p>jeudi</p>
+                        <p>samedi</p>
+                    </div>
+                    <div class="heure">
+                        <p>11h30 - 15h00  |  17h00 - 22h00</p>
+                        <p>11h30 - 15h00  |  17h00 - 22h00</p>
+                        <p>11h00 - 22h00</p>
+                    </div>
+                </div>
+
+                <!-- FERMETURE -->
+                <h3>Jours de fermetures</h3>
+                <div class="jour">
+                    <p>mercredi et dimanche</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script>
         $(document).ready(function() {
@@ -312,7 +377,7 @@
                 $('#list_bowl').find('figure').show(); // Afficher toute la liste des bokits
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
-                $('.list_menu_principale a').removeClass('activeLink'); 
+                $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
                 $(this).addClass('activeLink');
             });
@@ -333,7 +398,7 @@
                 $('#list_bokit').find('figure').show(); // Afficher toute la liste des bokits
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
-                $('.list_menu_principale a').removeClass('activeLink'); 
+                $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
                 $(this).addClass('activeLink');
             });
@@ -352,17 +417,17 @@
 
                 // Ajouter la classe "active" sur le parent (li) du "a" cliqué
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
-                $('#filtre #tout').addClass('active'); 
+                $('#filtre #tout').addClass('active');
                 // Afficher toute la liste "petite faim"
-                $('#list_petite_faim').find('figure').show(); 
+                $('#list_petite_faim').find('figure').show();
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
-                $('.list_menu_principale a').removeClass('activeLink'); 
+                $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
                 $(this).addClass('activeLink');
             });
 
-            
+
 
 
 
