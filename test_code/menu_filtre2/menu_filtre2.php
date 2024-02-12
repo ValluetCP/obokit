@@ -37,7 +37,7 @@
                     <a href="#" class="bokit-link" id="bokit-link">BOKIT</a>
                     <a href="#" class="bowl-link">BOWL</a>
                     <a href="#" class="petiteFaim-link" class="activeMenu1">PETITE FAIM & ACCOMPAGNEMENT</a>
-                    <a href="#" class="sauce-link">SAUCE</a>
+                    <a href="#" class="supplement-link">supplément</a>
                     <a href="#" class="dessert-link">DESSERT</a>
                     <a href="#" class="boisson-link">BOISSON</a>
                 </div>
@@ -71,50 +71,64 @@
                     </div>
 
 
-                    <!-- BOWL -->
-                    <div class="filtre_ingredient" id="list_bowl">
-
-                        <figure class="legume">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_vegan_uber.JPG" alt="">
-                            </div>
-                            <h4>Végétarien</h4>
-                            <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
-                        </figure>
-
-                        <figure class="poulet">
+                    <!-- MENU -->
+                    <div class="filtre_ingredient" id="list_menu">
+                        <figure class="menu_bokit">
                             <div class="fond_noir">
                                 <!-- Attente de l'image -->
                             </div>
-                            <h4>poulet yassa</h4>
-                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                            <h4>Menu bokit</h4>
+                            <p>Un bokit au choix, un accompagnement au choix et une boisson (+1€ boisson 50cl) </p>
                         </figure>
+                    </div>
 
-                        <figure class="poisson">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_morue_uber.JPG" alt="">
-                            </div>
-                            <h4>MORUE</h4>
-                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
-                        </figure>
-
-                        <figure class="viande">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_complet_uber.JPG" alt="">
-                            </div>
-                            <h4>Complet</h4>
-                            <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
-                        </figure>
-
-                        <p class="asterisque">*BASE DE RIZ OU SALADE</p>
-
-                        <!-- <figure class="poulet fig1">
-                            <div class="fond_noir">
-                                <img src="../image/bowl_complet_uber.JPG" alt="">
-                            </div>
-                            <h4>poulet boucané</h4>
-                            <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                        </figure>-->
+                    <!-- BOWL -->
+                    <div class="contenant">
+                        <div class="filtre_ingredient" id="list_bowl">
+                            <figure class="legume">
+                                <div class="fond_noir">
+                                    <img src="../image/bowl_vegan_uber.JPG" alt="">
+                                </div>
+                                <h4>Végétarien</h4>
+                                <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
+                            </figure>
+    
+                            <figure class="poulet">
+                                <div class="fond_noir">
+                                    <!-- Attente de l'image -->
+                                </div>
+                                <h4>poulet yassa</h4>
+                                <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                            </figure>
+    
+                            <figure class="poisson">
+                                <div class="fond_noir">
+                                    <img src="../image/bowl_morue_uber.JPG" alt="">
+                                </div>
+                                <h4>MORUE</h4>
+                                <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                            </figure>
+    
+                            <figure class="viande">
+                                <div class="fond_noir">
+                                    <img src="../image/bowl_complet_uber.JPG" alt="">
+                                </div>
+                                <h4>Complet</h4>
+                                <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
+                            </figure>
+    
+                            
+                            <!-- <figure class="poulet fig1">
+                                <div class="fond_noir">
+                                    <img src="../image/bowl_complet_uber.JPG" alt="">
+                                </div>
+                                <h4>poulet boucané</h4>
+                                <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
+                            </figure>-->
+                        </div>
+                        <div class="container_asterisque">
+                            <p class="asterisque  note_bowl">*BASE DE RIZ OU SALADE</p>
+                        </div>
                     </div>
 
                     <!-- BOKIT -->
@@ -270,6 +284,96 @@
                             <p>saumon fumé, ciboulette, fromage, ail et fines herbes, parfait pour une collaboration raffinée.</p>
                         </figure> -->
                     </div>
+
+                    <!-- SUPPLEMENT -->
+                    <div class="filtre_ingredient" id="list_supplement">
+                        <figure class="viande">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Protéine</h4>
+                            <p>Choix : oeuf, bacon de boeuf, viande</p>
+                        </figure>
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Vegan</h4>
+                            <p>Choix : avocat, banane plantain, fromage</p>
+                        </figure>
+                        <figure class="accompagenement">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>sauce</h4>
+                            <p>Choix : sauce créoline, sauce tomate</p>
+                        </figure>
+                    </div>
+                    
+                    <!-- DESSERT -->
+                    <div class="filtre_ingredient" id="list_dessert">
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Smoothie Baobab</h4>
+                            <p>Dessert artisanal buvable, à la texture crémeuse à base de fruits.</p>
+                        </figure>
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Degué (thiakry)</h4>
+                            <p>Dessert artisanal à base de couscous de mil et de yaourt</p>
+                        </figure>
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Montblanc</h4>
+                            <p>Dessert artisanal</p>
+                        </figure>
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Salade de fruits</h4>
+                            <p>Dessert artisanal, composé d'un mélange de fruits frais</p>
+                        </figure>
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Lassi mangue</h4>
+                            <p>Dessert artisanal buvable à base de yaourt.</p>
+                        </figure>
+                    </div>
+                    
+                    <!-- BOISSON -->
+                    <div class="contenant">
+                        <div class="filtre_ingredient" id="list_boisson">
+                            <figure>
+                                <div class="fond_noir">
+                                    <!-- Attente de l'image -->
+                                </div>
+                                <h4>Bissap</h4>
+                                <p>Boisson non gazeuse, fabriquée artisanalement</p>
+                            </figure>
+                            <figure>
+                                <div class="fond_noir">
+                                    <!-- Attente de l'image -->
+                                </div>
+                                <h4>Gingembre</h4>
+                                <p>Boisson non gazeuse, fabriquée artisanalement</p>
+                            </figure>
+                        </div>
+                        <div class="container_asterisque">
+                            <p class="asterisque note_boisson"><span>*Boisson non gazeuse :</span> Eau plate, jus de mangue, jus de goyave.</p>
+                            <p class="asterisque note_boisson"><span>*Boisson gazeuse :</span> Eau gazeuse, ordinaire, kola champion, coca zéro, coca.</p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <p class="menuPdf"><a href="http://" target="_blank" rel="noopener noreferrer">AFFICHER TOUTE LA CARTE</a></p>
@@ -353,14 +457,44 @@
             function afficherElementsSection5() {
                 $('#list_menu_secondaire').find('.btnChoix').show();
                 $('#list_bokit').show();
+                $('#list_menu').hide();
                 $('#list_bowl').hide();
                 $('#list_petite_faim').hide();
+                $('#list_supplement').hide();
+                $('#list_dessert').hide();
+                $('#list_boisson').hide();
+                $('.container_asterisque').hide();
                 $('#list_menu_secondaire').find('#accompagenement').hide();
                 $('.bokit-link').addClass('activeLink');
+                
             }
 
             // Appel de la fonction pour afficher les éléments requis lors du chargement de la page
             afficherElementsSection5();
+
+            // Gérer le clic sur le lien "MENU"
+            $('.menu-link').click(function(e) {
+                e.preventDefault();
+                $('#list_menu_secondaire').find('#crevette,#poisson,#poulet,#legume,#viande').hide();
+                $('#list_menu').show();
+                $('#list_bowl').hide();
+                $('#list_bokit').hide();
+                $('#list_petite_faim').hide();
+                $('#list_supplement').hide();
+                $('#list_boisson').hide();
+                $('#list_dessert').hide();
+                $('.container_asterisque').hide();
+
+                // Réinitialiser l'affichage à 'tout'
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+                $('#list_menu').find('figure').show(); // Afficher toute la liste des menus
+
+                // Supprimer la classe "activeLink" sur tous les liens du filtre
+                $('.list_menu_principale a').removeClass('activeLink');
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
+            });
 
             // Gérer le clic sur le lien "BOWL"
             $('.bowl-link').click(function(e) {
@@ -368,13 +502,19 @@
                 $('#list_menu_secondaire').find('#poisson,#poulet,#legume,#viande').show();
                 $('#list_menu_secondaire').find('#crevette,#accompagenement').hide();
                 $('#list_bowl').show();
+                $('#list_menu').hide();
                 $('#list_bokit').hide();
                 $('#list_petite_faim').hide();
+                $('#list_supplement').hide();
+                $('#list_boisson').hide();
+                $('#list_dessert').hide();
+                $('.container_asterisque').find('.note_bowl').show();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
                 $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
-                $('#list_bowl').find('figure').show(); // Afficher toute la liste des bokits
+                $('#list_bowl').find('figure').show(); // Afficher toute la liste des bowls
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
@@ -389,8 +529,13 @@
                 $('#list_menu_secondaire').find('.btnChoix').show();
                 $('#list_menu_secondaire').find('#crevette,#accompagenement').hide();
                 $('#list_bokit').show();
+                $('#list_menu').hide();
                 $('#list_bowl').hide();
                 $('#list_petite_faim').hide();
+                $('#list_supplement').hide();
+                $('#list_boisson').hide();
+                $('#list_dessert').hide();
+                $('.container_asterisque').hide();
 
                 // Réinitialiser l'affichage à 'tout'
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
@@ -410,8 +555,13 @@
                 $('#list_menu_secondaire').find('#poisson,#viande,#accompagenement,#legume').show();
                 $('#list_menu_secondaire').find('#crevette,#poulet').hide();
                 $('#list_petite_faim').show();
+                $('#list_menu').hide();
                 $('#list_bokit').hide();
                 $('#list_bowl').hide();
+                $('#list_supplement').hide();
+                $('#list_boisson').hide();
+                $('#list_dessert').hide();
+                $('.container_asterisque').hide();
 
                 // Réinitialiser l'affichage à 'tout'
 
@@ -420,6 +570,88 @@
                 $('#filtre #tout').addClass('active');
                 // Afficher toute la liste "petite faim"
                 $('#list_petite_faim').find('figure').show();
+
+                // Supprimer la classe "activeLink" sur tous les liens du filtre
+                $('.list_menu_principale a').removeClass('activeLink');
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
+            });
+
+            // Gérer le clic sur le lien "SUPPLEMENT"
+            $('.supplement-link').click(function(e) {
+                e.preventDefault();
+                $('#list_menu_secondaire').find('#viande,#accompagenement,#legume').show();
+                $('#list_menu_secondaire').find('#crevette,#poulet,#poisson').hide();
+                $('#list_supplement').show();
+                $('#list_petite_faim').hide();
+                $('#list_menu').hide();
+                $('#list_bokit').hide();
+                $('#list_bowl').hide();
+                $('#list_boisson').hide();
+                $('#list_dessert').hide();
+                $('.container_asterisque').hide();
+
+                // Réinitialiser l'affichage à 'tout'
+
+                // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $('#filtre #tout').addClass('active');
+                // Afficher toute la liste "supplement"
+                $('#list_supplement').find('figure').show();
+
+                // Supprimer la classe "activeLink" sur tous les liens du filtre
+                $('.list_menu_principale a').removeClass('activeLink');
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
+            });
+
+            // Gérer le clic sur le lien "DESSERT"
+            $('.dessert-link').click(function(e) {
+                e.preventDefault();
+                $('#list_menu_secondaire').find('#crevette,#poulet,#poisson,#viande,#accompagenement,#legume').hide();
+                $('#list_dessert').show();
+                $('#list_boisson').hide();
+                $('#list_supplement').hide();
+                $('#list_petite_faim').hide();
+                $('#list_menu').hide();
+                $('#list_bokit').hide();
+                $('#list_bowl').hide();
+                $('.container_asterisque').hide();
+
+                // Réinitialiser l'affichage à 'tout'
+
+                // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $('#filtre #tout').addClass('active');
+                // Afficher toute la liste "dessert"
+                $('#list_dessert').find('figure').show();
+
+                // Supprimer la classe "activeLink" sur tous les liens du filtre
+                $('.list_menu_principale a').removeClass('activeLink');
+                // Ajouter la classe pour spécifier la couleur du texte
+                $(this).addClass('activeLink');
+            });
+            
+            // Gérer le clic sur le lien "BOISSON"
+            $('.boisson-link').click(function(e) {
+                e.preventDefault();
+                $('#list_menu_secondaire').find('#crevette,#poulet,#poisson,#viande,#accompagenement,#legume').hide();
+                $('#list_boisson').show();
+                $('#list_dessert').hide();
+                $('#list_supplement').hide();
+                $('#list_petite_faim').hide();
+                $('#list_menu').hide();
+                $('#list_bokit').hide();
+                $('#list_bowl').hide();
+                $('.container_asterisque').hide();
+
+                // Réinitialiser l'affichage à 'tout'
+
+                // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+                $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
+                $('#filtre #tout').addClass('active');
+                // Afficher toute la liste "boisson"
+                $('#list_boisson').find('figure').show();
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
