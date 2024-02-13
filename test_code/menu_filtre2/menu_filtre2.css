@@ -43,6 +43,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
      --grisClair: #CCCCCC;
      --grisMoyen: #7C7C7C;
      --noirDore: #1E1C17;
+     --imgVide: #44413A;
      
 }
 
@@ -52,11 +53,98 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 
+h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--textNoir);
+    font-size: 28px;
+    margin-bottom: 76px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+h2 span{
+    font-size: 95px;
+    line-height: 98px;
+    letter-spacing: 4px; 
+    text-transform: uppercase;
+    
+}
 
 
 
 
+/* ----------------------- HEADER - DEBUT----------------------- */
 
+
+/* ----------------------- HEADER - FIN----------------------- */
+
+
+/* ----------------------- SECTION 3 - SON HISTOIRE DEBUT----------------------- */
+
+.section3{
+    background-color: var(--noirDore);
+    width: 100%;
+}
+
+/* CONTAINER */
+.container_sect3{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 152px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 65px;
+}
+
+/* IMAGE */
+.sect3_img{
+    width: 640px;
+    height: 830px;
+    background-color: var(--imgVide);
+}
+
+/* TEXTE */
+
+.sect3_txt h2{
+    color: white;
+    margin-top: 27px;
+}
+
+.sect3_txt Blockquote {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 46px;
+    color: var(--beigeDoree);
+    padding-bottom: 84px;
+    line-height: 48px;
+}
+
+.sect3_txt Blockquote span{
+    font-family: 'bebas', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.sect3_txt p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 28px;
+}
+
+
+
+/* ---------------------------- SECTION 3 - FIN---------------------------- */
+
+
+
+/* ---------------------------- SECTION 4 - DEBUT---------------------------- */
+
+.section4{
+    background-color: var(--beige2);
+}
+/* ---------------------------- SECTION 4 - FIN---------------------------- */
 
 
 /* ---------------------------- SECTION 5 - DEBUT---------------------------- */
@@ -65,6 +153,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     width: 100%;
     height: 1562px;
     background-color: white;
+    margin-top: 100px;
 }
 
 .container_sect5{
@@ -180,6 +269,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     background-color: transparent;
 }
 
+
+/* CARTE - Container des menus */
+
+/* .carte{
+    display: grid;
+    grid-template-rows: auto 50px;
+} */
 
 /* MENU */
 

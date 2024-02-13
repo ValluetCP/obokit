@@ -23,9 +23,40 @@
 
 <body>
 
-    <!-- SECTION 5 -->
-    <div class="section5">
+    <!-- HEADER -->
+    <header>
+        <div class="img_header">
+            <!-- image en background -->
+        </div>
+    </header>
 
+    <!-- SECTION 3 - SON HISTOIRE -->
+    <div class="section3">
+        <div class="container_sect3">
+            <div class="sect3_img">
+                <!-- Attente de l'image -->
+            </div>
+            <div class="sect3_txt">
+                <h2>Son<br><span>Histoire</span></h2>
+                <Blockquote>
+                    « J’ai toujours été bercé par les saveurs des plats 
+                    traditionnels d’Afrique de l’Ouest, préparés par ma mère. »  <span>Atif SAADE</span>
+                </Blockquote>
+                <p>
+                    Du plus lointain qu’il s’en rappelle, Atif SAADE a toujours été bercé par les saveurs des plats traditionnels d’Afrique de l’Ouest préparés par sa mère.
+                    Après un CAP cuisine, il est rapidement rentré dans le monde du travail, par passion mais aussi afin de pouvoir subvenir aux besoins de sa famille. Sa formation en cuisine gastronomique, sa connaissance de la cuisine afro et son expérience dans la restauration antillaise, sont les facteurs clés qui lui permettent aujourd’hui de proposer des recettes mixant saveurs afro caribéennes et saveurs continentales.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4 - CONCEPT -->
+    <div class="section4">
+
+    </div>
+
+    <!-- SECTION 5 - CARTE-->
+    <div class="section5">
         <div class="container_sect5">
             <h2>Notre<br><span>Carte</span></h2>
 
@@ -83,53 +114,53 @@
                     </div>
 
                     <!-- BOWL -->
-                    <div class="contenant">
-                        <div class="filtre_ingredient" id="list_bowl">
-                            <figure class="legume">
-                                <div class="fond_noir">
-                                    <img src="../image/bowl_vegan_uber.JPG" alt="">
-                                </div>
-                                <h4>Végétarien</h4>
-                                <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
-                            </figure>
-    
-                            <figure class="poulet">
-                                <div class="fond_noir">
-                                    <!-- Attente de l'image -->
-                                </div>
-                                <h4>poulet yassa</h4>
-                                <p>*Sauce chien, banane plantain, crudités et avocat.</p>
-                            </figure>
-    
-                            <figure class="poisson">
-                                <div class="fond_noir">
-                                    <img src="../image/bowl_morue_uber.JPG" alt="">
-                                </div>
-                                <h4>MORUE</h4>
-                                <p>*Sauce chien, banane plantain, crudités et avocat.</p>
-                            </figure>
-    
-                            <figure class="viande">
-                                <div class="fond_noir">
-                                    <img src="../image/bowl_complet_uber.JPG" alt="">
-                                </div>
-                                <h4>Complet</h4>
-                                <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
-                            </figure>
-    
-                            
-                            <!-- <figure class="poulet fig1">
-                                <div class="fond_noir">
-                                    <img src="../image/bowl_complet_uber.JPG" alt="">
-                                </div>
-                                <h4>poulet boucané</h4>
-                                <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
-                            </figure>-->
-                        </div>
-                        <div class="container_asterisque">
-                            <p class="asterisque  note_bowl">*BASE DE RIZ OU SALADE</p>
-                        </div>
+                    <div class="filtre_ingredient" id="list_bowl">
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_vegan_uber.JPG" alt="">
+                            </div>
+                            <h4>Végétarien</h4>
+                            <p>*Sauce chien, mélange de légumes marinés, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        <figure class="poulet">
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>poulet yassa</h4>
+                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        <figure class="poisson">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_morue_uber.JPG" alt="">
+                            </div>
+                            <h4>MORUE</h4>
+                            <p>*Sauce chien, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        <figure class="viande">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_complet_uber.JPG" alt="">
+                            </div>
+                            <h4>Complet</h4>
+                            <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
+                        </figure>
+
+                        
+                        <!-- <figure class="poulet fig1">
+                            <div class="fond_noir">
+                                <img src="../image/bowl_complet_uber.JPG" alt="">
+                            </div>
+                            <h4>poulet boucané</h4>
+                            <p>Sauce chien, banane plantain, juliennes de carottes et choux, tomate, oignon rouge, avocat.</p>
+                        </figure>-->
                     </div>
+                    <!-- Astérisque -->
+                    <div class="container_asterisque">
+                        <p class="asterisque  note_bowl">*BASE DE RIZ OU SALADE</p>
+                    </div>
+                    
 
                     <!-- BOKIT -->
                     <div class="flex filtre_ingredient" id="list_bokit">
@@ -350,27 +381,26 @@
                     </div>
                     
                     <!-- BOISSON -->
-                    <div class="contenant">
-                        <div class="filtre_ingredient" id="list_boisson">
-                            <figure>
-                                <div class="fond_noir">
-                                    <!-- Attente de l'image -->
-                                </div>
-                                <h4>Bissap</h4>
-                                <p>Boisson non gazeuse, fabriquée artisanalement</p>
-                            </figure>
-                            <figure>
-                                <div class="fond_noir">
-                                    <!-- Attente de l'image -->
-                                </div>
-                                <h4>Gingembre</h4>
-                                <p>Boisson non gazeuse, fabriquée artisanalement</p>
-                            </figure>
-                        </div>
-                        <div class="container_asterisque">
-                            <p class="asterisque note_boisson"><span>*Boisson non gazeuse :</span> Eau plate, jus de mangue, jus de goyave.</p>
-                            <p class="asterisque note_boisson"><span>*Boisson gazeuse :</span> Eau gazeuse, ordinaire, kola champion, coca zéro, coca.</p>
-                        </div>
+                    <div class="filtre_ingredient" id="list_boisson">
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Bissap</h4>
+                            <p>Boisson non gazeuse, fabriquée artisanalement</p>
+                        </figure>
+                        <figure>
+                            <div class="fond_noir">
+                                <!-- Attente de l'image -->
+                            </div>
+                            <h4>Gingembre</h4>
+                            <p>Boisson non gazeuse, fabriquée artisanalement</p>
+                        </figure>
+                    </div>
+                    <!-- Astérisque -->
+                    <div class="container_asterisque">
+                        <p class="asterisque note_boisson"><span>*Boisson non gazeuse :</span> Eau plate, jus de mangue, jus de goyave.</p>
+                        <p class="asterisque note_boisson"><span>*Boisson gazeuse :</span> Eau gazeuse, ordinaire, kola champion, coca zéro, coca.</p>
                     </div>
 
 
@@ -463,9 +493,10 @@
                 $('#list_supplement').hide();
                 $('#list_dessert').hide();
                 $('#list_boisson').hide();
-                $('.container_asterisque').hide();
                 $('#list_menu_secondaire').find('#accompagenement').hide();
                 $('.bokit-link').addClass('activeLink');
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
                 
             }
 
@@ -483,7 +514,8 @@
                 $('#list_supplement').hide();
                 $('#list_boisson').hide();
                 $('#list_dessert').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
@@ -535,7 +567,8 @@
                 $('#list_supplement').hide();
                 $('#list_boisson').hide();
                 $('#list_dessert').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
@@ -561,7 +594,8 @@
                 $('#list_supplement').hide();
                 $('#list_boisson').hide();
                 $('#list_dessert').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
 
@@ -589,7 +623,8 @@
                 $('#list_bowl').hide();
                 $('#list_boisson').hide();
                 $('#list_dessert').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
 
@@ -616,7 +651,8 @@
                 $('#list_menu').hide();
                 $('#list_bokit').hide();
                 $('#list_bowl').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').hide();
 
                 // Réinitialiser l'affichage à 'tout'
 
@@ -643,7 +679,8 @@
                 $('#list_menu').hide();
                 $('#list_bokit').hide();
                 $('#list_bowl').hide();
-                $('.container_asterisque').hide();
+                $('.container_asterisque').find('.note_bowl').hide();
+                $('.container_asterisque').find('.note_boisson').show();
 
                 // Réinitialiser l'affichage à 'tout'
 
