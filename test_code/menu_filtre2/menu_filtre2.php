@@ -30,6 +30,9 @@
         </div>
     </header>
 
+    <!-- SECTION 2 -  -->
+
+
     <!-- SECTION 3 - SON HISTOIRE -->
     <div class="section3">
         <div class="container_sect3">
@@ -52,7 +55,19 @@
 
     <!-- SECTION 4 - CONCEPT -->
     <div class="section4">
-
+        <!-- TYPO géante -->
+        <div class="concept">
+            <img src="../image/sect4_concept.png" alt="Typographie géante concept">
+        </div>
+        <!-- texte & image -->
+        <div class="container_sect4">
+            <p class="sect4_txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor autem provident dicta, sunt consequuntur. Ratione suscipit dignissimos libero quidem distinctio officiis vitae voluptatum cumque enim minus eaque nihil itaque, quo eveniet deserunt, sit corporis necessitatibus reprehenderit? Est debitis iusto hic quos explicabo.
+            </p>
+            <div class="sect4_img_camion">
+                <img src="../image/bokit-jambon-fromage-et-camion2.jpg" alt="">
+            </div>
+        </div>
     </div>
 
     <!-- SECTION 5 - CARTE-->
@@ -67,7 +82,7 @@
                     <a href="#" class="menu-link">MENU</a>
                     <a href="#" class="bokit-link" id="bokit-link">BOKIT</a>
                     <a href="#" class="bowl-link">BOWL</a>
-                    <a href="#" class="petiteFaim-link" class="activeMenu1">PETITE FAIM & ACCOMPAGNEMENT</a>
+                    <a href="#" class="petiteFaim-link" class="activeMenu1">PETITE FAIM</a>
                     <a href="#" class="supplement-link">supplément</a>
                     <a href="#" class="dessert-link">DESSERT</a>
                     <a href="#" class="boisson-link">BOISSON</a>
@@ -165,6 +180,22 @@
                     <!-- BOKIT -->
                     <div class="flex filtre_ingredient" id="list_bokit">
 
+                        <figure class="legume">
+                            <div class="fond_noir">
+                                <img src="../image/bokit_vegan_uber.JPG" alt="">
+                            </div>
+                            <h4><span>légumes marinés</span><br>Végétarien</h4>
+                            <p>Sauce chien, sauce blanche, mélange de légumes marinés, salade, tomate, oignon rouge.</p>
+                        </figure>
+
+                        <figure class="poulet">
+                            <div class="fond_noir">
+                                <img src="../image/bokit_jambon_uber.JPG" alt="">
+                            </div>
+                            <h4><span>jambon de dinde & fromage</span><br>classique</h4>
+                            <p>Sauce chien, sauce boucané, salade, tomate, oignon rouge, duo de fromage rapé.</p>
+                        </figure>
+
                         <figure class="poisson">
                             <div class="fond_noir">
                                 <!-- Attente de l'image -->
@@ -195,22 +226,6 @@
                             </div>
                             <h4><span>steak & bacon de bœuf</span><br>complet</h4>
                             <p>Sauce poivre, salade, tomates, oignons, œuf et Cheddar.</p>
-                        </figure>
-
-                        <figure class="legume">
-                            <div class="fond_noir">
-                                <img src="../image/bokit_vegan_uber.JPG" alt="">
-                            </div>
-                            <h4><span>légumes marinés</span><br>Végétarien</h4>
-                            <p>Sauce chien, sauce blanche, mélange de légumes marinés, salade, tomate, oignon rouge.</p>
-                        </figure>
-
-                        <figure class="poulet">
-                            <div class="fond_noir">
-                                <img src="../image/bokit_jambon_uber.JPG" alt="">
-                            </div>
-                            <h4><span>jambon de dinde & fromage</span><br>classique</h4>
-                            <p>Sauce chien, sauce boucané, salade, tomate, oignon rouge, duo de fromage rapé.</p>
                         </figure>
 
                         <!-- 

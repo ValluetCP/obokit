@@ -75,7 +75,12 @@ h2 span{
 
 
 /* ----------------------- HEADER - DEBUT----------------------- */
-
+.img_header {
+    background-image: url(../image/header.jpg);
+    width: 100%;
+    height: 916px;
+    background-position-y: bottom;
+}
 
 /* ----------------------- HEADER - FIN----------------------- */
 
@@ -129,7 +134,7 @@ h2 span{
 .sect3_txt p{
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: white;
+    color: var(--beige2);
     line-height: 28px;
 }
 
@@ -143,6 +148,39 @@ h2 span{
 
 .section4{
     background-color: var(--beige2);
+    padding-bottom: 100px;
+    padding-top: 100px;
+    position: relative;
+    z-index: -2;
+}
+
+.sect4_img_camion{
+    width: 700px;
+}
+
+.concept {
+    width: 1240px;
+    position: absolute;
+    left: -48px;
+    top: 170px;
+    z-index: -1;
+}
+
+.container_sect4{
+    max-width: 1820px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.sect4_txt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--noirDore);
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 189px;
+    line-height: 28px;
 }
 /* ---------------------------- SECTION 4 - FIN---------------------------- */
 
@@ -206,14 +244,20 @@ h2 span{
 /* Couleur initiale */
 .bokit-link,
 .bowl-link,
-.petiteFaim-link{
+.petiteFaim-link,
+.boisson-link,
+.dessert-link,
+.supplement-link{
     color: var(--textGris); /* Couleur de texte par défaut */
 }
 
 /* Couleur active */
 .bokit-link.activeLink,
 .bowl-link.activeLink,
-.petiteFaim-link.activeLink {
+.petiteFaim-link.activeLink,
+.boisson-link.activeLink,
+.dessert-link.activeLink,
+.supplement-link.activeLink {
     color: black; /* Couleur du texte lorsque le lien est actif */
     font-weight: 600;
 }
@@ -225,7 +269,7 @@ h2 span{
 #filtre{
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 26px;
+    font-size: 21px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 58px;
@@ -233,12 +277,12 @@ h2 span{
 
 #filtre a{
     text-decoration: none;
-    color: var(--beige1);
+    color: var(--noirDore);
     letter-spacing: 1px;
 }
 
 #filtre a:hover{
-    color: #1E1C17;
+    color: var(--beige1);
 }
 
 
@@ -253,20 +297,25 @@ h2 span{
     padding: 0 34px;
     height: 44px;
     margin: 0 10px;
-    background-color: var(--noirDore);
-    transition: opacity 0.5ms ease;
+    background-color: transparent;
+    transition: opacity 0.8s ease;
 }
 
 /* Liste menu secondaire - Lien */
 
 .btnChoix:hover{
-    background-color: transparent;
+    background-color: var(--noirDore);
 }
 
 .active{
     font-size: 20px;
     font-style: italic;
-    background-color: transparent;
+    background-color: var(--noirDore);
+    color: var(--beige1);
+}
+
+.active a{
+    color: var(--beige1);
 }
 
 
@@ -336,8 +385,8 @@ figure.hide {
 .filtre_ingredient figure:hover{
     width: 276px;
     /* margin-bottom: 65px; */
-    border: 10px solid var(--beigeLumineux);
-    background-color: var(--beigeLumineux);
+    border: 10px solid var(--beige2);
+    background-color: var(--beige2);
     border-radius: 22px;
 }
 
@@ -353,9 +402,10 @@ figure.hide {
 .fond_noir {
     width: 100%;
     height: 275px;
-    background-color: #0D0803;
+    background-color: var(--beige2);
     border-radius: 12px;
     margin-bottom: 20px;
+    
 }
 
 .fond_noir img {
@@ -444,7 +494,7 @@ figure.hide {
 
 .plante {
     position: absolute;
-    top: -140px;
+    top: -80px;
     right: 7%;
 }
 
