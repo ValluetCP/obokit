@@ -260,6 +260,7 @@ h2 span{
 .supplement-link.activeLink {
     color: black; /* Couleur du texte lorsque le lien est actif */
     font-weight: 600;
+    font-size: 16px;
 }
 
 
@@ -304,7 +305,7 @@ h2 span{
 /* Liste menu secondaire - Lien */
 
 .btnChoix:hover{
-    background-color: var(--noirDore);
+    background-color: var(--beigeDoree);
 }
 
 .active{
@@ -314,7 +315,7 @@ h2 span{
     color: var(--beige1);
 }
 
-.active a{
+#filtre li .btnChoix.linkActive{
     color: var(--beige1);
 }
 

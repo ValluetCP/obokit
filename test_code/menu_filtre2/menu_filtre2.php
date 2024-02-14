@@ -104,9 +104,9 @@
                             <li>
                                 <a href="#" class="btnChoix" id="legume" title="legume">Legume</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#" class="btnChoix" id="crevette" title="crevette">Crevette</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="#" class="btnChoix" id="viande" title="viande">Viande</a>
                             </li>
@@ -363,14 +363,14 @@
                                 <!-- Attente de l'image -->
                             </div>
                             <h4>Smoothie Baobab</h4>
-                            <p>Dessert artisanal buvable, à la texture crémeuse à base de fruits.</p>
+                            <p>Buvable à la texture crémeuse à base de fruits. Dessert artisanal.</p>
                         </figure>
                         <figure>
                             <div class="fond_noir">
                                 <!-- Attente de l'image -->
                             </div>
                             <h4>Degué (thiakry)</h4>
-                            <p>Dessert artisanal à base de couscous de mil et de yaourt</p>
+                            <p>à base de couscous de mil et de yaourt. Dessert artisanal.</p>
                         </figure>
                         <figure>
                             <div class="fond_noir">
@@ -384,14 +384,14 @@
                                 <!-- Attente de l'image -->
                             </div>
                             <h4>Salade de fruits</h4>
-                            <p>Dessert artisanal, composé d'un mélange de fruits frais</p>
+                            <p>composé d'un mélange de fruits frais. Dessert artisanal.</p>
                         </figure>
                         <figure>
                             <div class="fond_noir">
                                 <!-- Attente de l'image -->
                             </div>
                             <h4>Lassi mangue</h4>
-                            <p>Dessert artisanal buvable à base de yaourt.</p>
+                            <p>Dessert artisanal à base de yaourt.</p>
                         </figure>
                     </div>
                     
@@ -510,6 +510,7 @@
                 $('#list_boisson').hide();
                 $('#list_menu_secondaire').find('#accompagenement').hide();
                 $('.bokit-link').addClass('activeLink');
+                $('#filtre #tout').find('a').addClass('linkActive');
                 $('.container_asterisque').find('.note_bowl').hide();
                 $('.container_asterisque').find('.note_boisson').hide();
                 
@@ -534,8 +535,13 @@
 
                 // Réinitialiser l'affichage à 'tout'
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
-                $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
+                $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué 
                 $('#list_menu').find('figure').show(); // Afficher toute la liste des menus
+
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
@@ -563,6 +569,11 @@
                 $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
                 $('#list_bowl').find('figure').show(); // Afficher toute la liste des bowls
 
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
+
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
@@ -589,6 +600,11 @@
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
                 $('#filtre #tout').addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
                 $('#list_bokit').find('figure').show(); // Afficher toute la liste des bokits
+
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
@@ -620,6 +636,11 @@
                 // Afficher toute la liste "petite faim"
                 $('#list_petite_faim').find('figure').show();
 
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
+
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
@@ -649,6 +670,11 @@
                 // Afficher toute la liste "supplement"
                 $('#list_supplement').find('figure').show();
 
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
+
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
                 // Ajouter la classe pour spécifier la couleur du texte
@@ -676,6 +702,11 @@
                 $('#filtre #tout').addClass('active');
                 // Afficher toute la liste "dessert"
                 $('#list_dessert').find('figure').show();
+
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
@@ -722,6 +753,10 @@
                 $('#filtre li').removeClass('active'); // Supprimer la classe "active" sur tous les liens du filtre
                 $(this).parent().addClass('active'); // Ajouter la classe "active" sur le parent (li) du "a" cliqué
 
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                $(this).addClass('linkActive');
+
                 var valeurFiltre = $(this).text().toLowerCase(); // On stocke dans une variable la valeur du lien cliqué, en minuscule
 
                 $('.filtre_ingredient figure').hide(); // Cacher tous les projets
@@ -735,6 +770,8 @@
 
                 if (valeurFiltre == 'tout') { // On teste si le filtre appliqué est sur "tout"				
                     $('.filtre_ingredient figure').show('slow'); // Alors on montre tous les projets
+
+                    
                 } else {
                     // alert('hello');
                     $('.filtre_ingredient figure').each(function() { // Sinon c'est que l'on est dans une catégorie
