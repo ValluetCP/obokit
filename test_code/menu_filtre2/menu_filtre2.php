@@ -62,7 +62,7 @@
         <!-- texte & image -->
         <div class="container_sect4">
             <p class="sect4_txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor autem provident dicta, sunt consequuntur. Ratione suscipit dignissimos libero quidem distinctio officiis vitae voluptatum cumque enim minus eaque nihil itaque, quo eveniet deserunt, sit corporis necessitatibus reprehenderit? Est debitis iusto hic quos explicabo.
+            Tout  droit sorti de Guadeloupe, le bokit est un pain chaud frit. Granit comme un sandwich, O’bokit vous propose des recettes revisitées mêlant les plats traditionnels d’Afrique de l’Ouest à celles des caraïbes. Découvrez des saveurs réconfortantes voire dépaysantes pour certains, le tout dans une ambiance chaleureuse et conviviale à l’image de ses communautés.
             </p>
             <div class="sect4_img_camion">
                 <img src="../image/bokit-jambon-fromage-et-camion2.jpg" alt="">
@@ -433,6 +433,9 @@
         <div class="localisation">
             <img src="../image/sect6_localisation.png" alt="titre localisation">
         </div>
+
+    
+        <!-- ZONE IMAGE -->
         <div class="img_bokit">
             <img src="../image/sect6_bokit.jpg" alt="image bokit">
         </div>

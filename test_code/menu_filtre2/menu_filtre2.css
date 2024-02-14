@@ -154,15 +154,15 @@ h2 span{
     z-index: -2;
 }
 
-.sect4_img_camion{
-    width: 700px;
+.sect4_img_camion {
+    width: 540px;
 }
 
 .concept {
-    width: 1240px;
+    width: 1370px;
     position: absolute;
-    left: -48px;
-    top: 170px;
+    left: 8%;
+    top: 54px;
     z-index: -1;
 }
 
@@ -171,6 +171,7 @@ h2 span{
     margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    margin-top: 193px;
 }
 
 .sect4_txt{
@@ -179,7 +180,7 @@ h2 span{
     color: var(--noirDore);
     display: flex;
     flex-direction: column-reverse;
-    padding: 0 189px;
+    padding: 0 211px;
     line-height: 28px;
 }
 /* ---------------------------- SECTION 4 - FIN---------------------------- */
@@ -488,27 +489,44 @@ figure.hide {
 .section6 {
     background-color: var(--noirDore);
     width: 100%;
-    height: 1400px;
+    height: 1472px;
     position: relative;
     padding-top: 420px;
 }
 
-.plante {
+/* .plante {
     position: absolute;
     top: -80px;
     right: 7%;
+    width: 510px;
+} */
+
+.plante {
+    position: absolute;
+    top: -110px;
+    right: 7%;
+    width: 510px;
 }
 
 .localisation {
     position: absolute;
     top: 50px;
-    left: 11%;
+    right: 11%;
+    padding-left: 11%;
 }
 
+
+/* .container_sect6_global{
+    display: grid;
+    grid-template-columns: 1fr auto;
+} */
+
+/* ZONE IMAGE */
 .img_bokit {
     position: absolute;
     top: 238px;
     left: 378px;
+    /* width: 405px; */
 }
 
 
@@ -518,10 +536,13 @@ figure.hide {
     display: flex;
     justify-content: end;
     margin-right: 168px;
+    margin-top: 120px;
+    padding-left: 11%;
 }
 
 .sect6_txt{
     text-transform: uppercase;
+    z-index: 0;
 }
 
 .section6 h2 {
@@ -590,3 +611,138 @@ figure.hide {
 }
 
 /* ---------------------------- SECTION 6 - FIN---------------------------- */
+
+
+
+/* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
+
+/* ----------(max-width:1600px) - DEBUT ---------- */
+@media screen and (max-width:1600px) {
+
+    /* ---------- SECTION - (max-width:1600px) ---------- */
+    /* ---------- SECTION 3 - (max-width:1600px)---------- */
+    .sect3_txt Blockquote {
+        font-size: 43px;
+        padding-bottom: 54px;
+    }
+
+    .container_sect3 {
+        grid-gap: 128px;
+    }
+    /* ---------- SECTION 4- (max-width:1600px) ---------- */
+    .concept {
+        width: 980px;
+    }
+
+    /* ---------- SECTION 6 - (max-width:1600px)---------- */
+    .plante {
+        display: none;
+    }
+
+    .img_bokit {
+        top: 220px;
+    }
+    
+
+}
+
+
+
+
+/* ----------(max-width:1400px) - DEBUT ---------- */
+@media screen and (max-width:1400px) {
+
+    /* ---------- SECTION - (max-width:1400px) ---------- */
+    /* ---------- SECTION 3 - (max-width:1400px)---------- */
+    .container_sect3 {
+        grid-template-columns: 1fr;
+        max-width: 800px;
+        padding: 65px;
+        grid-gap: 34px;
+    }
+
+    .sect3_txt h2 {
+        margin-top: 50px;
+    }
+
+    .sect3_img {
+        width: 100%;
+    }
+
+    /* ---------- SECTION 4 - (max-width:1400px) ---------- */
+    
+    .container_sect4 {
+        max-width: 800px;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        margin-top: 250px;
+    }
+    
+    .sect4_txt {
+        padding: 0 48px;
+    }
+    
+    .sect4_img_camion {
+        width: 80%;
+        margin: auto;
+    }
+    
+    /* ---------- SECTION 5 - (max-width:1400px) ---------- */
+    .section5 h2 {
+        margin-left: 20px;
+    }
+
+    /* ---------- SECTION 6 - (max-width:1400px)---------- */
+
+    .img_bokit {
+        top: 172px;
+    }
+
+}
+
+
+/* ----------(max-width:1210px) - DEBUT ---------- */
+@media screen and (max-width:1210px) {
+
+    /* ---------- SECTION - (max-width:1210px) ---------- */
+    /* ---------- SECTION 3 - (max-width:1210px)---------- */
+
+    /* ---------- SECTION 4 CONCEPT- (max-width:1210px) ---------- */
+    .concept {
+        width: 885px;
+    }
+    
+    /* ---------- SECTION 5 CARTE- (max-width:1210px) ---------- */
+    
+    .container_sect5 {
+        width: 100%;
+    }
+
+    .section5 h2 {
+        margin-left: 56px;
+    }
+
+    .filtre_ingredient {
+        width: 930px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    /* ---------- SECTION 6 - (max-width:1210px)---------- */
+}
+
+
+/* ----------(max-width:980px) - DEBUT ---------- */
+@media screen and (max-width:980px) {
+
+    /* ---------- SECTION - (max-width:980px) ---------- */
+    /* ---------- SECTION 3 - (max-width:980px)---------- */
+
+    /* ---------- SECTION 4 CONCEPT- (max-width:980px) ---------- */
+    
+    /* ---------- SECTION 5 CARTE- (max-width:980px) ---------- */
+    
+    /* ---------- SECTION 6 - (max-width:980px)---------- */
+}
+
+
+
