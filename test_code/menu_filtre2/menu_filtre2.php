@@ -451,7 +451,7 @@
                 <!-- VILLEJUIF -->
                 <h4>villejuif // </h4>
                 <p class="adresse">
-                    adresse : Place Léo-lagrange, 94800 Villejuif
+                    adresse : Place Léo-lagrange, <br class="code_postal">94800 Villejuif
                 </p>
                 <div class="horaire">
                     <div class="jour">
@@ -466,7 +466,7 @@
                 <!-- BOURG-LA-REINE -->
                 <h4>bourg-la-reine // </h4>
                 <p class="adresse">
-                    adresse : Place Condorcet, centre ville près <br>du café Leffe, 92340 Bourg la reine
+                    adresse : Place Condorcet, centre ville près <br class="a_la_ligne">du café Leffe, <br class="code_postal">92340 Bourg-la-reine
                 </p>
                 <div class="horaire">
                     <div class="jour">
