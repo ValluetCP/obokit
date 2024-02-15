@@ -610,17 +610,20 @@ figure.hide {
     margin-bottom: 10px;
 }
 
-/* ---------------------------- SECTION 6 - FIN---------------------------- */
+/* ---------------------------- SECTION 6 - FIN ---------------------------- */
 
 
 
 /* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
 
-/* ----------(max-width:1600px) - DEBUT ---------- */
+
+/* ----------------------(max-width:1600px) - DEBUT ---------------------- */
+
 @media screen and (max-width:1600px) {
 
-    /* ---------- SECTION - (max-width:1600px) ---------- */
-    /* ---------- SECTION 3 - (max-width:1600px)---------- */
+    /* --- SECTION - (max-width:1600px) --- */
+
+    /* --- SECTION 3 MON HISTOIRE - (max-width:1600px)--- */
     .sect3_txt Blockquote {
         font-size: 43px;
         padding-bottom: 54px;
@@ -629,12 +632,13 @@ figure.hide {
     .container_sect3 {
         grid-gap: 128px;
     }
-    /* ---------- SECTION 4- (max-width:1600px) ---------- */
+
+    /* --- SECTION 4 CONCEPT - (max-width:1600px) --- */
     .concept {
         width: 980px;
     }
 
-    /* ---------- SECTION 6 - (max-width:1600px)---------- */
+    /* --- SECTION 6 LOCALISATION - (max-width:1600px)--- */
     .plante {
         display: none;
     }
@@ -642,18 +646,18 @@ figure.hide {
     .img_bokit {
         top: 220px;
     }
-    
-
 }
 
 
 
 
 /* ----------(max-width:1400px) - DEBUT ---------- */
+
 @media screen and (max-width:1400px) {
 
-    /* ---------- SECTION - (max-width:1400px) ---------- */
-    /* ---------- SECTION 3 - (max-width:1400px)---------- */
+    /* ------------------ SECTION - (max-width:1400px) ------------------ */
+
+    /* --- SECTION 3 MON HISTOIRE - (max-width:1400px) --- */
     .container_sect3 {
         grid-template-columns: 1fr;
         max-width: 800px;
@@ -669,7 +673,7 @@ figure.hide {
         width: 100%;
     }
 
-    /* ---------- SECTION 4 - (max-width:1400px) ---------- */
+    /* --- SECTION 4 CONCEPT- (max-width:1400px) --- */
     
     .container_sect4 {
         max-width: 800px;
@@ -687,12 +691,12 @@ figure.hide {
         margin: auto;
     }
     
-    /* ---------- SECTION 5 - (max-width:1400px) ---------- */
+    /* --- SECTION 5 CARTE - (max-width:1400px) --- */
     .section5 h2 {
         margin-left: 20px;
     }
 
-    /* ---------- SECTION 6 - (max-width:1400px)---------- */
+    /* --- SECTION 6 LOCALISATION - (max-width:1400px)--- */
 
     .img_bokit {
         top: 172px;
@@ -704,15 +708,16 @@ figure.hide {
 /* ----------(max-width:1210px) - DEBUT ---------- */
 @media screen and (max-width:1210px) {
 
-    /* ---------- SECTION - (max-width:1210px) ---------- */
-    /* ---------- SECTION 3 - (max-width:1210px)---------- */
+    /* --- SECTION - (max-width:1210px) --- */
 
-    /* ---------- SECTION 4 CONCEPT- (max-width:1210px) ---------- */
+    /* --- SECTION 3 SECTION 3 MON HISTOIRE - (max-width:1210px)--- */
+
+    /* --- SECTION 4 CONCEPT- (max-width:1210px) --- */
     .concept {
         width: 885px;
     }
     
-    /* ---------- SECTION 5 CARTE- (max-width:1210px) ---------- */
+    /* --- SECTION 5 CARTE- (max-width:1210px) --- */
     
     .container_sect5 {
         width: 100%;
@@ -727,21 +732,184 @@ figure.hide {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
     }
-    /* ---------- SECTION 6 - (max-width:1210px)---------- */
+    /* --- SECTION 6 LOCALISATION- (max-width:1210px)--- */
 }
 
 
-/* ----------(max-width:980px) - DEBUT ---------- */
+/* -----------------------(max-width:980px) - DEBUT ----------------------- */
+
 @media screen and (max-width:980px) {
 
-    /* ---------- SECTION - (max-width:980px) ---------- */
-    /* ---------- SECTION 3 - (max-width:980px)---------- */
+    /* --- SECTION - (max-width:980px) --- */
 
-    /* ---------- SECTION 4 CONCEPT- (max-width:980px) ---------- */
+    /* --- SECTION 3 MON HISTOIRE - (max-width:980px)--- */
+
+    /* --- SECTION 4 CONCEPT- (max-width:980px) --- */
+    .concept {
+        width: 581px;
+    }
+
+    .container_sect4 {
+        margin-top: 192px;
+    }
     
-    /* ---------- SECTION 5 CARTE- (max-width:980px) ---------- */
+    /* --- SECTION 5 CARTE- (max-width:980px) --- */
+
+
+    .section5 {
+        height: 1900px;
+    }
+
+    .bokit-link.activeLink, .bowl-link.activeLink, .petiteFaim-link.activeLink, .boisson-link.activeLink, .dessert-link.activeLink, .supplement-link.activeLink {
+        font-size: 15px;
+    }
+
+    #filtre {
+        font-size: 15px;
+    }
+
+    .filtre_ingredient {
+        width: 610px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btnChoix {
+        padding: 0 26px;
+    }
+
+
     
-    /* ---------- SECTION 6 - (max-width:980px)---------- */
+    /* --- SECTION 6 LOCALISATION - (max-width:980px)--- */
+
+    .section6 {
+        height: 1592px;
+    }
+
+    .img_bokit {
+        left: 154px;
+    }
+
+    .container_sect6 {
+        margin-right: 6px;
+        margin-top: 120px;
+    }
+}
+
+
+
+/* -----------------------(max-width:700px) - DEBUT ----------------------- */
+
+@media screen and (max-width:700px) {
+
+    /* --- SECTION - (max-width:700px) --- */
+
+    /* --- GENERAL- (max-width:700px) --- */
+    h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    
+    /* --- SECTION 3 MON HISTOIRE - (max-width:700px)--- */
+    .sect3_img {
+        height: 470px;
+    }
+
+    /* --- SECTION 4 CONCEPT- (max-width:700px) --- */
+    .container_sect4 {
+        margin-top: 125px;
+    }
+    
+    /* --- SECTION 5 CARTE- (max-width:700px) --- */
+    
+    /* --- SECTION 6 LOCALISATION - (max-width:700px)--- */
+}
+
+
+
+
+/* -----------------------(max-width:500px) - DEBUT ----------------------- */
+
+@media screen and (max-width:500px) {
+
+    /* --- SECTION - (max-width:500px) --- */
+
+    /* --- SECTION 3 MON HISTOIRE - (max-width:500px)--- */
+    .concept {
+        width: 406px;
+    }
+
+    /* --- SECTION 4 CONCEPT- (max-width:500px) --- */
+    .concept {
+        width: 322px;
+    }
+    
+    /* --- SECTION 5 CARTE- (max-width:500px) --- */
+    
+    .section5 {
+        height: 3317px;
+    }
+    
+    .filtre_ingredient {
+        width: 305px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .filtre_ingredient figure {
+        width: 276px;
+        /* margin-bottom: 65px; */
+        border: 10px solid var(--beige2);
+        background-color: var(--beige2);
+        border-radius: 22px;
+    }
+
+    .menuPdf {
+        width: 285px;
+    }
+
+    
+    /* --- SECTION 6 LOCALISATION - (max-width:500px)--- */
+    .img_bokit {
+        left: 4%;
+        width: 90%;
+    }
+
+    .section6 h2 {
+        margin-top: 83px;
+    }
+
+    .section6 h2 span {
+        font-size: 52px;
+        line-height: 56px;
+    }
+    
+    .container_sect6 {
+        padding-left: 6%;
+    }
+
+    .horaire {
+        font-size: 14px;
+        grid-template-columns: 128px 1fr;
+    }
+
+    .adresse {
+        line-height: 42px;
+        letter-spacing: 2px;
+    }
+
+    .adresse {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 2px;
+    }
+
+    .adresse br{
+        display: none;
+    }
+
+    .jour p {
+        font-size: 14px;
+    }
+
 }
 
 
