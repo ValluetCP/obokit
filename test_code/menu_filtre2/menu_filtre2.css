@@ -47,6 +47,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
      
 }
 
+
+/* SCROLL */
+
+/* width */
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #b2a88754;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: var(--beigeDoree); 
+    
+}
+
+
 /* PARAMETRAGE */
 .flex{
     display: flex;
@@ -188,9 +208,9 @@ h2 span{
 
 /* ---------------------------- SECTION 5 - DEBUT---------------------------- */
 
-.section5{
+.section5 {
     width: 100%;
-    height: 1562px;
+    min-height: 770px;
     background-color: white;
     margin-top: 100px;
 }
@@ -468,7 +488,8 @@ figure.hide {
     width: 318px;
     padding: 15px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .menuPdf a{
@@ -489,7 +510,7 @@ figure.hide {
 .section6 {
     background-color: var(--noirDore);
     width: 100%;
-    height: 1472px;
+    height: 1565px;
     position: relative;
     padding-top: 420px;
 }
@@ -1021,6 +1042,10 @@ figure.hide {
 
     .jour p {
         font-size: 14px;
+    }
+
+    .img_bokit {
+        padding-right: 1%;
     }
 
 }

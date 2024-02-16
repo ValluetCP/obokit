@@ -421,9 +421,9 @@
 
                 </div>
             </div>
-            <p class="menuPdf"><a href="http://" target="_blank" rel="noopener noreferrer">AFFICHER TOUTE LA CARTE</a></p>
         </div>
     </div>
+    <p class="menuPdf"><a href="http://" target="_blank" rel="noopener noreferrer">AFFICHER TOUTE LA CARTE</a></p>
 
     <!-- SECTION 6 -->
     <div class="section6">
@@ -738,6 +738,11 @@
                 $('#filtre #tout').addClass('active');
                 // Afficher toute la liste "boisson"
                 $('#list_boisson').find('figure').show();
+
+                // Retirer la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre li').find('a').removeClass('linkActive');
+                // Ajouter la classe "linkActive" à l'élément <a> si son parent <li> a la classe "active"
+                $('#filtre #tout').find('a').addClass('linkActive');
 
                 // Supprimer la classe "activeLink" sur tous les liens du filtre
                 $('.list_menu_principale a').removeClass('activeLink');
