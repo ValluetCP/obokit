@@ -490,6 +490,22 @@
         </div>
     </div>
 
+    <!-- SECTION 7 -->
+    <div class="section7">
+        <div class="sect7_txt">
+            <h2>découvrez nos<br><span>prestations & services</span></h2>
+            <p>
+            Votre food truck est prêt à régaler vos papilles lors de tous vos événements. Qu’il s’agisse d’un mariage, d’une fête d’anniversaire ou d’une soirée d’entreprise, privatisez O’bokit et partageons des moments inoubliables avec une touche d’exotisme grâce à nos délicieuses saveurs.
+            </p>
+            <p>
+            Notre incroyable équipe mettra, comme à ses habitudes  tout son coeur et son talent à votre disposition pour vous offrir un service et une expérience digne de ce nom.
+            </p>
+        </div>
+        <div class="sect7_img">
+            <img src="../image/sect6_bokit.jpg" alt="bokit">
+        </div>
+    </div>
+
 
 
     <script>

@@ -52,7 +52,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* width */
 body::-webkit-scrollbar {
-    width: 2px;
+    width:  5px;
 }
 
 /* Track */
@@ -633,6 +633,43 @@ figure.hide {
 
 /* ---------------------------- SECTION 6 - FIN ---------------------------- */
 
+/* ---------------------------- SECTION 7 - DEBUT ---------------------------- */
+.section7{
+    display: grid;
+    grid-template-columns: auto 880px;
+    height: 965px;
+
+}
+
+.sect7_txt {
+    background-color: var(--beige2);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: var(--noirDore);
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16%;
+}
+
+.sect7_txt p{
+    padding-bottom: 10px;
+}
+
+.sect7_img{
+    background-image: url(../image/sect7_bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect7_img img{
+    width: 500px;
+}
+
+/* ---------------------------- SECTION 7 - FIN ---------------------------- */
+
 
 
 /* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
@@ -682,7 +719,7 @@ figure.hide {
     .container_sect3 {
         grid-template-columns: 1fr;
         max-width: 800px;
-        padding: 65px;
+        padding: 6%;
         grid-gap: 34px;
     }
 
@@ -723,6 +760,17 @@ figure.hide {
         top: 172px;
     }
 
+    /* --- SECTION 7 PRESTATION - (max-width:1400px)--- */
+    .section7 {
+        grid-template-columns: auto 50%;
+        height: 812px;
+    }
+
+    .sect7_img img {
+        width: 414px;
+    }
+
+
 }
 
 
@@ -753,7 +801,29 @@ figure.hide {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
     }
+
+    .container_asterisque{
+        padding-left: 56px;
+    }
+
     /* --- SECTION 6 LOCALISATION- (max-width:1210px)--- */
+
+    .section6 {
+        height: 1720px;
+    }
+
+    /* --- SECTION 7 PRESTATION - (max-width:1210px)--- */
+    
+    .section7 {
+        grid-template-columns: 1fr;
+        height: 1446px;
+    }
+
+    .sect7_img img {
+        width: 464px;
+    }
+    
+    
 }
 
 
@@ -776,10 +846,6 @@ figure.hide {
     
     /* --- SECTION 5 CARTE- (max-width:980px) --- */
 
-
-    .section5 {
-        height: 1900px;
-    }
 
     .bokit-link.activeLink, .bowl-link.activeLink, .petiteFaim-link.activeLink, .boisson-link.activeLink, .dessert-link.activeLink, .supplement-link.activeLink {
         font-size: 15px;
@@ -848,6 +914,10 @@ figure.hide {
     
     /* --- SECTION 5 CARTE- (max-width:700px) --- */
 
+    .section5 {
+        min-height: 685px;
+    }
+
     .section5 h2 {
         margin-bottom: 43px;
     }
@@ -909,7 +979,7 @@ figure.hide {
     #list_menu_secondaire {
         overflow-x: scroll;
         overflow-y: hidden;
-        width: 366px;
+        width: 420px;
         margin: auto;
         height: 100px;
         margin-bottom: 50px;
@@ -941,6 +1011,10 @@ figure.hide {
         line-height: 70px;
     }
 
+    .section6 {
+        height: 1710px;
+    }
+
     .container_sect6 {
         padding-left: 5%;
     }
@@ -952,6 +1026,15 @@ figure.hide {
     
     .adresse .a_la_ligne{
         display: none;
+    }
+
+    /* --- SECTION 7 PRESTATION - (max-width:700px)--- */
+    .sect7_img img {
+        width: 332px;
+    }
+
+    .sect7_txt {
+        padding: 0 8%;
     }
 }
 
@@ -976,10 +1059,6 @@ figure.hide {
     
     /* --- SECTION 5 CARTE- (max-width:500px) --- */
     
-    .section5 {
-        height: 3317px;
-    }
-
     .section5 h2 {
         margin-left: 28px;
     }
@@ -999,6 +1078,7 @@ figure.hide {
     #list_menu_secondaire {
         margin-top: 10px;
         margin-bottom: 22px;
+        width: 302px;
     }
 
     .asterisque {
@@ -1026,7 +1106,7 @@ figure.hide {
 
     .horaire {
         font-size: 14px;
-        grid-template-columns: 128px 1fr;
+        grid-template-columns: 106px 1fr;
     }
 
     .adresse {
