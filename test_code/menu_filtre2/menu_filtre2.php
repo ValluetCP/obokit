@@ -42,8 +42,8 @@
             <div class="sect3_txt">
                 <h2>Son<br><span>Histoire</span></h2>
                 <Blockquote>
-                    « J’ai toujours été bercé par les saveurs des plats 
-                    traditionnels d’Afrique de l’Ouest, préparés par ma mère. »  <span>Atif SAADE</span>
+                    « J’ai toujours été bercé par les saveurs des plats
+                    traditionnels d’Afrique de l’Ouest, préparés par ma mère. » <span>Atif SAADE</span>
                 </Blockquote>
                 <p>
                     Du plus lointain qu’il s’en rappelle, Atif SAADE a toujours été bercé par les saveurs des plats traditionnels d’Afrique de l’Ouest préparés par sa mère.
@@ -62,7 +62,7 @@
         <!-- texte & image -->
         <div class="container_sect4">
             <p class="sect4_txt">
-            Tout  droit sorti de Guadeloupe, le bokit est un pain chaud frit. Granit comme un sandwich, O’bokit vous propose des recettes revisitées mêlant les plats traditionnels d’Afrique de l’Ouest à celles des caraïbes. Découvrez des saveurs réconfortantes voire dépaysantes pour certains, le tout dans une ambiance chaleureuse et conviviale à l’image de ses communautés.
+                Tout droit sorti de Guadeloupe, le bokit est un pain chaud frit. Granit comme un sandwich, O’bokit vous propose des recettes revisitées mêlant les plats traditionnels d’Afrique de l’Ouest à celles des caraïbes. Découvrez des saveurs réconfortantes voire dépaysantes pour certains, le tout dans une ambiance chaleureuse et conviviale à l’image de ses communautés.
             </p>
             <div class="sect4_img_camion">
                 <img src="../image/bokit-jambon-fromage-et-camion2.jpg" alt="">
@@ -162,7 +162,7 @@
                             <p>*Sauce chien, steak, oeuf, bacon de bœuf, banane plantain, crudités et avocat.</p>
                         </figure>
 
-                        
+
                         <!-- <figure class="poulet fig1">
                             <div class="fond_noir">
                                 <img src="../image/bowl_complet_uber.JPG" alt="">
@@ -175,7 +175,7 @@
                     <div class="container_asterisque">
                         <p class="asterisque  note_bowl">*BASE DE RIZ OU SALADE</p>
                     </div>
-                    
+
 
                     <!-- BOKIT -->
                     <div class="flex filtre_ingredient" id="list_bokit">
@@ -355,7 +355,7 @@
                             <p>Choix : sauce créoline, sauce tomate</p>
                         </figure>
                     </div>
-                    
+
                     <!-- DESSERT -->
                     <div class="filtre_ingredient" id="list_dessert">
                         <figure>
@@ -394,7 +394,7 @@
                             <p>Dessert artisanal à base de yaourt.</p>
                         </figure>
                     </div>
-                    
+
                     <!-- BOISSON -->
                     <div class="filtre_ingredient" id="list_boisson">
                         <figure>
@@ -427,14 +427,14 @@
 
     <!-- SECTION 6 -->
     <div class="section6">
-        <div class="plante">
+        <!-- <div class="plante">
             <img src="../image/sect6_plante2.jpg" alt="image végétation">
-        </div>
+        </div> -->
         <div class="localisation">
             <img src="../image/sect6_localisation.png" alt="titre localisation">
         </div>
 
-    
+
         <!-- ZONE IMAGE -->
         <div class="img_bokit">
             <img src="../image/sect6_bokit.jpg" alt="image bokit">
@@ -475,8 +475,8 @@
                         <p>samedi</p>
                     </div>
                     <div class="heure">
-                        <p>11h30 - 15h00  |  17h00 - 22h00</p>
-                        <p>11h30 - 15h00  |  17h00 - 22h00</p>
+                        <p>11h30 - 15h00 | 17h00 - 22h00</p>
+                        <p>11h30 - 15h00 | 17h00 - 22h00</p>
                         <p>11h00 - 22h00</p>
                     </div>
                 </div>
@@ -490,15 +490,91 @@
         </div>
     </div>
 
+    <!-- SECTION BANDE -->
+    <section class="container_bande">
+        <div class="list">
+            <div class="item">
+                <span class="item-txt">BOKIT</span>
+                <span class="item-d">
+                    <p class="item-dot dot-t"></p>
+                </span>
+                <span class="item-txt">PARTAGE</span>
+                <span class="item-d">
+                    <p class="item-dot dot-b"></p>
+                </span>
+                <span class="item-txt">afro-caribéen</span>
+                <span class="item-d">
+                    <p class="item-dot dot-g"></p>
+                </span>
+                <span class="item-txt">convivialité</span>
+                <span class="item-d">
+                    <p class="item-dot dot-y"></p>
+                </span>
+                <span class="item-txt">saveurs exotiques</span>
+                <span class="item-d">
+                    <p class="item-dot dot-r"></p>
+                </span>
+            </div>
+        </div>
+        <div class="list">
+            <div class="item">
+                <span class="item-txt">BOKIT</span>
+                <span class="item-d">
+                    <p class="item-dot dot-t"></p>
+                </span>
+                <span class="item-txt">PARTAGE</span>
+                <span class="item-d">
+                    <p class="item-dot dot-b"></p>
+                </span>
+                <span class="item-txt">afro-caribéen</span>
+                <span class="item-d">
+                    <p class="item-dot dot-g"></p>
+                </span>
+                <span class="item-txt">convivialité</span>
+                <span class="item-d">
+                    <p class="item-dot dot-y"></p>
+                </span>
+                <span class="item-txt">saveurs exotiques</span>
+                <span class="item-d">
+                    <p class="item-dot dot-r"></p>
+                </span>
+            </div>
+        </div>
+        <!-- <div class="list">
+            <div class="item">
+                <span class="item-txt">WEB</span>
+                <span class="item-d">
+                    <p class="item-dot dot-t"></p>
+                </span>
+                <span class="item-txt">UX</span>
+                <span class="item-d">
+                    <p class="item-dot dot-b"></p>
+                </span>
+                <span class="item-txt">VISUAL</span>
+                <span class="item-d">
+                    <p class="item-dot dot-g"></p>
+                </span>
+                <span class="item-txt">ILLUSTRATION</span>
+                <span class="item-d">
+                    <p class="item-dot dot-y"></p>
+                </span>
+                <span class="item-txt">& MORE</span>
+                <span class="item-d">
+                    <p class="item-dot dot-r"></p>
+                </span>
+            </div>
+        </div> -->
+    </section>
+
     <!-- SECTION 7 -->
     <div class="section7">
         <div class="sect7_txt">
             <h2>découvrez nos<br><span>prestations & services</span></h2>
             <p>
-            Votre food truck est prêt à régaler vos papilles lors de tous vos événements. Qu’il s’agisse d’un mariage, d’une fête d’anniversaire ou d’une soirée d’entreprise, privatisez O’bokit et partageons des moments inoubliables avec une touche d’exotisme grâce à nos délicieuses saveurs.
+                Votre food truck est prêt à régaler vos papilles lors de tous vos événements. Qu’il s’agisse d’un mariage, d’une fête d’anniversaire ou d’une soirée d’entreprise, privatisez O’bokit et partageons des moments inoubliables avec une touche d’exotisme grâce à nos délicieuses saveurs.
             </p>
             <p>
-            Notre incroyable équipe mettra, comme à ses habitudes  tout son coeur et son talent à votre disposition pour vous offrir un service et une expérience digne de ce nom.
+                Notre incroyable équipe mettra, comme à ses habitudes tout son coeur et son talent à votre disposition pour vous offrir un service et une expérience digne de ce nom.
             </p>
         </div>
         <div class="sect7_img">
@@ -506,6 +582,69 @@
         </div>
     </div>
 
+    <!-- SECTION 8 - SERVICES-->
+    <div class="section8">
+        <div class="container_sect8">
+            <div class="service">
+                <div class="service_img"></div>
+                <div class="service_txt">livraison</div>
+            </div>
+            <div class="service">
+                <div class="service_img"></div>
+                <div class="service_txt">à emporter</div>
+            </div>
+            <div class="service">
+                <div class="service_img"></div>
+                <div class="service_txt">événements</div>
+            </div>
+            <div class="service">
+                <div class="service_img"></div>
+                <div class="service_txt">réception</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 9 - CONTACT -->
+    <div class="section9">
+        <div class="container_sect9">
+            <div class="contact">
+                <div class="contact_img">
+                    <img src="../image/sect9_contact.png" alt="">
+                </div>
+                <div class="contact_txt">
+                    <div class="sect9_email">obokitsa@gmail.com</div>
+                    <div class="sect9_phone">+33 699128474</div>
+                </div>
+            </div>
+            <form action="mailto:obokitsa@gmail.com" method="get" enctype="text/plain">
+                <div>
+                    <input type="text" placeholder="prénom" name="prenom" class="champ_name input_general">
+                    <input type="text" placeholder="nom" name="nom" class="champ_name input_general">
+                </div>
+
+                <div>
+                    <input type="email" name="email" id="email" placeholder="votre adresse mail" class="champ_basic input_general">
+                </div>
+
+                <div>
+                    <input type="text" placeholder="objet" class="champ_basic input_general">
+                </div>
+
+                <div>
+                    <input type="tel" name="tel" id="tel" placeholder="téléphone" class="champ_basic input_general">
+                </div>
+
+                <div>
+                    <textarea name="comments" rows="12" cols="35">votre message.</textarea>
+                </div>
+
+                <div>
+                    <input type="submit" name="submit" value="Send" />
+                    <input type="reset" name="reset" value="Clear Form" />
+                </div>
+            </form>
+        </div>
+    </div>
 
 
     <script>
@@ -532,7 +671,7 @@
                 $('#filtre #tout').find('a').addClass('linkActive');
                 $('.container_asterisque').find('.note_bowl').hide();
                 $('.container_asterisque').find('.note_boisson').hide();
-                
+
             }
 
             // Appel de la fonction pour afficher les éléments requis lors du chargement de la page
@@ -732,7 +871,7 @@
                 // Ajouter la classe pour spécifier la couleur du texte
                 $(this).addClass('activeLink');
             });
-            
+
             // Gérer le clic sur le lien "BOISSON"
             $('.boisson-link').click(function(e) {
                 e.preventDefault();
@@ -795,7 +934,7 @@
                 if (valeurFiltre == 'tout') { // On teste si le filtre appliqué est sur "tout"				
                     $('.filtre_ingredient figure').show('slow'); // Alors on montre tous les projets
 
-                    
+
                 } else {
                     // alert('hello');
                     $('.filtre_ingredient figure').each(function() { // Sinon c'est que l'on est dans une catégorie
