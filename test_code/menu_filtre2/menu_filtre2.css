@@ -66,6 +66,10 @@ body::-webkit-scrollbar-thumb {
     
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 /* PARAMETRAGE */
 .flex{
@@ -485,6 +489,7 @@ figure.hide {
 .menuPdf {
     text-align: center;
     border: 1px solid var(--noir);
+    background-color: var(--noirDore);
     width: 318px;
     padding: 15px;
     margin: auto;
@@ -498,7 +503,7 @@ figure.hide {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 400;
-    color: var(--noir);
+    color: white;
 }
 
 
@@ -720,13 +725,21 @@ figure.hide {
 
 /* ----------------------- SECTION 8 SERVICE - DEBUT ----------------------- */
 
-.container_sect8{
-    width: 1016px;
+.container_sect8 {
+    max-width: 1016px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 20px;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service_img{
@@ -747,7 +760,7 @@ figure.hide {
 /* ---------------------------- SECTION 8 - FIN ---------------------------- */
 
 
-/* ---------------------------- SECTION 9 - DEBUT ---------------------------- */
+/* ---------------------------- SECTION 9 - CONTACT - DEBUT ---------------------------- */
 
 .section9{
     background-color: var(--beige2);
@@ -761,6 +774,7 @@ figure.hide {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .contact_txt{
@@ -1044,11 +1058,26 @@ footer p a{
         grid-template-columns: 1fr;
         height: 1446px;
     }
-
+    
     .sect7_img img {
         width: 464px;
     }
     
+    /* --- SECTION 9 CONTACT - (max-width:1210px)--- */
+    .container_sect9 {
+        display: block;
+    }
+
+    .contact {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    form{
+        width: 90%;
+        margin-top: 100px;
+        margin: auto;
+    }
     
 }
 
@@ -1095,7 +1124,7 @@ footer p a{
     /* --- SECTION 6 LOCALISATION - (max-width:980px)--- */
 
     .section6 {
-        height: 1592px;
+        height: 1702px;
     }
 
     .img_bokit {
@@ -1107,6 +1136,13 @@ footer p a{
     .container_sect6 {
         margin-right: 6px;
         margin-top: 120px;
+    }
+
+    /* --- SECTION 8 SERVICE - (max-width:980px)--- */
+    .container_sect8 {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 640px;
+        grid-gap: 60px;
     }
 }
 
@@ -1262,6 +1298,15 @@ footer p a{
     .sect7_txt {
         padding: 0 8%;
     }
+
+    /* --- SECTION 8 SERVICE - (max-width:700px)--- */
+    .contact_txt {
+        display: block;
+    }
+
+    .sect9_phone{
+        margin-top: 25px;
+    }
 }
 
 
@@ -1352,6 +1397,12 @@ footer p a{
 
     .img_bokit {
         padding-right: 1%;
+    }
+
+    /* --- SECTION 8 SERVICE - (max-width:500px)--- */
+    .container_sect8 {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 640px;
     }
 
 }
