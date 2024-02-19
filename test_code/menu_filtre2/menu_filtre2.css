@@ -291,7 +291,7 @@ h2 span{
 #filtre{
     justify-content: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 58px;
@@ -725,8 +725,8 @@ figure.hide {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .service_img{
@@ -749,17 +749,18 @@ figure.hide {
 
 /* ---------------------------- SECTION 9 - DEBUT ---------------------------- */
 
-/* ---------------------------- SECTION 9 - FIN ---------------------------- */
 .section9{
     background-color: var(--beige2);
     width: 100%;
     padding-top: 170px;
+    padding-bottom: 50px;
 }
 
 .container_sect9{
     max-width: 1600px;
     margin: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .contact_txt{
@@ -772,7 +773,7 @@ figure.hide {
 }
 
 .contact{
-    width: 60%;
+    width: 50%;
 }
 
 /* FORMULAIRE */
@@ -780,8 +781,19 @@ form{
     width: 40%;
 }
 
+::placeholder{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    /* letter-spacing: 1px; */
+}
+
+#name_input{
+    display: flex;
+    justify-content: space-between;
+}
+
 .champ_name{
-    width: 40%;
+    width: 45%;
 }
 
 .champ_basic{
@@ -789,11 +801,100 @@ form{
 }
 
 .input_general{
-    height: 50px;
+    height: 65px;
     background-color: var(--beige2);
     border: none;
     border-bottom: 2px solid var(--noirDore);
 }
+
+textarea{
+    width: 100%;
+    background-color: var(--beige2);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid var(--noirDore);
+    height: 150px;
+    padding-top: 20px;
+}
+
+/* FORMULAIRE - BOUTON */
+
+.bouton_form{
+    margin-top: 20px;
+}
+
+#envoyer,
+#reinitialiser{
+    background-color: var(--beige2);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    border: none;
+    border: 1px solid var(--noirDore);
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+#envoyer:hover,
+#reinitialiser:hover{
+    background-color: var(--beigeDoree);
+}
+
+#envoyer{
+    color: var(--beige2);
+    background-color: var(--noirDore);
+}
+
+/* ---------------------------- SECTION 9 - FIN ---------------------------- */
+
+
+/* ---------------------------- FOOTER - DEBUT ---------------------------- */
+footer{
+    border-top: 1px solid var(--noirDore);
+    background-color: var(--beige2);
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+}
+
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p a{
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: var(--noirDore);
+}
+
+/* RESEAUX SOCIAUX */
+.reseaux{
+    display: flex;
+}
+
+.reseaux_icone a{
+    text-decoration: none;
+    color: var(--noirDore);
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+    font-size: 21px;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.fa-snapchat:before {
+    content: "\f2ab";
+    font-size: 25px;
+    padding-left: 10px;
+}
+/* ---------------------------- FOOTER - FIN ---------------------------- */
 
 
 
@@ -805,7 +906,7 @@ form{
 @media screen and (max-width:1600px) {
 
     /* --- SECTION - (max-width:1600px) --- */
-
+    
     /* --- SECTION 3 MON HISTOIRE - (max-width:1600px)--- */
     .sect3_txt Blockquote {
         font-size: 43px;

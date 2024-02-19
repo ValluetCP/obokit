@@ -7,6 +7,7 @@
     <meta name="description" content="Une phrase d’environ 170 caractères">
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -617,7 +618,7 @@
                 </div>
             </div>
             <form action="mailto:obokitsa@gmail.com" method="get" enctype="text/plain">
-                <div>
+                <div id="name_input">
                     <input type="text" placeholder="prénom" name="prenom" class="champ_name input_general">
                     <input type="text" placeholder="nom" name="nom" class="champ_name input_general">
                 </div>
@@ -635,16 +636,35 @@
                 </div>
 
                 <div>
-                    <textarea name="comments" rows="12" cols="35">votre message.</textarea>
+                    <textarea name="comments" placeholder="votre message"></textarea>
                 </div>
 
-                <div>
-                    <input type="submit" name="submit" value="Send" />
-                    <input type="reset" name="reset" value="Clear Form" />
+                <div class="bouton_form">
+                    <input type="submit" name="submit" value="envoyer" id="envoyer" />
+                    <input type="reset" name="reset" value="réinitialiser" id="reinitialiser" />
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container_footer">
+            <p><a href="">mentions légales</a></p>
+            <div class="reseaux">
+                <div class="reseaux_icone" title="facebook - obokitfoodtruck">
+                    <a href="https://www.facebook.com/obokitfoodtruck/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="reseaux_icone" title="instagram - obokitfoodtruck">
+                    <a href="https://www.instagram.com/obokitfoodtruck/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="reseaux_icone" title="snapchat - obokitfoodtruck">
+                    <a href="https://www.snapchat.com/obokitfoodtruck/"><i class="fa-brands fa-snapchat"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script>
