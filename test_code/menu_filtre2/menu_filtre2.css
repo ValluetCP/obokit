@@ -98,6 +98,40 @@ h2 span{
 
 
 
+/* ----------------------- NAV - DEBUT----------------------- */
+
+nav{
+    background-color: var(--beige2);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.burger div{
+    background-color: var(--beige4);
+    width: 55px;
+    height: 1px;
+}
+
+.trait2,
+.trait3{
+    margin-top: 6px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: var(--beige4);
+    font-family: 'bebas', sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+
+/* ----------------------- NAV - FIN----------------------- */
+
+
 /* ----------------------- HEADER - DEBUT----------------------- */
 .img_header {
     background-image: url(../image/header.jpg);
@@ -911,6 +945,57 @@ footer p a{
 /* ---------------------------- FOOTER - FIN ---------------------------- */
 
 
+/* ---------------------- SECTION - MENTIONS LEGALES - DEBUT ---------------------- */
+.container_mentionsLegales{
+    /* min-width: 1920px;
+    height: 100%; */
+    width: 100%;
+    min-height: 100%;
+    background-image: url(../image/mention_bg.png);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect_mention h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--textNoir);
+    font-size: 28px;
+    margin-bottom: 56px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+.sect_mention {
+    background-color: var(--beige2);
+    border-radius: 20px;
+    padding: 20px 100px;
+}
+
+.grid_mention{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 90px;
+}
+
+.txt_mention{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+}
+
+.txt_mention span{
+    text-transform: lowercase;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+/* ----------------------- SECTION - MENTIONS LEGALES - FIN ----------------------- */
+
+
 
 /* ----------------------- MEDIA QUERY - DEBUT ----------------------- */
 
@@ -1144,6 +1229,24 @@ footer p a{
         max-width: 640px;
         grid-gap: 60px;
     }
+
+    /* --- SECTION - MENTIONS LEGALES - (max-width:980px) --- */
+    .container_mentionsLegales{
+        position: static;
+    }
+
+    .sect_mention {
+        padding: 20px 50px;
+    }
+
+    .grid_mention{
+        grid-gap: 50px;
+    }
+
+    .sect_mention h2 span {
+        font-size: 84px;
+    }
+
 }
 
 
@@ -1307,6 +1410,15 @@ footer p a{
     .sect9_phone{
         margin-top: 25px;
     }
+
+    /* --- SECTION - MENTIONS LEGALES - (max-width:700px) --- */
+
+    
+    .grid_mention{
+        grid-template-columns: 1fr;
+        grid-gap: 0px;
+    }
+
 }
 
 

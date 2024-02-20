@@ -24,6 +24,16 @@
 
 <body>
 
+    <!-- NAV -->
+    <nav>
+        <p class="logo"><a href="">o'bokit</a></p>
+        <div class="burger">
+            <div class="trait1"></div>
+            <div class="trait2"></div>
+            <div class="trait3"></div>
+        </div>
+    </nav>
+
     <!-- HEADER -->
     <header>
         <div class="img_header">
@@ -647,10 +657,19 @@
         </div>
     </div>
 
+    <!-- MODAL - MENTION LEGALES -->
+    <!-- <div id="modal">
+        <div class="modal-content">
+            <a class="modal-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+            <h2 class="modalTitre">mentions légales</h2>
+            <p>En cliquant sur le bouton "quitter cette page", ces informations ne seront pas enregistrées et vos modifications ne seront pas prises en comptes.</p>
+        </div>
+    </div> -->
+
     <!-- FOOTER -->
     <footer>
         <div class="container_footer">
-            <p><a href="">mentions légales</a></p>
+            <p><a href="#modalMentionsLegales">mentions légales</a></p>
             <div class="reseaux">
                 <div class="reseaux_icone" title="facebook - obokitfoodtruck">
                     <a href="https://www.facebook.com/obokitfoodtruck/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
